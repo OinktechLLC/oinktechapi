@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-06-18T18:45:40.536251+00:00",
+  "apis": {
+    "tv": "data/tv/schedule_latest.json",
+    "news": "data/news/news_latest.json",
+    "weather": "data/weather/weather_latest.json",
+    "rates": "data/rates/rates_latest.json"
+  }
+}
