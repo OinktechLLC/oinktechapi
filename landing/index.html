@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OinkTech API — Агрегация Цифровых Функций</title>
+<meta name="description" content="Бесплатные API для разработчиков: ТВ-расписание, новости, погода, курсы валют. Интегрируй за 5 минут.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #080c14;
+  --surface: #0e1420;
+  --surface2: #141c2e;
+  --border: #1e2d4a;
+  --border2: #253550;
+  --accent: #3b82f6;
+  --accent2: #60a5fa;
+  --accent-glow: rgba(59,130,246,0.15);
+  --green: #22c55e;
+  --orange: #f59e0b;
+  --purple: #a855f7;
+  --red: #ef4444;
+  --text: #e2e8f0;
+  --text2: #94a3b8;
+  --text3: #64748b;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* GRID BG */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(8,12,20,0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-logo .pig { font-size: 22px; }
+
+.nav-logo span {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); }
+
+.nav-cta {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  transition: background 0.2s !important;
+}
+.nav-cta:hover { background: var(--accent2) !important; color: #fff !important; }
+
+/* SECTIONS */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-full { max-width: 100%; padding: 100px 40px; }
+
+/* HERO */
+.hero {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 32px;
+}
+
+.hero-badge .dot {
+  width: 8px; height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hero h1 {
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.hero h1 .accent { color: var(--accent); }
+.hero h1 .accent2 { color: var(--purple); }
+
+.hero-sub {
+  font-size: 20px;
+  color: var(--text2);
+  max-width: 600px;
+  margin: 0 auto 48px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 30px rgba(59,130,246,0.3);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 50px rgba(59,130,246,0.5); }
+
+.btn-secondary {
+  background: var(--surface2);
+  color: var(--text);
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid var(--border2);
+  transition: border-color 0.2s;
+}
+.btn-secondary:hover { border-color: var(--accent); }
+
+/* STATS BAR */
+.stats-bar {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-item { text-align: center; }
+.stat-num {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--accent);
+  display: block;
+}
+.stat-label { font-size: 13px; color: var(--text3); margin-top: 4px; }
+
+/* API CARDS */
+.api-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.api-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: border-color 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.api-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--card-accent, var(--accent));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.api-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-4px);
+}
+.api-card:hover::before { opacity: 1; }
+
+.api-card.tv { --card-accent: var(--accent); }
+.api-card.news { --card-accent: var(--orange); }
+.api-card.weather { --card-accent: var(--green); }
+.api-card.rates { --card-accent: var(--purple); }
+
+.api-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.api-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.api-card p {
+  color: var(--text2);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.api-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--text2);
+  font-family: var(--mono);
+}
+
+.tag.green { border-color: rgba(34,197,94,0.3); color: var(--green); }
+.tag.blue { border-color: rgba(59,130,246,0.3); color: var(--accent2); }
+.tag.orange { border-color: rgba(245,158,11,0.3); color: var(--orange); }
+.tag.purple { border-color: rgba(168,85,247,0.3); color: var(--purple); }
+
+/* SECTION HEADERS */
+.section-header {
+  margin-bottom: 60px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-family: var(--mono);
+}
+
+.section-header h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  color: var(--text2);
+  font-size: 17px;
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* CODE BLOCK */
+.code-window {
+  background: #0a0f1a;
+  border: 1px solid var(--border2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.code-header {
+  background: var(--surface);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.code-dots { display: flex; gap: 6px; }
+.code-dots span {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+}
+.code-dots .r { background: #ff5f57; }
+.code-dots .y { background: #ffbd2e; }
+.code-dots .g { background: #28c840; }
+
+.code-lang {
+  font-size: 12px;
+  color: var(--text3);
+  font-family: var(--mono);
+  margin-left: auto;
+}
+
+.code-body {
+  padding: 24px;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-x: auto;
+}
+
+.c-comment { color: #4e6080; }
+.c-key { color: #60a5fa; }
+.c-str { color: #86efac; }
+.c-num { color: #fcd34d; }
+.c-fn { color: #c4b5fd; }
+.c-var { color: #f9a8d4; }
+.c-punct { color: #94a3b8; }
+
+/* INTEGRATION STEPS */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+.step:last-child { border-bottom: none; }
+
+.step-num {
+  width: 48px; height: 48px;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--accent);
+  flex-shrink: 0;
+  font-family: var(--mono);
+}
+
+.step h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.step p { color: var(--text2); font-size: 14px; line-height: 1.7; }
+
+.step .step-url {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent2);
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+  display: inline-block;
+  word-break: break-all;
+}
+
+/* FAQ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--text);
+  text-align: left;
+  padding: 24px 0;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--sans);
+  transition: color 0.2s;
+}
+.faq-q:hover { color: var(--accent2); }
+
+.faq-arrow {
+  font-size: 20px;
+  color: var(--text3);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.faq-item.open .faq-arrow { transform: rotate(45deg); color: var(--accent); }
+
+.faq-a {
+  color: var(--text2);
+  font-size: 15px;
+  line-height: 1.8;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s;
+}
+.faq-item.open .faq-a {
+  max-height: 400px;
+  padding-bottom: 24px;
+}
+
+/* DOCS TABS */
+.docs-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  background: var(--surface);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  width: fit-content;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--text2);
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+  font-family: var(--sans);
+}
+.tab-btn.active { background: var(--accent); color: #fff; }
+.tab-btn:hover:not(.active) { color: var(--text); }
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ENDPOINTS TABLE */
+.endpoints-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.endpoints-table th {
+  text-align: left;
+  padding: 12px 16px;
+  color: var(--text3);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.endpoints-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.endpoints-table tr:last-child td { border-bottom: none; }
+.endpoints-table tr:hover td { background: var(--surface2); }
+
+.method {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(34,197,94,0.1);
+  color: var(--green);
+}
+
+.endpoint-path {
+  font-family: var(--mono);
+  color: var(--accent2);
+}
+
+.endpoint-desc { color: var(--text2); font-size: 13px; }
+
+/* FOOTER */
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 60px 40px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer-brand p {
+  color: var(--text2);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 12px;
+  max-width: 280px;
+}
+
+.footer-col h5 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--text); }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text3);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* LIVE FEED */
+.live-feed {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.live-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.live-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 2s infinite;
+}
+
+.feed-items { padding: 8px 0; }
+.feed-item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.feed-item:last-child { border-bottom: none; }
+.feed-time { color: var(--text3); font-family: var(--mono); font-size: 11px; flex-shrink: 0; margin-top: 3px; }
+.feed-text { color: var(--text2); line-height: 1.5; }
+.feed-source { font-size: 11px; color: var(--accent); }
+
+/* POLICY SECTION */
+.policy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.policy-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+}
+.policy-card h3 { font-size: 20px; margin-bottom: 16px; }
+.policy-card p, .policy-card li {
+  color: var(--text2);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.policy-card ul { padding-left: 20px; }
+.policy-card li { margin-bottom: 6px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  section { padding: 60px 20px; }
+  .stats-bar { gap: 40px; padding: 24px 20px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .policy-grid { grid-template-columns: 1fr; }
+  .step { grid-template-columns: 1fr; }
+  .step-num { margin-bottom: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <span class="pig">🐷</span>
+    Oink<span>Tech</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#apis">API</a></li>
+    <li><a href="#docs">Документация</a></li>
+    <li><a href="#integration">Интеграция</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#terms">Условия</a></li>
+    <li><a href="https://github.com/YOUR_REPO" class="nav-cta">GitHub →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">
+    <span class="dot"></span>
+    Все сервисы работают в реальном времени
+  </div>
+  <h1>
+    Агрегация<br>
+    <span class="accent">Цифровых</span> <span class="accent2">Функций</span>
+  </h1>
+  <p class="hero-sub">
+    Бесплатные API для разработчиков — ТВ-расписание, новости, погода и курсы валют. 
+    Один репозиторий, четыре потока данных, обновление каждый час.
+  </p>
+  <div class="hero-buttons">
+    <a href="#integration" class="btn-primary">Начать интеграцию</a>
+    <a href="#docs" class="btn-secondary">Документация</a>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-num">15+</span>
+    <div class="stat-label">Каналов ТВ</div>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">10</span>
+    <div class="stat-label">Источников новостей</div>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">20</span>
+    <div class="stat-label">Городов погоды</div>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">60+</span>
+    <div class="stat-label">Валют и криптовалют</div>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">0 ₽</span>
+    <div class="stat-label">Стоимость</div>
+  </div>
+</div>
+
+<!-- APIS -->
+<section id="apis">
+  <div class="section-header">
+    <div class="eyebrow">// api.list</div>
+    <h2>Четыре потока данных</h2>
+    <p>Все данные обновляются автоматически через GitHub Actions и доступны как статичные JSON-файлы — без сервера, без задержек.</p>
+  </div>
+
+  <div class="api-grid">
+    <div class="api-card tv">
+      <span class="api-icon">📺</span>
+      <h3>TV Schedule</h3>
+      <p>Расписание телепередач для 15+ каналов. Источники: XMLTV-агрегаторы, Яндекс.ТВ, поисковой робот. Обновление каждые 3 часа.</p>
+      <div class="api-tags">
+        <span class="tag blue">каждые 3ч</span>
+        <span class="tag">XMLTV</span>
+        <span class="tag">Яндекс.ТВ</span>
+        <span class="tag green">live</span>
+      </div>
+    </div>
+
+    <div class="api-card news">
+      <span class="api-icon">📰</span>
+      <h3>News Feed</h3>
+      <p>Новости из 10 источников: РИА, ТАСС, Lenta, RBC, Коммерсантъ, Хабр и другие. Категории: общее, спорт, технологии, бизнес. Обновление каждые 6 часов.</p>
+      <div class="api-tags">
+        <span class="tag orange">каждые 6ч</span>
+        <span class="tag">RSS</span>
+        <span class="tag">DuckDuckGo</span>
+        <span class="tag green">live</span>
+      </div>
+    </div>
+
+    <div class="api-card weather">
+      <span class="api-icon">🌤</span>
+      <h3>Weather</h3>
+      <p>Погода и 7-дневный прогноз для 20 городов России. Текущая температура, осадки, ветер, давление. Источник: Open-Meteo API. Обновление каждый час.</p>
+      <div class="api-tags">
+        <span class="tag green">каждый час</span>
+        <span class="tag">Open-Meteo</span>
+        <span class="tag">7-day</span>
+      </div>
+    </div>
+
+    <div class="api-card rates">
+      <span class="api-icon">💱</span>
+      <h3>Rates</h3>
+      <p>Официальные курсы ЦБ РФ: 40+ валют в рублях. Криптовалюты в реальном времени: BTC, ETH, TON, SOL и другие. Обновление каждый час.</p>
+      <div class="api-tags">
+        <span class="tag purple">каждый час</span>
+        <span class="tag">ЦБ РФ</span>
+        <span class="tag">CoinGecko</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE DEMO -->
+<section id="live">
+  <div class="section-header">
+    <div class="eyebrow">// live.demo</div>
+    <h2>Живые данные прямо сейчас</h2>
+  </div>
+  <div class="live-feed">
+    <div class="live-header">
+      <span class="live-dot"></span>
+      Последние обновления парсера
+    </div>
+    <div class="feed-items">
+      <div class="feed-item">
+        <span class="feed-time">00:00</span>
+        <div>
+          <div class="feed-text">📺 TV: расписание обновлено — Первый канал, Россия 1, НТВ и ещё 12 каналов</div>
+          <div class="feed-source">tv_parser.py → data/tv/schedule_latest.json</div>
+        </div>
+      </div>
+      <div class="feed-item">
+        <span class="feed-time">00:15</span>
+        <div>
+          <div class="feed-text">🌤 Weather: Москва −3°C, Санкт-Петербург −1°C, Новосибирск −18°C</div>
+          <div class="feed-source">weather_parser.py → data/weather/weather_latest.json</div>
+        </div>
+      </div>
+      <div class="feed-item">
+        <span class="feed-time">00:15</span>
+        <div>
+          <div class="feed-text">💱 Rates: USD/RUB обновлён, BTC → данные CoinGecko</div>
+          <div class="feed-source">rates_parser.py → data/rates/rates_latest.json</div>
+        </div>
+      </div>
+      <div class="feed-item">
+        <span class="feed-time">06:30</span>
+        <div>
+          <div class="feed-text">📰 News: собрано 200+ статей из РИА, ТАСС, Lenta, RBC, Хабр</div>
+          <div class="feed-source">news_parser.py → data/news/news_latest.json</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRATION -->
+<section id="integration">
+  <div class="section-header">
+    <div class="eyebrow">// integration.guide</div>
+    <h2>Подключи за 5 минут</h2>
+    <p>Никаких ключей, регистраций и лимитов. Просто форкни репо и используй данные.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h4>Форкни репозиторий</h4>
+          <p>Клонируй наш GitHub-репозиторий к себе. Это займёт 30 секунд.</p>
+          <span class="step-url">github.com/YOUR_ORG/oinktech-api</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h4>Включи GitHub Actions</h4>
+          <p>Actions уже настроены. Просто разреши их запуск в настройках форка — парсеры запустятся автоматически по расписанию.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h4>Читай JSON напрямую</h4>
+          <p>Данные коммитятся в репо как статичные файлы. Читай через raw.githubusercontent.com или деплой на GitHub Pages.</p>
+          <span class="step-url">raw.githubusercontent.com/YOUR/oinktech-api/main/data/tv/schedule_latest.json</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <h4>Встрой в своё приложение</h4>
+          <p>Используй любой HTTP-клиент: fetch, axios, requests — всё что угодно. Смотри пример кода →</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-window">
+      <div class="code-header">
+        <div class="code-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <span class="code-lang">JavaScript</span>
+      </div>
+      <div class="code-body">
+<span class="c-comment">// Получаем расписание ТВ</span><br>
+<span class="c-key">const</span> <span class="c-var">BASE</span> <span class="c-punct">=</span> <span class="c-str">"https://raw.githubusercontent.com/YOUR/oinktech-api/main/data"</span><span class="c-punct">;</span><br><br>
+<span class="c-comment">// Все каналы сегодня</span><br>
+<span class="c-key">const</span> <span class="c-var">tv</span> <span class="c-punct">=</span> <span class="c-key">await</span> <span class="c-fn">fetch</span><span class="c-punct">(</span><span class="c-str">`${BASE}/tv/schedule_latest.json`</span><span class="c-punct">)</span><br>
+&nbsp;&nbsp;<span class="c-punct">.</span><span class="c-fn">then</span><span class="c-punct">(</span><span class="c-var">r</span> <span class="c-punct">=></span> <span class="c-var">r</span><span class="c-punct">.</span><span class="c-fn">json</span><span class="c-punct">());</span><br><br>
+<span class="c-comment">// Конкретный канал</span><br>
+<span class="c-key">const</span> <span class="c-var">ntv</span> <span class="c-punct">=</span> <span class="c-key">await</span> <span class="c-fn">fetch</span><span class="c-punct">(</span><span class="c-str">`${BASE}/tv/channels/ntv.json`</span><span class="c-punct">)</span><br>
+&nbsp;&nbsp;<span class="c-punct">.</span><span class="c-fn">then</span><span class="c-punct">(</span><span class="c-var">r</span> <span class="c-punct">=></span> <span class="c-var">r</span><span class="c-punct">.</span><span class="c-fn">json</span><span class="c-punct">());</span><br><br>
+<span class="c-comment">// Погода в Москве</span><br>
+<span class="c-key">const</span> <span class="c-var">weather</span> <span class="c-punct">=</span> <span class="c-key">await</span> <span class="c-fn">fetch</span><span class="c-punct">(</span><br>
+&nbsp;&nbsp;<span class="c-str">`${BASE}/weather/cities/moscow.json`</span><br>
+<span class="c-punct">).</span><span class="c-fn">then</span><span class="c-punct">(</span><span class="c-var">r</span> <span class="c-punct">=></span> <span class="c-var">r</span><span class="c-punct">.</span><span class="c-fn">json</span><span class="c-punct">());</span><br><br>
+<span class="c-comment">// USD/RUB</span><br>
+<span class="c-key">const</span> <span class="c-var">rates</span> <span class="c-punct">=</span> <span class="c-key">await</span> <span class="c-fn">fetch</span><span class="c-punct">(</span><span class="c-str">`${BASE}/rates/rates_latest.json`</span><span class="c-punct">)</span><br>
+&nbsp;&nbsp;<span class="c-punct">.</span><span class="c-fn">then</span><span class="c-punct">(</span><span class="c-var">r</span> <span class="c-punct">=></span> <span class="c-var">r</span><span class="c-punct">.</span><span class="c-fn">json</span><span class="c-punct">());</span><br>
+<span class="c-key">const</span> <span class="c-var">usd</span> <span class="c-punct">=</span> <span class="c-var">rates</span><span class="c-punct">.</span><span class="c-var">highlight</span><span class="c-punct">.</span><span class="c-var">USD</span><span class="c-punct">;</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCS -->
+<section id="docs">
+  <div class="section-header">
+    <div class="eyebrow">// api.reference</div>
+    <h2>Документация</h2>
+  </div>
+
+  <div class="docs-tabs">
+    <button class="tab-btn active" onclick="switchTab('tv')">📺 TV</button>
+    <button class="tab-btn" onclick="switchTab('news')">📰 News</button>
+    <button class="tab-btn" onclick="switchTab('weather')">🌤 Weather</button>
+    <button class="tab-btn" onclick="switchTab('rates')">💱 Rates</button>
+  </div>
+
+  <div id="tab-tv" class="tab-content active">
+    <div class="code-window">
+      <div class="code-header">
+        <div class="code-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <span class="code-lang">TV Schedule Endpoints</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="endpoints-table">
+          <tr><th>Метод</th><th>Путь</th><th>Описание</th></tr>
+          <tr>
+            <td><span class="method">GET</span></td>
+            <td class="endpoint-path">data/tv/schedule_latest.json</td>
+            <td class="endpoint-desc">Полное расписание всех каналов на сегодня</td>
+          </tr>
+          <tr>
+            <td><span class="method">GET</span></td>
+            <td class="endpoint-path">data/tv/schedule_YYYY-MM-DD.json</td>
+            <td class="endpoint-desc">Расписание за конкретную дату</td>
+          </tr>
+          <tr>
+            <td><span class="method">GET</span></td>
+            <td class="endpoint-path">data/tv/channels/{id}.json</td>
+            <td class="endpoint-desc">Расписание одного канала. ID: russia1, perviy, ntv, match, tnt...</td>
+          </tr>
+          <tr>
+            <td><span class="method">GET</span></td>
+            <td class="endpoint-path">data/tv/index.json</td>
+            <td class="endpoint-desc">Список всех доступных каналов с метаданными</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:24px;" class="code-window">
+      <div class="code-header">
+        <div class="code-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <span class="code-lang">Response example — channel</span>
+      </div>
+      <div class="code-body">
+<span class="c-punct">{</span><br>
+&nbsp;&nbsp;<span class="c-key">"id"</span><span class="c-punct">:</span> <span class="c-str">"ntv"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;<span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"НТВ"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;<span class="c-key">"date"</span><span class="c-punct">:</span> <span class="c-str">"2025-06-18"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;<span class="c-key">"updated_at"</span><span class="c-punct">:</span> <span class="c-str">"2025-06-18T09:00:00Z"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;<span class="c-key">"programs_count"</span><span class="c-punct">:</span> <span class="c-num">24</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;<span class="c-key">"programs"</span><span class="c-punct">: [</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-punct">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">"title"</span><span class="c-punct">:</span> <span class="c-str">"Утро. Самое лучшее"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">"start"</span><span class="c-punct">:</span> <span class="c-str">"08:00"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">"end"</span><span class="c-punct">:</span> <span class="c-str">"10:00"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">"description"</span><span class="c-punct">:</span> <span class="c-str">"..."</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">"genre"</span><span class="c-punct">:</span> <span class="c-str">"Информация"</span><span class="c-punct">,</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">"source"</span><span class="c-punct">:</span> <span class="c-str">"xmltv"</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-punct">}</span><br>
+&nbsp;&nbsp;<span class="c-punct">]</span><br>
+<span class="c-punct">}</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-news" class="tab-content">
+    <div class="code-window">
+      <div class="code-header">
+        <div class="code-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <span class="code-lang">News Endpoints</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="endpoints-table">
+          <tr><th>Метод</th><th>Путь</th><th>Описание</th></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/news/news_latest.json</td><td class="endpoint-desc">Все новости, свежие первые (до 200 статей)</td></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/news/categories/general.json</td><td class="endpoint-desc">Общие новости</td></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/news/categories/tech.json</td><td class="endpoint-desc">Технологии (Хабр, VC.ru)</td></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/news/categories/sport.json</td><td class="endpoint-desc">Спорт</td></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/news/categories/business.json</td><td class="endpoint-desc">Бизнес и экономика</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-weather" class="tab-content">
+    <div class="code-window">
+      <div class="code-header">
+        <div class="code-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <span class="code-lang">Weather Endpoints</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="endpoints-table">
+          <tr><th>Метод</th><th>Путь</th><th>Описание</th></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/weather/weather_latest.json</td><td class="endpoint-desc">Погода для всех 20 городов</td></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/weather/cities/{key}.json</td><td class="endpoint-desc">Город: moscow, spb, novosibirsk, ekaterinburg...</td></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/weather/index.json</td><td class="endpoint-desc">Быстрый индекс: все города с текущей температурой</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-rates" class="tab-content">
+    <div class="code-window">
+      <div class="code-header">
+        <div class="code-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <span class="code-lang">Rates Endpoints</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="endpoints-table">
+          <tr><th>Метод</th><th>Путь</th><th>Описание</th></tr>
+          <tr><td><span class="method">GET</span></td><td class="endpoint-path">data/rates/rates_latest.json</td><td class="endpoint-desc">Все курсы: fiat (ЦБ РФ) + crypto (CoinGecko)</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-header">
+    <div class="eyebrow">// faq</div>
+    <h2>Часто задаваемые вопросы</h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Нужен ли API-ключ для использования?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">Нет. OinkTech API работает полностью без ключей и регистрации. Данные хранятся как статичные JSON-файлы в открытом GitHub-репозитории и доступны через raw.githubusercontent.com или GitHub Pages без каких-либо ограничений.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Как часто обновляются данные?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">Расписание ТВ — каждые 3 часа. Новости — каждые 6 часов. Погода и курсы валют — каждый час. Все обновления происходят через GitHub Actions по расписанию (cron) и коммитятся прямо в репозиторий.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Можно ли добавить свои источники данных?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">Да, именно для этого сделан открытый реестр каналов в tv_parser.py и расширяемый список RSS-источников в news_parser.py. Форкни репо, добавь свои каналы или источники в соответствующий словарь, и они автоматически заработают. Мы принимаем pull requests.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Есть ли ограничения по количеству запросов?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">Ограничений со стороны OinkTech нет — это статичные файлы. Ограничения могут накладывать GitHub (raw.githubusercontent.com) или GitHub Pages, но они достаточно высоки для большинства проектов. Для продакшн-нагрузки рекомендуем форкнуть репо и деплоить данные в CDN или Cloudflare Pages.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Что делать если данные для канала не найдены?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">Парсер использует три уровня источников: XMLTV-агрегаторы, Яндекс.ТВ API и веб-поиск (DuckDuckGo). Если канал не найден ни в одном — в JSON-файле канала будет пустой массив programs. Парсер никогда не генерирует фиктивные данные-заглушки. Добавьте канал в реестр CHANNEL_REGISTRY с правильными алиасами.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Как встроить виджет ТВ-расписания на сайт?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">Достаточно одного fetch-запроса к JSON-файлу нужного канала и рендеринга результата. Никаких SDK, npm-пакетов или iframe не нужно. Смотри пример кода в разделе «Интеграция».</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        На каком хостинге работает сервис?
+        <span class="faq-arrow">+</span>
+      </button>
+      <div class="faq-a">Весь сервис работает исключительно на GitHub: Actions для парсинга, репозиторий для хранения данных, Pages для лендинга. Это означает нулевые расходы на хостинг и максимальную надёжность. После форка ты можешь деплоить на Vercel, Netlify, Cloudflare Pages или Tatnet.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TERMS & PRIVACY -->
+<section id="terms">
+  <div class="section-header">
+    <div class="eyebrow">// legal</div>
+    <h2>Условия использования и политика</h2>
+  </div>
+
+  <div class="policy-grid">
+    <div class="policy-card">
+      <h3>📋 Условия использования</h3>
+      <p>Используя OinkTech API, вы соглашаетесь со следующими условиями:</p>
+      <ul>
+        <li>API предоставляется бесплатно «как есть» (as-is) без гарантий доступности</li>
+        <li>Использование в коммерческих проектах разрешено при указании источника</li>
+        <li>Запрещено использование для генерации спама или массовых рассылок</li>
+        <li>Мы оставляем право изменить структуру данных с предупреждением в README</li>
+        <li>Автоматические запросы должны соблюдать разумные интервалы (не чаще раза в минуту)</li>
+        <li>Данные парсятся из открытых источников и предоставляются для удобства разработчиков</li>
+        <li>OinkTech не несёт ответственности за точность данных третьих сторон</li>
+      </ul>
+    </div>
+
+    <div class="policy-card">
+      <h3>🔒 Политика конфиденциальности</h3>
+      <p>OinkTech API не собирает персональные данные пользователей:</p>
+      <ul>
+        <li>Мы не используем cookies и не устанавливаем трекеры на лендинге</li>
+        <li>Данные о запросах к raw.githubusercontent.com обрабатываются GitHub согласно их политике</li>
+        <li>Парсер не сохраняет персональные данные из источников</li>
+        <li>GitHub Actions логи содержат только технические метаданные (время запуска, количество найденных записей)</li>
+        <li>Лендинг размещён на GitHub Pages — применяется политика конфиденциальности GitHub</li>
+        <li>Мы не продаём и не передаём никакие данные третьим лицам</li>
+      </ul>
+    </div>
+
+    <div class="policy-card">
+      <h3>⚖️ Лицензия</h3>
+      <p>Код проекта распространяется под лицензией MIT:</p>
+      <ul>
+        <li>Свободное использование в личных и коммерческих проектах</li>
+        <li>Разрешено копировать, изменять и распространять</li>
+        <li>Требуется сохранение уведомления об авторских правах</li>
+        <li>Данные, собранные парсером, принадлежат их первоначальным источникам</li>
+        <li>Авторские права на оригинальный контент принадлежат РИА, ТАСС, Lenta.ru и другим источникам</li>
+      </ul>
+    </div>
+
+    <div class="policy-card">
+      <h3>🛡️ Ответственность</h3>
+      <p>Важные оговорки об ограничении ответственности:</p>
+      <ul>
+        <li>Данные предоставляются для информационных целей и могут содержать ошибки парсинга</li>
+        <li>Мы не гарантируем 100% покрытие расписания ТВ для всех каналов</li>
+        <li>Точность курсов валют зависит от источников (ЦБ РФ, CoinGecko)</li>
+        <li>Сервис может быть недоступен во время обслуживания GitHub</li>
+        <li>При использовании данных в критических приложениях рекомендуем дублировать из официальных источников</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="text-decoration:none;">
+        <span class="pig">🐷</span>
+        <span style="font-weight:700;font-size:18px;color:var(--text);">Oink<span style="color:var(--accent)">Tech</span></span>
+      </a>
+      <p>Агрегация Цифровых Функций — бесплатные API для разработчиков на Russian-speaking рынок. Сделано с ❤️ командой OinkTech Ltd.</p>
+    </div>
+    <div class="footer-col">
+      <h5>API</h5>
+      <ul>
+        <li><a href="#apis">TV Schedule</a></li>
+        <li><a href="#apis">News Feed</a></li>
+        <li><a href="#apis">Weather</a></li>
+        <li><a href="#apis">Rates</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Разработчикам</h5>
+      <ul>
+        <li><a href="#docs">Документация</a></li>
+        <li><a href="#integration">Интеграция</a></li>
+        <li><a href="https://github.com/YOUR_REPO">GitHub</a></li>
+        <li><a href="https://github.com/YOUR_REPO/issues">Issues</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Компания</h5>
+      <ul>
+        <li><a href="#terms">Условия использования</a></li>
+        <li><a href="#terms">Конфиденциальность</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="mailto:hello@oinktech.ru">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 OinkTech Ltd / TOO Oink Tech Ltd Co. Все права защищены.</span>
+    <span style="font-family:var(--mono);font-size:12px;">v1.0.0 • MIT License</span>
+  </div>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+function switchTab(name) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Анимация stat-num при скролле
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.api-card, .step').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
