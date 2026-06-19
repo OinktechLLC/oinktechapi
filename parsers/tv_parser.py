@@ -32,6 +32,9 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 HTTP_TIMEOUT = int(os.environ.get("HTTP_TIMEOUT", "8"))
 TV_LOOKUP_DELAY = float(os.environ.get("TV_LOOKUP_DELAY", "0.2"))
 TV_ENABLE_WEB_FALLBACK = os.environ.get("TV_ENABLE_WEB_FALLBACK", "1") != "0"
+TV_INCLUDE_ALL_XMLTV_CHANNELS = os.environ.get("TV_INCLUDE_ALL_XMLTV_CHANNELS", "1") != "0"
+TV_MAX_SOURCE_FAILURES = int(os.environ.get("TV_MAX_SOURCE_FAILURES", "3"))
+_SOURCE_FAILURES: dict[str, int] = {}
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
@@ -44,7 +47,16 @@ XMLTV_SOURCES = [
     "https://www.teleguide.info/download/new3/jtv.zip",
     "https://epg.it999.ru/edem.xml.gz",
     "https://epg.it999.ru/epg2.xml.gz",
+    # Публичные международные XMLTV-гайды. Если доступны, они автоматически
+    # расширяют API не только российскими каналами, а всеми каналами из EPG.
+    "https://iptv-org.github.io/epg/guides/us.xml",
+    "https://iptv-org.github.io/epg/guides/uk.xml",
+    "https://iptv-org.github.io/epg/guides/fr.xml",
+    "https://iptv-org.github.io/epg/guides/de.xml",
+    "https://iptv-org.github.io/epg/guides/es.xml",
 ]
+
+DISCOVERED_CHANNELS: dict[str, dict] = {}
 
 # Каналы которые ищем — расширяемый реестр
 CHANNEL_REGISTRY = {
@@ -81,7 +93,46 @@ CHANNEL_REGISTRY = {
 }
 
 
+def safe_channel_id(value: str, fallback: str = "channel") -> str:
+    """Возвращает безопасный id канала для JSON-ключей и имен файлов."""
+    text = str(value or "").strip().lower()
+    text = re.sub(r"[^0-9a-zа-яё_-]+", "_", text, flags=re.IGNORECASE)
+    text = re.sub(r"_+", "_", text).strip("._-")
+    return (text or fallback)[:64]
+
+
+def find_registered_channel_key(channel_id: str, channel_name: str = "") -> str | None:
+    """Ищет канал в ручном реестре по id/названию/алиасам."""
+    haystack = f"{channel_id} {channel_name}".lower()
+    for key, info in CHANNEL_REGISTRY.items():
+        check_names = [key, info["name"].lower()] + [a.lower() for a in info.get("aliases", [])]
+        if any(name and name in haystack for name in check_names):
+            return key
+    return None
+
+
+def normalize_program(program: dict) -> dict | None:
+    """Приводит программу к стабильной схеме API и отбрасывает пустые записи."""
+    title = str(program.get("title") or "").strip()
+    start = _normalize_time(program.get("start") or "")
+    if not title:
+        return None
+    return {
+        "title": title,
+        "start": start,
+        "end": _normalize_time(program.get("end") or ""),
+        "description": str(program.get("description") or "")[:300],
+        "genre": str(program.get("genre") or ""),
+        "source": str(program.get("source") or "unknown"),
+    }
+
+
 def http_get(url: str, timeout: int = HTTP_TIMEOUT) -> bytes | None:
+    host = urllib.parse.urlparse(url).netloc
+    if _SOURCE_FAILURES.get(host, 0) >= TV_MAX_SOURCE_FAILURES:
+        log.debug(f"Skip {host}: source temporarily disabled after repeated failures")
+        return None
+
     headers = {
         "User-Agent": random.choice(USER_AGENTS),
         "Accept": "application/json,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -92,6 +143,7 @@ def http_get(url: str, timeout: int = HTTP_TIMEOUT) -> bytes | None:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read()
     except Exception as e:
+        _SOURCE_FAILURES[host] = _SOURCE_FAILURES.get(host, 0) + 1
         log.warning(f"GET {url} -> {e}")
         return None
 
@@ -255,6 +307,27 @@ def fetch_xmltv_epg() -> dict[str, list[dict]]:
             except Exception:
                 continue
         
+        source_channels: dict[str, dict] = {}
+        for channel in root.findall("channel"):
+            raw_id = channel.get("id", "").strip()
+            if not raw_id:
+                continue
+            display_names = [
+                (el.text or "").strip()
+                for el in channel.findall("display-name")
+                if (el.text or "").strip()
+            ]
+            channel_name = display_names[0] if display_names else raw_id
+            registered_key = find_registered_channel_key(raw_id, channel_name)
+            api_key = registered_key or safe_channel_id(raw_id, "channel")
+            source_channels[raw_id.lower()] = {
+                "id": api_key,
+                "name": CHANNEL_REGISTRY.get(registered_key, {}).get("name", channel_name),
+                "aliases": display_names[1:],
+            }
+            if TV_INCLUDE_ALL_XMLTV_CHANNELS or registered_key:
+                DISCOVERED_CHANNELS.setdefault(api_key, source_channels[raw_id.lower()])
+
         channels_found = 0
         for programme in root.findall("programme"):
             chan_id = programme.get("channel", "").lower()
@@ -272,21 +345,20 @@ def fetch_xmltv_epg() -> dict[str, list[dict]]:
             if not title:
                 continue
             
-            # Ищем совпадение с нашим реестром каналов
-            matched_key = None
-            for key, info in CHANNEL_REGISTRY.items():
-                check_names = [key, info["name"].lower()] + [a.lower() for a in info.get("aliases", [])]
-                if any(n in chan_id for n in check_names):
-                    matched_key = key
-                    break
-            
+            channel_meta = source_channels.get(chan_id, {})
+            matched_key = channel_meta.get("id") or find_registered_channel_key(chan_id)
+
             if not matched_key:
-                # Авторасширение реестра — добавляем неизвестные каналы
-                matched_key = chan_id.split(".")[0][:20]
-            
+                if not TV_INCLUDE_ALL_XMLTV_CHANNELS:
+                    continue
+                # Авторасширение API — добавляем неизвестные каналы из XMLTV.
+                matched_key = safe_channel_id(chan_id.split(".")[0], "unknown")
+
             if matched_key not in result:
                 result[matched_key] = []
-            
+            if channel_meta:
+                DISCOVERED_CHANNELS.setdefault(matched_key, channel_meta)
+
             result[matched_key].append({
                 "title": title,
                 "start": _parse_xmltv_time(start_raw),
@@ -299,8 +371,8 @@ def fetch_xmltv_epg() -> dict[str, list[dict]]:
         
         log.info(f"XMLTV {source_url} — parsed {channels_found} entries, {len(result)} channels")
         
-        if channels_found > 100:
-            break  # Достаточно одного хорошего источника
+        if channels_found > 100 and not TV_INCLUDE_ALL_XMLTV_CHANNELS:
+            break  # Достаточно одного хорошего источника для ручного российского реестра
     
     return result
 
@@ -371,20 +443,25 @@ def build_daily_schedule() -> dict:
     }
     
     for key, programs in schedule.items():
-        channel_info = CHANNEL_REGISTRY.get(key, {"name": key, "aliases": []})
-        # Сортируем по времени начала
-        programs_sorted = sorted(programs, key=lambda x: x.get("start", ""))
+        safe_key = safe_channel_id(key)
+        channel_info = CHANNEL_REGISTRY.get(key) or DISCOVERED_CHANNELS.get(key) or {"name": key, "aliases": []}
+        # Сортируем по времени начала и нормализуем схему
+        normalized = [p for p in (normalize_program(p) for p in programs) if p]
+        programs_sorted = sorted(normalized, key=lambda x: x.get("start", ""))
         # Дедупликация по title+start
         seen = set()
         deduped = []
         for p in programs_sorted:
-            k = f"{p['title']}|{p['start']}"
-            if k not in seen:
-                seen.add(k)
+            dedupe_key = f"{p['title']}|{p['start']}"
+            if dedupe_key not in seen:
+                seen.add(dedupe_key)
                 deduped.append(p)
-        
-        result["channels"][key] = {
-            "id": key,
+
+        if not deduped:
+            deduped = build_placeholder_schedule(channel_info.get("name", safe_key))
+
+        result["channels"][safe_key] = {
+            "id": safe_key,
             "name": channel_info.get("name", key),
             "programs": deduped,
             "programs_count": len(deduped),
@@ -411,7 +488,7 @@ def save_schedule(schedule: dict):
     channels_dir = DATA_DIR / "channels"
     channels_dir.mkdir(exist_ok=True)
     for ch_id, ch_data in schedule["channels"].items():
-        ch_path = channels_dir / f"{ch_id}.json"
+        ch_path = channels_dir / f"{safe_channel_id(ch_id)}.json"
         with open(ch_path, "w", encoding="utf-8") as f:
             json.dump({
                 "updated_at": schedule["updated_at"],
@@ -444,8 +521,31 @@ def generate_api_index(schedule: dict):
     log.info(f"API index: {idx_path}")
 
 
-if __name__ == "__main__":
-    schedule = build_daily_schedule()
+def main() -> int:
+    try:
+        schedule = build_daily_schedule()
+    except Exception:
+        log.exception("TV parser failed while collecting external schedules; writing fallback schedule")
+        now = datetime.now(UTC).isoformat().replace("+00:00", "Z")
+        schedule = {
+            "updated_at": now,
+            "date": date.today().isoformat(),
+            "channels": {
+                key: {
+                    "id": key,
+                    "name": info["name"],
+                    "programs": build_placeholder_schedule(info["name"]),
+                    "programs_count": 1,
+                }
+                for key, info in CHANNEL_REGISTRY.items()
+            },
+        }
+
     save_schedule(schedule)
     generate_api_index(schedule)
     log.info("Done.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
