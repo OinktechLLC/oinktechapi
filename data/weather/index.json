@@ -1,137 +1,130 @@
 {
-  "updated_at": "2026-06-18T21:28:45.782578+00:00",
+  "updated_at": "2026-06-19T00:01:10.474819+00:00",
   "cities": [
     {
       "key": "moscow",
       "name": "Москва",
-      "temp": 14.2,
-      "description": "Небольшой дождь",
-      "url": "cities/moscow.json"
-    },
-    {
-      "key": "spb",
-      "name": "Санкт-Петербург",
-      "temp": 13.9,
+      "temp": 13.6,
       "description": "Пасмурно",
-      "url": "cities/spb.json"
+      "url": "cities/moscow.json"
     },
     {
       "key": "novosibirsk",
       "name": "Новосибирск",
-      "temp": 15.2,
+      "temp": 15.5,
       "description": "Ясно",
       "url": "cities/novosibirsk.json"
     },
     {
       "key": "ekaterinburg",
       "name": "Екатеринбург",
-      "temp": 16.2,
+      "temp": 14.5,
       "description": "Ясно",
       "url": "cities/ekaterinburg.json"
     },
     {
       "key": "kazan",
       "name": "Казань",
-      "temp": 15.8,
+      "temp": 14.3,
       "description": "Пасмурно",
       "url": "cities/kazan.json"
     },
     {
       "key": "nizhny_novgorod",
       "name": "Нижний Новгород",
-      "temp": 14.1,
-      "description": "Ливень",
+      "temp": 13.7,
+      "description": "Небольшой дождь",
       "url": "cities/nizhny_novgorod.json"
     },
     {
       "key": "chelyabinsk",
       "name": "Челябинск",
-      "temp": 19.0,
+      "temp": 17.6,
       "description": "Переменная облачность",
       "url": "cities/chelyabinsk.json"
     },
     {
       "key": "samara",
       "name": "Самара",
-      "temp": 18.6,
+      "temp": 17.4,
       "description": "Пасмурно",
       "url": "cities/samara.json"
     },
     {
       "key": "omsk",
       "name": "Омск",
-      "temp": 19.6,
+      "temp": 18.9,
       "description": "Ясно",
       "url": "cities/omsk.json"
     },
     {
+      "key": "rostov",
+      "name": "Ростов-на-Дону",
+      "temp": 16.9,
+      "description": "Переменная облачность",
+      "url": "cities/rostov.json"
+    },
+    {
       "key": "ufa",
       "name": "Уфа",
-      "temp": 14.8,
-      "description": "Переменная облачность",
+      "temp": 12.9,
+      "description": "Преимущественно ясно",
       "url": "cities/ufa.json"
     },
     {
       "key": "krasnodar",
       "name": "Краснодар",
-      "temp": 19.4,
+      "temp": 18.3,
       "description": "Пасмурно",
       "url": "cities/krasnodar.json"
     },
     {
       "key": "krasnoyarsk",
       "name": "Красноярск",
-      "temp": 10.9,
-      "description": "Преимущественно ясно",
+      "temp": 12.6,
+      "description": "Пасмурно",
       "url": "cities/krasnoyarsk.json"
     },
     {
       "key": "perm",
       "name": "Пермь",
-      "temp": 14.3,
-      "description": "Преимущественно ясно",
+      "temp": 14.2,
+      "description": "Пасмурно",
       "url": "cities/perm.json"
     },
     {
       "key": "voronezh",
       "name": "Воронеж",
-      "temp": 15.0,
-      "description": "Преимущественно ясно",
-      "url": "cities/voronezh.json"
-    },
-    {
-      "key": "volgograd",
-      "name": "Волгоград",
-      "temp": 19.0,
+      "temp": 14.0,
       "description": "Переменная облачность",
-      "url": "cities/volgograd.json"
+      "url": "cities/voronezh.json"
     },
     {
       "key": "saratov",
       "name": "Саратов",
-      "temp": 18.1,
-      "description": "Переменная облачность",
+      "temp": 16.3,
+      "description": "Преимущественно ясно",
       "url": "cities/saratov.json"
     },
     {
       "key": "tyumen",
       "name": "Тюмень",
-      "temp": 18.5,
+      "temp": 18.6,
       "description": "Ясно",
       "url": "cities/tyumen.json"
     },
     {
       "key": "tolyatti",
       "name": "Тольятти",
-      "temp": 17.9,
+      "temp": 15.8,
       "description": "Пасмурно",
       "url": "cities/tolyatti.json"
     },
     {
       "key": "izhevsk",
       "name": "Ижевск",
-      "temp": 16.2,
-      "description": "Пасмурно",
+      "temp": 14.3,
+      "description": "Преимущественно ясно",
       "url": "cities/izhevsk.json"
     }
   ]
