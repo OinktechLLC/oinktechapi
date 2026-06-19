@@ -5,14 +5,14 @@
   "longitude": 53.2114,
   "timezone": "Europe/Samara",
   "current": {
-    "temperature": 17.7,
-    "feels_like": 18.4,
-    "humidity": 75,
+    "temperature": 16.9,
+    "feels_like": 17.3,
+    "humidity": 74,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1015.0,
     "wind_speed_ms": 0.6,
-    "wind_direction_deg": 149,
-    "wind_direction_text": "ЮЮВ",
+    "wind_direction_deg": 81,
+    "wind_direction_text": "В",
     "weather_code": 2,
     "description": "Переменная облачность"
   },
@@ -44,7 +44,7 @@
     {
       "time": "2026-06-20T04:00",
       "temp": 16.1,
-      "precip_prob": 3,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
@@ -68,43 +68,43 @@
     {
       "time": "2026-06-20T08:00",
       "temp": 20.0,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T09:00",
       "temp": 20.8,
-      "precip_prob": 10,
+      "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T10:00",
       "temp": 21.3,
-      "precip_prob": 15,
+      "precip_prob": 18,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T11:00",
       "temp": 19.9,
-      "precip_prob": 53,
+      "precip_prob": 75,
       "weather_code": 61
     },
     {
       "time": "2026-06-20T12:00",
       "temp": 18.9,
-      "precip_prob": 80,
+      "precip_prob": 83,
       "weather_code": 61
     },
     {
       "time": "2026-06-20T13:00",
       "temp": 18.1,
-      "precip_prob": 83,
+      "precip_prob": 93,
       "weather_code": 61
     },
     {
       "time": "2026-06-20T14:00",
       "temp": 18.3,
-      "precip_prob": 80,
+      "precip_prob": 100,
       "weather_code": 61
     },
     {
@@ -122,7 +122,7 @@
     {
       "time": "2026-06-20T17:00",
       "temp": 17.9,
-      "precip_prob": 88,
+      "precip_prob": 90,
       "weather_code": 95
     },
     {
@@ -134,13 +134,13 @@
     {
       "time": "2026-06-20T19:00",
       "temp": 17.2,
-      "precip_prob": 65,
+      "precip_prob": 60,
       "weather_code": 95
     },
     {
       "time": "2026-06-20T20:00",
       "temp": 17.2,
-      "precip_prob": 45,
+      "precip_prob": 58,
       "weather_code": 95
     },
     {
@@ -152,13 +152,13 @@
     {
       "time": "2026-06-20T22:00",
       "temp": 16.4,
-      "precip_prob": 30,
+      "precip_prob": 23,
       "weather_code": 80
     },
     {
       "time": "2026-06-20T23:00",
       "temp": 16.1,
-      "precip_prob": 18,
+      "precip_prob": 20,
       "weather_code": 3
     }
   ],
@@ -203,7 +203,7 @@
       "date": "2026-06-24",
       "temp_max": 17.5,
       "temp_min": 12.8,
-      "precipitation_mm": 22.7,
+      "precipitation_mm": 22.2,
       "wind_max_ms": 4.5,
       "weather_code": 95,
       "description": "Гроза"
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-19T20:03:26.259204+00:00"
+  "fetched_at": "2026-06-19T21:33:59.136469+00:00"
 }

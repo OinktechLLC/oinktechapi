@@ -5,14 +5,14 @@
   "longitude": 61.4368,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 20.9,
-    "feels_like": 20.4,
-    "humidity": 49,
+    "temperature": 19.9,
+    "feels_like": 19.5,
+    "humidity": 53,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1018.0,
     "wind_speed_ms": 0.8,
-    "wind_direction_deg": 166,
-    "wind_direction_text": "ЮЮВ",
+    "wind_direction_deg": 201,
+    "wind_direction_text": "ЮЮЗ",
     "weather_code": 2,
     "description": "Переменная облачность"
   },
@@ -146,13 +146,13 @@
     {
       "time": "2026-06-20T21:00",
       "temp": 26.9,
-      "precip_prob": 0,
+      "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T22:00",
       "temp": 25.2,
-      "precip_prob": 0,
+      "precip_prob": 3,
       "weather_code": 3
     },
     {
@@ -203,7 +203,7 @@
       "date": "2026-06-24",
       "temp_max": 21.8,
       "temp_min": 16.6,
-      "precipitation_mm": 7.2,
+      "precipitation_mm": 4.2,
       "wind_max_ms": 3.4,
       "weather_code": 95,
       "description": "Гроза"
@@ -227,5 +227,5 @@
       "description": "Небольшой дождь"
     }
   ],
-  "fetched_at": "2026-06-19T20:03:05.577280+00:00"
+  "fetched_at": "2026-06-19T21:33:37.889927+00:00"
 }
