@@ -40,6 +40,7 @@ jobs:
       - name: Run TV parser
         env:
           DATA_DIR: data/tv
+          TV_MAX_SOURCE_FAILURES: "1"
         run: |
           echo "🕐 $(date '+%Y-%m-%d %H:%M:%S') — Запускаем TV парсер"
           python parsers/tv_parser.py
