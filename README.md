@@ -27,6 +27,9 @@ console.log(rates.highlight.USD); // → 89.34
 
 // Новости (общие)
 const news = await fetch(`${BASE}/news/categories/general.json`).then(r => r.json());
+
+// Готовая коллекция API-запросов (Postman/импорт в клиенты)
+const apiCollection = await fetch(`${BASE}/api_collection.json`).then(r => r.json());
 ```
 
 ---
@@ -165,6 +168,8 @@ CHANNEL_REGISTRY = {
 
 ### Эндпоинты News
 
+Поисковый робот дополнительно проходит по запросам «все СМИ» для категорий `general`, `world`, `business`, `tech`, `sport`, `culture` и сохраняет найденные заголовки как источник `search_robot`.
+
 | Путь | Описание |
 |---|---|
 | `data/news/news_latest.json` | Все (до 200 статей) |
@@ -186,6 +191,21 @@ CHANNEL_REGISTRY = {
   "source_name": "РИА Новости",
   "category": "general"
 }
+```
+
+---
+
+## 🧩 API Collection
+
+Готовая коллекция запросов доступна как JSON и может импортироваться в Postman, Insomnia или использоваться как машинно-читаемый каталог эндпоинтов.
+
+| Путь | Описание |
+|---|---|
+| `data/api_collection.json` | Коллекция всех основных API-запросов |
+
+```js
+const collection = await fetch(`${BASE}/api_collection.json`).then(r => r.json());
+console.log(collection.item.map(i => i.name));
 ```
 
 ---
