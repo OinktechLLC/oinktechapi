@@ -12,6 +12,7 @@ import hashlib
 import urllib.request
 import urllib.parse
 import urllib.error
+import socket
 import xml.etree.ElementTree as ET
 from datetime import UTC, datetime, date, timedelta
 from pathlib import Path
@@ -27,6 +28,10 @@ log = logging.getLogger("tv_parser")
 
 DATA_DIR = Path(os.environ.get("DATA_DIR", "data/tv"))
 DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+HTTP_TIMEOUT = int(os.environ.get("HTTP_TIMEOUT", "8"))
+TV_LOOKUP_DELAY = float(os.environ.get("TV_LOOKUP_DELAY", "0.2"))
+TV_ENABLE_WEB_FALLBACK = os.environ.get("TV_ENABLE_WEB_FALLBACK", "1") != "0"
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
@@ -76,7 +81,7 @@ CHANNEL_REGISTRY = {
 }
 
 
-def http_get(url: str, timeout: int = 20) -> bytes | None:
+def http_get(url: str, timeout: int = HTTP_TIMEOUT) -> bytes | None:
     headers = {
         "User-Agent": random.choice(USER_AGENTS),
         "Accept": "application/json,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -100,7 +105,9 @@ def fetch_yandex_tv(channel_id: str, channel_info: dict) -> list[dict]:
     """
     programs: list[dict] = []
     today = date.today().strftime("%Y-%m-%d")
-    names = [channel_id, channel_info.get("name", ""), *channel_info.get("aliases", [])]
+    # Не перебираем все aliases: при сетевых блокировках это превращало запуск в десятки
+    # запросов на канал и могло завершать workflow по таймауту.
+    names = [channel_id, channel_info.get("name", "")]
     candidates = []
 
     for name in names:
@@ -114,7 +121,7 @@ def fetch_yandex_tv(channel_id: str, channel_info: dict) -> list[dict]:
         ])
 
     for url in dict.fromkeys(candidates):
-        data = http_get(url, timeout=15)
+        data = http_get(url, timeout=HTTP_TIMEOUT)
         if not data:
             continue
         try:
@@ -206,7 +213,7 @@ def fetch_xmltv_epg() -> dict[str, list[dict]]:
     
     for source_url in XMLTV_SOURCES:
         log.info(f"Trying XMLTV: {source_url}")
-        data = http_get(source_url, timeout=30)
+        data = http_get(source_url, timeout=HTTP_TIMEOUT)
         if not data:
             continue
         
@@ -309,6 +316,25 @@ def _parse_xmltv_time(raw: str) -> str:
         return raw[:5] if len(raw) >= 5 else raw
 
 
+def build_placeholder_schedule(channel_name: str) -> list[dict]:
+    """Возвращает безопасную заглушку, если внешние EPG-источники недоступны.
+
+    GitHub Actions/CI нередко получают 403 от EPG и поисковых сервисов. Раньше в
+    этом случае файл канала оставался пустым или запуск срывался таймаутом.
+    Заглушка сохраняет валидный API-ответ и явно помечает источник как fallback.
+    """
+    return [
+        {
+            "title": f"Расписание {channel_name} временно недоступно",
+            "start": "00:00",
+            "end": "23:59",
+            "description": "Внешние источники EPG не ответили. Парсер повторит поиск при следующем запуске.",
+            "genre": "service",
+            "source": "fallback",
+        }
+    ]
+
+
 def build_daily_schedule() -> dict:
     """Собирает полное дневное расписание всех каналов"""
     log.info("=== Building daily TV schedule ===")
@@ -326,13 +352,16 @@ def build_daily_schedule() -> dict:
             if yandex_progs:
                 schedule[key].extend(yandex_progs)
 
-            if len(schedule[key]) < 5:
+            if TV_ENABLE_WEB_FALLBACK and len(schedule[key]) < 5:
                 log.info(f"Searching web for channel: {info['name']}")
                 web_progs = search_schedule_web(info["name"])
                 if web_progs:
                     schedule[key].extend(web_progs)
 
-            time.sleep(1)  # вежливая пауза
+            if not schedule[key]:
+                schedule[key].extend(build_placeholder_schedule(info["name"]))
+
+            time.sleep(TV_LOOKUP_DELAY)  # вежливая пауза
     
     # 3. Обогащаем метаданными
     result = {

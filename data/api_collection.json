@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "OinkTech API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Готовая коллекция запросов к статическим JSON API OinkTech."
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://raw.githubusercontent.com/YOUR_ORG/oinktech-api/main/data"
+    }
+  ],
+  "item": [
+    {
+      "name": "TV schedule latest",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/tv/schedule_latest.json"
+      }
+    },
+    {
+      "name": "TV channels index",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/tv/index.json"
+      }
+    },
+    {
+      "name": "TV channel by id",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/tv/channels/ntv.json"
+      }
+    },
+    {
+      "name": "News latest",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/news/news_latest.json"
+      }
+    },
+    {
+      "name": "News category",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/news/categories/general.json"
+      }
+    },
+    {
+      "name": "Weather latest",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/weather/weather_latest.json"
+      }
+    },
+    {
+      "name": "Weather city",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/weather/cities/moscow.json"
+      }
+    },
+    {
+      "name": "Rates latest",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/rates/rates_latest.json"
+      }
+    },
+    {
+      "name": "API meta",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/meta.json"
+      }
+    },
+    {
+      "name": "API collection",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api_collection.json"
+      }
+    }
+  ]
+}

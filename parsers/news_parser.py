@@ -100,6 +100,15 @@ RSS_SOURCES = {
 
 CATEGORIES = ["general", "business", "tech", "sport", "culture", "world"]
 
+SEARCH_NEWS_QUERIES = {
+    "general": ["главные новости сегодня все сми", "срочные новости сегодня"],
+    "world": ["мировые новости сегодня все сми", "международные новости сегодня"],
+    "business": ["экономика бизнес новости сегодня все сми", "финансовые новости сегодня"],
+    "tech": ["технологии IT новости сегодня все сми", "новости искусственный интеллект сегодня"],
+    "sport": ["спорт новости сегодня все сми"],
+    "culture": ["культура кино музыка новости сегодня"],
+}
+
 
 def http_get(url: str, timeout: int = 15) -> bytes | None:
     headers = {
@@ -214,49 +223,70 @@ def _normalize_date(raw: str) -> str:
     return raw
 
 
+def _clean_html(value: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", value)).strip()
+
+
+def _extract_ddg_url(raw: str) -> str:
+    raw = _clean_html(raw)
+    if "uddg=" in raw:
+        parsed = urllib.parse.urlparse(raw)
+        params = urllib.parse.parse_qs(parsed.query)
+        if params.get("uddg"):
+            return urllib.parse.unquote(params["uddg"][0])
+    return raw
+
+
+def _domain_name(url: str) -> str:
+    host = urllib.parse.urlparse(url).netloc.replace("www.", "")
+    return host or "Поисковый робот"
+
+
 def search_trending_news() -> list[dict]:
-    """Ищет трендовые новости через DuckDuckGo"""
+    """Ищет новости поисковым роботом по всем ключевым категориям СМИ."""
     articles = []
-    queries = ["главные новости России сегодня", "новости технологии сегодня", "экономика России новости"]
-    
-    for query in queries:
-        encoded = urllib.parse.quote(query)
-        url = f"https://html.duckduckgo.com/html/?q={encoded}"
-        data = http_get(url)
-        if not data:
-            continue
-        
-        text = data.decode("utf-8", errors="ignore")
-        # Извлекаем заголовки результатов
-        title_pattern = re.compile(r'class="result__title"[^>]*>.*?<a[^>]*>(.*?)</a>', re.DOTALL)
-        snippet_pattern = re.compile(r'class="result__snippet"[^>]*>(.*?)</(?:a|div|span)>', re.DOTALL)
-        url_pattern = re.compile(r'class="result__url"[^>]*>(.*?)</(?:a|span)>', re.DOTALL)
-        
-        titles = title_pattern.findall(text)
-        snippets = snippet_pattern.findall(text)
-        
-        for i, title in enumerate(titles[:5]):
-            title_clean = re.sub(r'<[^>]+>', '', title).strip()
-            snippet = re.sub(r'<[^>]+>', '', snippets[i]).strip() if i < len(snippets) else ""
-            
-            if len(title_clean) < 10:
+
+    for category, queries in SEARCH_NEWS_QUERIES.items():
+        for query in queries:
+            encoded = urllib.parse.quote(query)
+            url = f"https://html.duckduckgo.com/html/?q={encoded}"
+            data = http_get(url)
+            if not data:
                 continue
-            
-            uid = hashlib.md5(f"search:{title_clean}".encode()).hexdigest()[:12]
-            articles.append({
-                "id": uid,
-                "title": title_clean,
-                "url": "",
-                "description": snippet[:300],
-                "published_at": datetime.now(timezone.utc).isoformat(),
-                "source_key": "search",
-                "source_name": "Поиск",
-                "category": "general",
-                "logo": "",
-            })
-        
-        time.sleep(2)
-    
+
+            text = data.decode("utf-8", errors="ignore")
+            title_pattern = re.compile(r'class="result__title"[^>]*>.*?<a[^>]*>(.*?)</a>', re.DOTALL)
+            snippet_pattern = re.compile(r'class="result__snippet"[^>]*>(.*?)</(?:a|div|span)>', re.DOTALL)
+            url_pattern = re.compile(r'class="result__url"[^>]*>(.*?)</(?:a|span)>', re.DOTALL)
+
+            titles = title_pattern.findall(text)
+            snippets = snippet_pattern.findall(text)
+            urls = url_pattern.findall(text)
+
+            for i, title in enumerate(titles[:10]):
+                title_clean = _clean_html(title)
+                snippet = _clean_html(snippets[i]) if i < len(snippets) else ""
+                article_url = _extract_ddg_url(urls[i]) if i < len(urls) else ""
+
+                if len(title_clean) < 10:
+                    continue
+
+                source_name = _domain_name(article_url)
+                uid = hashlib.md5(f"search:{article_url or title_clean}".encode()).hexdigest()[:12]
+                articles.append({
+                    "id": uid,
+                    "title": title_clean,
+                    "url": article_url,
+                    "description": snippet[:300],
+                    "published_at": datetime.now(timezone.utc).isoformat(),
+                    "source_key": "search_robot",
+                    "source_name": source_name,
+                    "category": category,
+                    "logo": "",
+                })
+
+            time.sleep(0.5)
+
     return articles
 
 
