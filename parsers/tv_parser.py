@@ -46,7 +46,15 @@ XMLTV_SOURCES = [
     "https://iptvx.one/epg/epg.xml.gz",
     "https://www.teleguide.info/download/new3/jtv.zip",
     "https://epg.it999.ru/edem.xml.gz",
-    "https://epg.it999.ru/epg2.xml.gz",
+    "https://epg.it999.ru/epg2.xml.gz", 
+    "http://epg.one/epg2.xml.gz",
+"http://epg.one/epg.xml.gz", 
+"http://epg.one/pp.xml.gz", 
+"http://epg.one/epg2.xml", 
+"http://epg.one/epg.xml", 
+"http://epg.one/ru2.xml.gz",
+"http://epg.one/ru.xml.gz",
+"http://epg.one/rupp.xml.gz",
     # Публичные международные XMLTV-гайды. Если доступны, они автоматически
     # расширяют API не только российскими каналами, а всеми каналами из EPG.
     "https://iptv-org.github.io/epg/guides/us.xml",
