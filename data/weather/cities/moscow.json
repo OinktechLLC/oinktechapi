@@ -5,16 +5,16 @@
   "longitude": 37.6176,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 18.0,
-    "feels_like": 18.1,
-    "humidity": 73,
+    "temperature": 15.6,
+    "feels_like": 16.3,
+    "humidity": 90,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1015.0,
-    "wind_speed_ms": 1.7,
-    "wind_direction_deg": 280,
-    "wind_direction_text": "З",
-    "weather_code": 3,
-    "description": "Пасмурно"
+    "pressure_hpa": 1016.0,
+    "wind_speed_ms": 1.2,
+    "wind_direction_deg": 290,
+    "wind_direction_text": "ЗСЗ",
+    "weather_code": 2,
+    "description": "Переменная облачность"
   },
   "hourly": [
     {
@@ -127,19 +127,19 @@
     },
     {
       "time": "2026-06-19T18:00",
-      "temp": 19.3,
+      "temp": 19.2,
       "precip_prob": 70,
       "weather_code": 3
     },
     {
       "time": "2026-06-19T19:00",
-      "temp": 19.1,
+      "temp": 18.9,
       "precip_prob": 53,
       "weather_code": 3
     },
     {
       "time": "2026-06-19T20:00",
-      "temp": 18.3,
+      "temp": 18.2,
       "precip_prob": 25,
       "weather_code": 3
     },
@@ -151,13 +151,13 @@
     },
     {
       "time": "2026-06-19T22:00",
-      "temp": 16.4,
+      "temp": 16.2,
       "precip_prob": 13,
-      "weather_code": 3
+      "weather_code": 2
     },
     {
       "time": "2026-06-19T23:00",
-      "temp": 15.7,
+      "temp": 15.6,
       "precip_prob": 5,
       "weather_code": 2
     }
@@ -167,17 +167,17 @@
       "date": "2026-06-19",
       "temp_max": 21.7,
       "temp_min": 13.5,
-      "precipitation_mm": 1.5,
+      "precipitation_mm": 1.3,
       "wind_max_ms": 3.4,
       "weather_code": 80,
       "description": "Ливень"
     },
     {
       "date": "2026-06-20",
-      "temp_max": 21.2,
-      "temp_min": 13.6,
-      "precipitation_mm": 0.2,
-      "wind_max_ms": 3.5,
+      "temp_max": 21.1,
+      "temp_min": 13.3,
+      "precipitation_mm": 0.4,
+      "wind_max_ms": 3.7,
       "weather_code": 80,
       "description": "Ливень"
     },
@@ -227,5 +227,5 @@
       "description": "Небольшой дождь"
     }
   ],
-  "fetched_at": "2026-06-19T17:26:07.349844+00:00"
+  "fetched_at": "2026-06-19T20:03:02.843680+00:00"
 }
