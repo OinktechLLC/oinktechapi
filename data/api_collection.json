@@ -7,7 +7,7 @@
   "variable": [
     {
       "key": "base_url",
-      "value": "https://raw.githubusercontent.com/YOUR_ORG/oinktech-api/main/data"
+      "value": "https://raw.githubusercontent.com/OinkTechLLC/oinktechapi/main/data"
     }
   ],
   "item": [
