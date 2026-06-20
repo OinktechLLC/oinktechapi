@@ -5,14 +5,14 @@
   "longitude": 73.3242,
   "timezone": "Asia/Omsk",
   "current": {
-    "temperature": 20.7,
-    "feels_like": 21.7,
-    "humidity": 72,
+    "temperature": 19.4,
+    "feels_like": 20.4,
+    "humidity": 76,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1017.0,
-    "wind_speed_ms": 1.5,
-    "wind_direction_deg": 38,
-    "wind_direction_text": "СВ",
+    "wind_speed_ms": 1.4,
+    "wind_direction_deg": 21,
+    "wind_direction_text": "ССВ",
     "weather_code": 0,
     "description": "Ясно"
   },
@@ -98,31 +98,31 @@
     {
       "time": "2026-06-21T13:00",
       "temp": 29.1,
-      "precip_prob": 2,
+      "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-21T14:00",
       "temp": 29.4,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-21T15:00",
       "temp": 29.5,
-      "precip_prob": 6,
+      "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-21T16:00",
       "temp": 29.5,
-      "precip_prob": 5,
+      "precip_prob": 1,
       "weather_code": 0
     },
     {
       "time": "2026-06-21T17:00",
       "temp": 29.4,
-      "precip_prob": 4,
+      "precip_prob": 2,
       "weather_code": 1
     },
     {
@@ -134,13 +134,13 @@
     {
       "time": "2026-06-21T19:00",
       "temp": 28.7,
-      "precip_prob": 1,
+      "precip_prob": 2,
       "weather_code": 0
     },
     {
       "time": "2026-06-21T20:00",
       "temp": 27.9,
-      "precip_prob": 0,
+      "precip_prob": 1,
       "weather_code": 0
     },
     {
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-20T20:40:57.182410+00:00"
+  "fetched_at": "2026-06-20T22:34:23.372411+00:00"
 }
