@@ -5,16 +5,16 @@
   "longitude": 53.2114,
   "timezone": "Europe/Samara",
   "current": {
-    "temperature": 17.4,
-    "feels_like": 18.1,
-    "humidity": 88,
+    "temperature": 15.7,
+    "feels_like": 16.7,
+    "humidity": 94,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1013.0,
-    "wind_speed_ms": 2.1,
-    "wind_direction_deg": 239,
-    "wind_direction_text": "ЗЮЗ",
-    "weather_code": 2,
-    "description": "Переменная облачность"
+    "wind_speed_ms": 1.2,
+    "wind_direction_deg": 235,
+    "wind_direction_text": "ЮЗ",
+    "weather_code": 3,
+    "description": "Пасмурно"
   },
   "hourly": [
     {
@@ -133,40 +133,40 @@
     },
     {
       "time": "2026-06-20T19:00",
-      "temp": 18.0,
+      "temp": 18.1,
       "precip_prob": 75,
       "weather_code": 80
     },
     {
       "time": "2026-06-20T20:00",
-      "temp": 17.7,
+      "temp": 17.8,
       "precip_prob": 55,
       "weather_code": 2
     },
     {
       "time": "2026-06-20T21:00",
-      "temp": 17.2,
+      "temp": 17.3,
       "precip_prob": 10,
       "weather_code": 2
     },
     {
       "time": "2026-06-20T22:00",
-      "temp": 16.1,
+      "temp": 16.2,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-20T23:00",
-      "temp": 15.8,
+      "temp": 15.6,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 3
     }
   ],
   "forecast_7d": [
     {
       "date": "2026-06-20",
       "temp_max": 20.9,
-      "temp_min": 15.8,
+      "temp_min": 15.6,
       "precipitation_mm": 7.7,
       "wind_max_ms": 3.9,
       "weather_code": 95,
@@ -174,12 +174,12 @@
     },
     {
       "date": "2026-06-21",
-      "temp_max": 21.4,
-      "temp_min": 14.5,
+      "temp_max": 21.8,
+      "temp_min": 14.4,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 2.7,
-      "weather_code": 45,
-      "description": "Туман"
+      "wind_max_ms": 2.4,
+      "weather_code": 3,
+      "description": "Пасмурно"
     },
     {
       "date": "2026-06-22",
@@ -227,5 +227,5 @@
       "description": "Ливень"
     }
   ],
-  "fetched_at": "2026-06-20T16:49:49.504682+00:00"
+  "fetched_at": "2026-06-20T18:45:23.005474+00:00"
 }
