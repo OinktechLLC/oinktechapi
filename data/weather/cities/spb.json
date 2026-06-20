@@ -5,16 +5,16 @@
   "longitude": 30.3609,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 22.5,
+    "temperature": 22.6,
     "feels_like": 22.4,
-    "humidity": 55,
+    "humidity": 58,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1020.0,
-    "wind_speed_ms": 2.1,
-    "wind_direction_deg": 250,
-    "wind_direction_text": "ЗЮЗ",
-    "weather_code": 2,
-    "description": "Переменная облачность"
+    "wind_speed_ms": 2.8,
+    "wind_direction_deg": 206,
+    "wind_direction_text": "ЮЮЗ",
+    "weather_code": 3,
+    "description": "Пасмурно"
   },
   "hourly": [
     {
@@ -151,7 +151,7 @@
     },
     {
       "time": "2026-06-20T22:00",
-      "temp": 22.4,
+      "temp": 22.3,
       "precip_prob": 0,
       "weather_code": 3
     },
@@ -193,39 +193,39 @@
     {
       "date": "2026-06-23",
       "temp_max": 18.1,
-      "temp_min": 14.5,
-      "precipitation_mm": 0.4,
-      "wind_max_ms": 5.3,
-      "weather_code": 51,
-      "description": "Лёгкая морось"
-    },
-    {
-      "date": "2026-06-24",
-      "temp_max": 18.2,
-      "temp_min": 13.0,
+      "temp_min": 14.6,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 4.9,
+      "wind_max_ms": 5.3,
       "weather_code": 3,
       "description": "Пасмурно"
     },
     {
+      "date": "2026-06-24",
+      "temp_max": 15.8,
+      "temp_min": 13.3,
+      "precipitation_mm": 0.6,
+      "wind_max_ms": 4.1,
+      "weather_code": 51,
+      "description": "Лёгкая морось"
+    },
+    {
       "date": "2026-06-25",
-      "temp_max": 18.1,
-      "temp_min": 14.4,
-      "precipitation_mm": 14.8,
-      "wind_max_ms": 3.4,
-      "weather_code": 96,
-      "description": "Гроза с градом"
+      "temp_max": 20.6,
+      "temp_min": 12.3,
+      "precipitation_mm": 0.3,
+      "wind_max_ms": 3.0,
+      "weather_code": 51,
+      "description": "Лёгкая морось"
     },
     {
       "date": "2026-06-26",
-      "temp_max": 21.3,
-      "temp_min": 14.6,
-      "precipitation_mm": 8.0,
-      "wind_max_ms": 5.0,
-      "weather_code": 80,
-      "description": "Ливень"
+      "temp_max": 21.5,
+      "temp_min": 14.3,
+      "precipitation_mm": 0.6,
+      "wind_max_ms": 4.1,
+      "weather_code": 51,
+      "description": "Лёгкая морось"
     }
   ],
-  "fetched_at": "2026-06-20T18:44:58.791367+00:00"
+  "fetched_at": "2026-06-20T20:40:53.989049+00:00"
 }

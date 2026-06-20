@@ -5,14 +5,14 @@
   "longitude": 38.9753,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 23.0,
-    "feels_like": 24.4,
-    "humidity": 68,
+    "temperature": 20.2,
+    "feels_like": 21.8,
+    "humidity": 77,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1018.0,
-    "wind_speed_ms": 1.9,
-    "wind_direction_deg": 198,
-    "wind_direction_text": "ЮЮЗ",
+    "pressure_hpa": 1019.0,
+    "wind_speed_ms": 0.8,
+    "wind_direction_deg": 225,
+    "wind_direction_text": "ЮЗ",
     "weather_code": 3,
     "description": "Пасмурно"
   },
@@ -127,37 +127,37 @@
     },
     {
       "time": "2026-06-20T18:00",
-      "temp": 24.6,
+      "temp": 25.2,
       "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T19:00",
-      "temp": 23.9,
+      "temp": 24.6,
       "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T20:00",
-      "temp": 22.7,
+      "temp": 23.3,
       "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T21:00",
-      "temp": 21.5,
+      "temp": 22.0,
       "precip_prob": 0,
-      "weather_code": 3
+      "weather_code": 2
     },
     {
       "time": "2026-06-20T22:00",
-      "temp": 20.7,
+      "temp": 21.1,
       "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-20T23:00",
-      "temp": 20.0,
+      "temp": 20.5,
       "precip_prob": 0,
       "weather_code": 3
     }
@@ -174,8 +174,8 @@
     },
     {
       "date": "2026-06-21",
-      "temp_max": 29.4,
-      "temp_min": 16.9,
+      "temp_max": 29.1,
+      "temp_min": 17.0,
       "precipitation_mm": 0.0,
       "wind_max_ms": 4.3,
       "weather_code": 3,
@@ -187,8 +187,8 @@
       "temp_min": 16.0,
       "precipitation_mm": 0.0,
       "wind_max_ms": 3.1,
-      "weather_code": 2,
-      "description": "Переменная облачность"
+      "weather_code": 1,
+      "description": "Преимущественно ясно"
     },
     {
       "date": "2026-06-23",
@@ -227,5 +227,5 @@
       "description": "Сильный ливень"
     }
   ],
-  "fetched_at": "2026-06-20T16:49:43.890812+00:00"
+  "fetched_at": "2026-06-20T20:40:58.496650+00:00"
 }
