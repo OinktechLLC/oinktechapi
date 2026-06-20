@@ -5,14 +5,14 @@
   "longitude": 60.6122,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 27.2,
-    "feels_like": 25.7,
-    "humidity": 34,
+    "temperature": 25.7,
+    "feels_like": 25.6,
+    "humidity": 43,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1016.0,
-    "wind_speed_ms": 2.8,
-    "wind_direction_deg": 184,
-    "wind_direction_text": "Ю",
+    "wind_speed_ms": 1.6,
+    "wind_direction_deg": 150,
+    "wind_direction_text": "ЮЮВ",
     "weather_code": 3,
     "description": "Пасмурно"
   },
@@ -227,5 +227,5 @@
       "description": "Небольшой дождь"
     }
   ],
-  "fetched_at": "2026-06-20T12:10:09.807485+00:00"
+  "fetched_at": "2026-06-20T14:29:10.809619+00:00"
 }

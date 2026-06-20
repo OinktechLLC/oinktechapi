@@ -5,16 +5,16 @@
   "longitude": 53.2114,
   "timezone": "Europe/Samara",
   "current": {
-    "temperature": 18.2,
-    "feels_like": 18.2,
-    "humidity": 89,
-    "precipitation_mm": 0.3,
-    "pressure_hpa": 1012.0,
-    "wind_speed_ms": 4.2,
-    "wind_direction_deg": 150,
+    "temperature": 17.9,
+    "feels_like": 18.4,
+    "humidity": 90,
+    "precipitation_mm": 0.2,
+    "pressure_hpa": 1011.0,
+    "wind_speed_ms": 3.2,
+    "wind_direction_deg": 166,
     "wind_direction_text": "ЮЮВ",
-    "weather_code": 95,
-    "description": "Гроза"
+    "weather_code": 80,
+    "description": "Ливень"
   },
   "hourly": [
     {
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-20T12:10:35.514886+00:00"
+  "fetched_at": "2026-06-20T14:29:36.517329+00:00"
 }

@@ -6,15 +6,15 @@
   "timezone": "Europe/Samara",
   "current": {
     "temperature": 23.3,
-    "feels_like": 24.0,
-    "humidity": 63,
+    "feels_like": 23.8,
+    "humidity": 61,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1013.0,
     "wind_speed_ms": 2.6,
-    "wind_direction_deg": 266,
-    "wind_direction_text": "З",
-    "weather_code": 1,
-    "description": "Преимущественно ясно"
+    "wind_direction_deg": 291,
+    "wind_direction_text": "ЗСЗ",
+    "weather_code": 3,
+    "description": "Пасмурно"
   },
   "hourly": [
     {
@@ -227,5 +227,5 @@
       "description": "Гроза"
     }
   ],
-  "fetched_at": "2026-06-20T12:10:12.612475+00:00"
+  "fetched_at": "2026-06-20T14:29:13.645508+00:00"
 }
