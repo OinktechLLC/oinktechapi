@@ -5,16 +5,16 @@
   "longitude": 92.8932,
   "timezone": "Asia/Krasnoyarsk",
   "current": {
-    "temperature": 15.9,
-    "feels_like": 16.2,
+    "temperature": 16.3,
+    "feels_like": 16.9,
     "humidity": 77,
-    "precipitation_mm": 0.0,
+    "precipitation_mm": 0.1,
     "pressure_hpa": 1016.0,
-    "wind_speed_ms": 0.4,
-    "wind_direction_deg": 76,
-    "wind_direction_text": "ВСВ",
-    "weather_code": 3,
-    "description": "Пасмурно"
+    "wind_speed_ms": 0.2,
+    "wind_direction_deg": 236,
+    "wind_direction_text": "ЮЗ",
+    "weather_code": 51,
+    "description": "Лёгкая морось"
   },
   "hourly": [
     {
@@ -50,31 +50,31 @@
     {
       "time": "2026-06-22T05:00",
       "temp": 15.9,
-      "precip_prob": 1,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-22T06:00",
       "temp": 16.3,
-      "precip_prob": 3,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-22T07:00",
       "temp": 16.4,
-      "precip_prob": 4,
+      "precip_prob": 0,
       "weather_code": 51
     },
     {
       "time": "2026-06-22T08:00",
       "temp": 17.3,
-      "precip_prob": 3,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-22T09:00",
       "temp": 17.9,
-      "precip_prob": 1,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
@@ -227,5 +227,5 @@
       "description": "Гроза"
     }
   ],
-  "fetched_at": "2026-06-21T21:41:57.645135+00:00"
+  "fetched_at": "2026-06-21T23:44:02.892430+00:00"
 }
