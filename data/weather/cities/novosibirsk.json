@@ -5,16 +5,16 @@
   "longitude": 82.9207,
   "timezone": "Asia/Novosibirsk",
   "current": {
-    "temperature": 28.8,
-    "feels_like": 25.7,
-    "humidity": 29,
+    "temperature": 24.5,
+    "feels_like": 22.9,
+    "humidity": 43,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1013.0,
-    "wind_speed_ms": 5.2,
-    "wind_direction_deg": 46,
+    "pressure_hpa": 1014.0,
+    "wind_speed_ms": 3.7,
+    "wind_direction_deg": 51,
     "wind_direction_text": "СВ",
-    "weather_code": 1,
-    "description": "Преимущественно ясно"
+    "weather_code": 0,
+    "description": "Ясно"
   },
   "hourly": [
     {
@@ -168,7 +168,7 @@
       "temp_max": 31.8,
       "temp_min": 18.3,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 5.5,
+      "wind_max_ms": 5.3,
       "weather_code": 3,
       "description": "Пасмурно"
     },
@@ -177,7 +177,7 @@
       "temp_max": 31.4,
       "temp_min": 19.2,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 4.6,
+      "wind_max_ms": 4.5,
       "weather_code": 0,
       "description": "Ясно"
     },
@@ -186,7 +186,7 @@
       "temp_max": 29.8,
       "temp_min": 19.4,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 4.7,
+      "wind_max_ms": 4.5,
       "weather_code": 3,
       "description": "Пасмурно"
     },
@@ -195,7 +195,7 @@
       "temp_max": 30.4,
       "temp_min": 18.9,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 2.4,
+      "wind_max_ms": 3.0,
       "weather_code": 1,
       "description": "Преимущественно ясно"
     },
@@ -204,7 +204,7 @@
       "temp_max": 32.0,
       "temp_min": 19.4,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 2.6,
+      "wind_max_ms": 3.4,
       "weather_code": 1,
       "description": "Преимущественно ясно"
     },
@@ -213,7 +213,7 @@
       "temp_max": 29.2,
       "temp_min": 23.2,
       "precipitation_mm": 3.0,
-      "wind_max_ms": 3.0,
+      "wind_max_ms": 3.1,
       "weather_code": 95,
       "description": "Гроза"
     },
@@ -222,10 +222,10 @@
       "temp_max": 26.9,
       "temp_min": 19.5,
       "precipitation_mm": 4.9,
-      "wind_max_ms": 3.9,
+      "wind_max_ms": 3.2,
       "weather_code": 95,
       "description": "Гроза"
     }
   ],
-  "fetched_at": "2026-06-21T13:17:45.635261+00:00"
+  "fetched_at": "2026-06-21T16:10:08.979522+00:00"
 }
