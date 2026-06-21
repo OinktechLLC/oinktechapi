@@ -5,14 +5,14 @@
   "longitude": 68.0,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 17.0,
-    "feels_like": 17.2,
-    "humidity": 80,
+    "temperature": 18.5,
+    "feels_like": 18.8,
+    "humidity": 74,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1018.0,
-    "wind_speed_ms": 1.6,
-    "wind_direction_deg": 96,
-    "wind_direction_text": "В",
+    "wind_speed_ms": 1.7,
+    "wind_direction_deg": 112,
+    "wind_direction_text": "ВЮВ",
     "weather_code": 3,
     "description": "Пасмурно"
   },
@@ -63,7 +63,7 @@
       "time": "2026-06-21T07:00",
       "temp": 22.0,
       "precip_prob": 0,
-      "weather_code": 1
+      "weather_code": 3
     },
     {
       "time": "2026-06-21T08:00",
@@ -111,13 +111,13 @@
       "time": "2026-06-21T15:00",
       "temp": 29.7,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 3
     },
     {
       "time": "2026-06-21T16:00",
       "temp": 29.5,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 3
     },
     {
       "time": "2026-06-21T17:00",
@@ -141,7 +141,7 @@
       "time": "2026-06-21T20:00",
       "temp": 25.3,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 3
     },
     {
       "time": "2026-06-21T21:00",
@@ -153,13 +153,13 @@
       "time": "2026-06-21T22:00",
       "temp": 22.1,
       "precip_prob": 0,
-      "weather_code": 3
+      "weather_code": 2
     },
     {
       "time": "2026-06-21T23:00",
       "temp": 20.8,
       "precip_prob": 0,
-      "weather_code": 3
+      "weather_code": 1
     }
   ],
   "forecast_7d": [
@@ -205,8 +205,8 @@
       "temp_min": 17.8,
       "precipitation_mm": 10.2,
       "wind_max_ms": 4.7,
-      "weather_code": 96,
-      "description": "Гроза с градом"
+      "weather_code": 99,
+      "description": "Сильная гроза с градом"
     },
     {
       "date": "2026-06-26",
@@ -227,5 +227,5 @@
       "description": "Лёгкая морось"
     }
   ],
-  "fetched_at": "2026-06-20T22:34:43.815598+00:00"
+  "fetched_at": "2026-06-21T00:21:38.608498+00:00"
 }
