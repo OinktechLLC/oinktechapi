@@ -5,16 +5,16 @@
   "longitude": 30.3609,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 22.9,
-    "feels_like": 20.8,
-    "humidity": 46,
+    "temperature": 20.5,
+    "feels_like": 18.4,
+    "humidity": 51,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1016.0,
-    "wind_speed_ms": 4.2,
-    "wind_direction_deg": 295,
+    "wind_speed_ms": 3.9,
+    "wind_direction_deg": 290,
     "wind_direction_text": "ЗСЗ",
-    "weather_code": 2,
-    "description": "Переменная облачность"
+    "weather_code": 1,
+    "description": "Преимущественно ясно"
   },
   "hourly": [
     {
@@ -109,57 +109,57 @@
     },
     {
       "time": "2026-06-22T15:00",
-      "temp": 22.9,
+      "temp": 23.0,
       "precip_prob": 10,
       "weather_code": 2
     },
     {
       "time": "2026-06-22T16:00",
-      "temp": 23.0,
+      "temp": 23.3,
       "precip_prob": 7,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-22T17:00",
-      "temp": 23.2,
+      "temp": 22.8,
       "precip_prob": 3,
       "weather_code": 1
     },
     {
       "time": "2026-06-22T18:00",
-      "temp": 23.1,
+      "temp": 22.2,
       "precip_prob": 0,
-      "weather_code": 1
+      "weather_code": 0
     },
     {
       "time": "2026-06-22T19:00",
-      "temp": 21.8,
+      "temp": 21.4,
       "precip_prob": 0,
-      "weather_code": 1
+      "weather_code": 0
     },
     {
       "time": "2026-06-22T20:00",
-      "temp": 21.4,
+      "temp": 21.1,
       "precip_prob": 0,
-      "weather_code": 1
+      "weather_code": 0
     },
     {
       "time": "2026-06-22T21:00",
-      "temp": 20.7,
+      "temp": 20.3,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-22T22:00",
       "temp": 19.8,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-22T23:00",
-      "temp": 19.1,
+      "temp": 18.7,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 0
     }
   ],
   "forecast_7d": [
@@ -168,64 +168,64 @@
       "temp_max": 23.9,
       "temp_min": 17.9,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 5.5,
+      "wind_max_ms": 6.5,
       "weather_code": 3,
       "description": "Пасмурно"
     },
     {
       "date": "2026-06-23",
       "temp_max": 19.6,
-      "temp_min": 16.5,
+      "temp_min": 16.6,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 6.8,
+      "wind_max_ms": 7.0,
       "weather_code": 3,
       "description": "Пасмурно"
     },
     {
       "date": "2026-06-24",
-      "temp_max": 16.2,
-      "temp_min": 14.0,
-      "precipitation_mm": 0.2,
-      "wind_max_ms": 5.8,
-      "weather_code": 51,
-      "description": "Лёгкая морось"
+      "temp_max": 16.3,
+      "temp_min": 13.7,
+      "precipitation_mm": 1.6,
+      "wind_max_ms": 5.5,
+      "weather_code": 53,
+      "description": "Морось"
     },
     {
       "date": "2026-06-25",
-      "temp_max": 19.8,
-      "temp_min": 13.4,
-      "precipitation_mm": 1.0,
-      "wind_max_ms": 4.2,
+      "temp_max": 20.7,
+      "temp_min": 12.9,
+      "precipitation_mm": 0.5,
+      "wind_max_ms": 4.0,
       "weather_code": 51,
       "description": "Лёгкая морось"
     },
     {
       "date": "2026-06-26",
-      "temp_max": 19.5,
-      "temp_min": 14.1,
-      "precipitation_mm": 4.2,
-      "wind_max_ms": 4.0,
-      "weather_code": 53,
-      "description": "Морось"
+      "temp_max": 21.6,
+      "temp_min": 14.4,
+      "precipitation_mm": 0.0,
+      "wind_max_ms": 5.1,
+      "weather_code": 3,
+      "description": "Пасмурно"
     },
     {
       "date": "2026-06-27",
-      "temp_max": 22.2,
-      "temp_min": 15.4,
+      "temp_max": 23.9,
+      "temp_min": 16.8,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 3.3,
+      "wind_max_ms": 3.7,
       "weather_code": 3,
       "description": "Пасмурно"
     },
     {
       "date": "2026-06-28",
       "temp_max": 26.9,
-      "temp_min": 19.0,
+      "temp_min": 18.9,
       "precipitation_mm": 0.2,
       "wind_max_ms": 4.1,
       "weather_code": 51,
       "description": "Лёгкая морось"
     }
   ],
-  "fetched_at": "2026-06-22T12:25:43.816754+00:00"
+  "fetched_at": "2026-06-22T17:48:50.746481+00:00"
 }
