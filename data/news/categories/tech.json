@@ -1,7 +1,84 @@
 {
-  "updated_at": "2026-06-23T15:36:35.830902+00:00",
+  "updated_at": "2026-06-23T20:35:32.853548+00:00",
   "category": "tech",
   "articles": [
+    {
+      "id": "d5cd3508945a",
+      "title": "Цукерберг задумал создать приложение с рынками предсказаний в стиле Polymarket и Kalshi — NYT",
+      "url": "https://vc.ru/money/2992434-cukerberg-arena-rinki-predskazaniy?from=rss",
+      "description": "Рабочее название — Arena, ставок на реальные деньги сначала не будет, говорят источники.",
+      "published_at": "2026-06-23T21:44:46+03:00",
+      "source_key": "vc",
+      "source_name": "VC.ru",
+      "category": "tech",
+      "logo": "https://vc.ru/favicon.ico"
+    },
+    {
+      "id": "48430cd4e97c",
+      "title": "Roadmap разработчика имитационных моделей в AnyLogic",
+      "url": "https://habr.com/ru/articles/1051184/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051184",
+      "description": "Данная статья предназначена для начинающих разработчиков имитационных моделей в среде AnyLogic и всех интересующихся этим направлением. Мой рецепт специалиста построен на собственном опыте профессионального становления, а также обучении новичков данному ремеслу, но не является единственно верным и носит лишь ориентировочный характер. Итак, приступим. Приступим!",
+      "published_at": "2026-06-23T19:58:35",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "68fba1464949",
+      "title": "Реализация RSS-генератора на «коленке» или наш ответ Чемберлену",
+      "url": "https://habr.com/ru/articles/1051178/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051178",
+      "description": "Всё началось с банальной задачи — я и моя напарница нейросеть Асси задумались над SEO-продвижением и адаптацией нашего сайта  под современные реалии генеративного поиска (GEO / RAG) и краулеры языковых моделей (GPTBot, ClaudeBot, Perplexity). По старой привычке решили поглядеть, как эту задачу решают другие «взрослые дяди», открыли исходники популярных решений для синдикации в современных CMS… и, мягко говоря, офигели. То, что в корпоративном BigTech считается стандартом генерации банальной XML-",
+      "published_at": "2026-06-23T19:45:13",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "f6db803bab9b",
+      "title": "Source generators в.NET: как они вытеснили рефлексию из стандартной библиотеки",
+      "url": "https://habr.com/ru/companies/otus/articles/1049286/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1049286",
+      "description": "Ещё несколько лет назад рефлексия считалась нормой для.NET‑приложений. Сегодня Microsoft последовательно выносит всё больше работы из&nbsp;runtime в&nbsp;этап компиляции: JSON‑сериализация, логирование, регулярные выражения, конфигурация и даже тестовые фреймворки всё чаще опираются на&nbsp;source generators. Разбираемся, почему рефлексия начала сдавать позиции, где кодогенерация уже стала стандартом и что&nbsp;это меняет для&nbsp;разработчиков.NET.  Читать далее",
+      "published_at": "2026-06-23T19:40:02",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "de02d9765956",
+      "title": "Heineken впервые назначила гендиректором человека со стороны на фоне снижения спроса на пиво и падения продаж",
+      "url": "https://vc.ru/food/2992228-heineken-naznachila-novogo-gendirektora?from=rss",
+      "description": "Он займёт должность на четыре года.",
+      "published_at": "2026-06-23T19:14:09+03:00",
+      "source_key": "vc",
+      "source_name": "VC.ru",
+      "category": "tech",
+      "logo": "https://vc.ru/favicon.ico"
+    },
+    {
+      "id": "e5c9d508aad5",
+      "title": "Данные крутятся: почему вырос спрос на жёсткие диски и что дальше",
+      "url": "https://vc.ru/tech/2991862-spros-na-jestkie-diski-prichiny-rosta-i-budushhee-hraneniya-dannyh?from=rss",
+      "description": "Крупный бизнес на фоне бума ИИ и облачных вычислений делает заказы на месяцы вперёд, а на рынке при этом фактически дуополия.",
+      "published_at": "2026-06-23T18:49:52+03:00",
+      "source_key": "vc",
+      "source_name": "VC.ru",
+      "category": "tech",
+      "logo": "https://vc.ru/favicon.ico"
+    },
+    {
+      "id": "37c38cb34ce7",
+      "title": "Изометрия в 1С: склад стал интереснее, чем ваш сериал",
+      "url": "https://habr.com/ru/companies/alabuga_sez/articles/1051154/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051154",
+      "description": "Что,&nbsp;если&nbsp;мы&nbsp;создадим&nbsp;такой&nbsp;интерфейс&nbsp;в&nbsp;1С,&nbsp;чтобы&nbsp;он&nbsp;был&nbsp;удобнее,&nbsp;чем&nbsp;в&nbsp;Excel?&nbsp;Да&nbsp;не&nbsp;просто&nbsp;удобнее&nbsp;— а&nbsp;чтобы&nbsp;сотрудники&nbsp;сказали:&nbsp;«Ого,&nbsp;это&nbsp;же&nbsp;как&nbsp;игра!» С вами снова Ведущий специалист модуля разработки 1С Михеев Антон. Давайте вместе сделаем эту игру идею реальностьюПредставьте,&nbsp;что&nbsp;Excel&nbsp;— это&nbsp;склад,&nbsp;вид&nbsp;сверху.&nbsp;Синие&nbsp;яч",
+      "published_at": "2026-06-23T18:23:02",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
     {
       "id": "0b64bd268cc9",
       "title": "Госдума поддержала в первом чтении законопроект о «заморозке» на уровне 20 млн рублей порога выручки для бизнеса на УСН для уплаты НДС",
@@ -14,6 +91,39 @@
       "logo": "https://vc.ru/favicon.ico"
     },
     {
+      "id": "fd146a814f4a",
+      "title": "Как Fable 5 помог написать аналог Vanessa для AI-агента в 1С",
+      "url": "https://habr.com/ru/articles/1051142/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051142",
+      "description": "Эта статья про то, как работая над продуктом “AI для 1С” (комплексная AI-система для аналитиков и разработчиков 1С), я сначала прикрутил Vanessa Automation, а потом решил реализовать нативный TestClient протокол на Python, но ничего не вышло. А потом внезапно сильно продвинулся с помощью новой модели от Антропик - Fable 5. В итоге получился быстрый и функциональный qa-mcp - собственный контур тестирования для AI-разработки в 1С. Читать дальше",
+      "published_at": "2026-06-23T17:39:59",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "58d4753b2239",
+      "title": "Они умеют думать. Как я искал (и нашёл) язык, на котором «думает» LLM",
+      "url": "https://habr.com/ru/articles/1051130/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051130",
+      "description": "Это история одного эксперимента. Без хайпа про «сознание ИИ», но с настоящим результатом: внутри большой языковой модели есть слой, где мысль ещё не слово, а концепт. И этот концепт можно поймать за руку, подвигать, как ручку громкости, и прочитать по слогам.Вопрос, с которого всё началосьКогда LLM отвечает вам, она выдаёт токены — кусочки слов. Слева направо, по одному. Но до того, как родился токен, внутри сети прокатывается волна чисел — скрытые состояния, 3584 числа на каждом слое, 28 слоёв",
+      "published_at": "2026-06-23T17:10:53",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "cd7c0bb887c5",
+      "title": "Пишем свой Web3 мессенджер",
+      "url": "https://habr.com/ru/articles/1051134/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051134",
+      "description": "Сразу оговорюсь, что данная статья не сгенерирована средствами нейросети, и я, как автор, являюсь единственным идейным вдохновителем данного проекта. Любые попытки уличить меня в фальсификации будут расценены как политическое или конкурентное давление.Что такое мессенджерСуществует отдельный вид программного обеспечения призванный решать задачи коммуникации между пользователями. Будь то простой обмен текстом или пересылка медиа данных особого значения не имеет. Каждое приложение решает определен",
+      "published_at": "2026-06-23T17:07:07",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
       "id": "4e95e4afb7d4",
       "title": "Власти обсуждают условное «разделение» отделений «Почты России» на коммерчески эффективные и социальные — РБК",
       "url": "https://vc.ru/legal/2991961-razdelenie-otdelenij-pochty-rossii?from=rss",
@@ -23,6 +133,50 @@
       "source_name": "VC.ru",
       "category": "tech",
       "logo": "https://vc.ru/favicon.ico"
+    },
+    {
+      "id": "6acf2b9b708a",
+      "title": "Реально ли продакту выйти работать на международный рынок в 2026?",
+      "url": "https://habr.com/ru/articles/1051120/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051120",
+      "description": "В 2026 выход на международный рынок – это не просто «подтянуть английский и откликнуться в Revolut». Рынок перегрет, конкуренция выросла, а компании стали значительно осторожнее нанимать кандидатов из СНГ. Особенно если речь идет про релокацию.В статье рассказываю, что нужно знать про выход на международку, чтобы начать готовиться заранее. Читать далее",
+      "published_at": "2026-06-23T16:18:11",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "69e413065046",
+      "title": "Claude Code Antifraud: Колмогоров‑Смирнов и недетские аномалии на детской олимпиаде",
+      "url": "https://habr.com/ru/articles/1051116/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051116",
+      "description": "Приходит ко мне как-то знакомый с импортным за 300р. «Слушай, – говорит, – ты ж антифрод-эксперт. Проверь, пожалуйста, школьную олимпиаду. У меня сын ходил, что-то результаты странные».Триста за импортное – серьёзная заявка. Ну что ж, триста так триста. Погнали. Читать далее",
+      "published_at": "2026-06-23T16:12:37",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "7a1a6cdc8dda",
+      "title": "Позвонить бесплатно: история взлома аналоговой телефонии. Часть 2",
+      "url": "https://habr.com/ru/companies/beget/articles/1048836/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1048836",
+      "description": "В прошлой статье мы подробно разобрали феномен цветных коробок (в первую очередь голубых) для взлома аналоговых телефонных сетей в США. В этой части мы поговорим, какие варианты взломов практиковали в нашей стране.&nbsp; Читать далее",
+      "published_at": "2026-06-23T16:05:47",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "db35e50e066b",
+      "title": "Создаем описания изображений для sigplus (Joomla) без боли",
+      "url": "https://habr.com/ru/articles/1051106/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1051106",
+      "description": "У CMS Joomla есть одно замечательное расширение для вывода галерей на страницах сайта -&nbsp;sigplus, и он может выводить описания для изображений в галерее, но разработчик не предусмотрел инструмент для комфортного создания файлов с описаниями, за него это сделал я.  Хочу перестать страдать",
+      "published_at": "2026-06-23T15:56:29",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
     },
     {
       "id": "0bb7945dc3ef",
@@ -388,165 +542,11 @@
       "logo": "https://habr.com/favicon.ico"
     },
     {
-      "id": "d51e4652f4d2",
-      "title": "LLM для игры в ДнД: эволюция подхода",
-      "url": "https://habr.com/ru/articles/1050968/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050968",
-      "description": "Каждый, кто пробовал играть в&nbsp;настольные ролевые игры типа ДнД с&nbsp;ИИ‑ассистентом типа ChatGPT или&nbsp;Gemini,&nbsp;быстро упирался в&nbsp;ограничения: модель забывает контекст, подыгрывает пользователю, путается в&nbsp;очерёдности ходов и теряет сюжетные рельсы. Но&nbsp;что, если забрать у&nbsp;нейросети математику и управление, оставив ей то, в&nbsp;чём она сильна&nbsp;— работу с&nbsp;нарративом?В&nbsp;этой статье я расскажу о&nbsp;своём пути R&amp;D: от&nbsp;простого PoC «одна модель",
-      "published_at": "2026-06-23T11:36:07",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "ceccb3622595",
-      "title": "Модераторские доклады на A&amp;PM EVENT 2026: практика для аналитиков, архитекторов и руководителей проектов",
-      "url": "https://habr.com/ru/companies/infostart/articles/1050962/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050962",
-      "description": "Модераторы A&amp;PM EVENT 2026 участвуют не только в формировании программы конференции. Они готовят собственные практические форматы: доклады, деловые игры, воркшопы и мастер-классы. В этом году в центре внимания — инструменты аналитика, архитектура решений на 1С, управление проектами и командами, а также современные подходы к решению сложных профессиональных задач.Рассказываем, с какими темами выступят модераторы и кому будет полезно их послушать... Читать далее",
-      "published_at": "2026-06-23T11:32:28",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "59ddfba87d42",
-      "title": "Установка и немного опыта использования Arch Linux",
-      "url": "https://habr.com/ru/articles/1050956/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050956",
-      "description": "После многих лет домашнего использования попеременно то Debian GNU/Linux, то win10, у меня возникло желание побороть в себе консерватизм и поиграться с rolling-release дистрибутивом, но не debian-sid, это уже из чистого любопытства. Выбор пал на арч потому, что он удовлетворял критерию свежести софта и модели rolling-release, но не требует массы времени для сборки софта из исходников, как генту, плюс он достаточно популярен и у меня не возникло оснований выбрать что-то слишком малоизвестное. В ю",
-      "published_at": "2026-06-23T11:27:17",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "430593327a90",
-      "title": "Метаданные вместо видео: как меняется подход к хранению записей привилегированных сессий",
-      "url": "https://habr.com/ru/companies/solarsecurity/articles/1050762/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050762",
-      "description": "За 2025 год Центр противодействия кибератакам Solar JSOC выявил 1,16 млн событий информационной безопасности у примерно 300 организаций из ключевых отраслей экономики. Второе место среди типов инцидентов занимают попытки несанкционированного доступа – на них пришлось 23% случаев: злоумышленники активно подбирают пароли и эксплуатируют уязвимости систем аутентификации. Особую опасность представляет компрометация привилегированных учетных записей. По данным ГК «Солар», в 2025 году почти треть кибе",
-      "published_at": "2026-06-23T11:20:15",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "481e1d89cc48",
-      "title": "Установка NVMe M.2 SSD в слот mini PCI-E на старом ноутбуке. А счастье было так возможно…",
-      "url": "https://habr.com/ru/articles/1050948/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050948",
-      "description": "Давно хотел провести эксперимент по установке SSD NVMe в ноутбуке без слота M.2, используя переходник miniPCI-E - NVMe, наконец-то дошли руки.Итак, имеем ноутбук ASUS K52F выпуска начала нулевых годов, чипсет Intel HM55 Express, процессор Intel Pentium P6200, 8Gb RAM DDR3 PC10600. Имеется слот miniPCI-E, в котором установлена карта Wi-Fi. Удаляем её и устанавливаем вот такой переходник. Читать далее",
-      "published_at": "2026-06-23T11:15:31",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
       "id": "6456ff1ce9a7",
       "title": "Сначала свадебные фото, теперь инфлюенсеры из TikTok: какие изменения происходят на LinkedIn",
       "url": "https://vc.ru/social/2989970-izmeneniya-v-linkedin-ot-rezyume-k-lichnym-istoriyam-i-inflyuenseram?from=rss",
       "description": "В последние годы лента профессиональной платформы все больше напоминает традиционную соцсеть с рассказами о личной жизни и эмоциональными селфи. Почему LinkedIn продвигает «человечность» и как на всплеске аутентичности зарабатывают блогеры — в разборе.",
       "published_at": "2026-06-23T11:13:51+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "597dcda40df4",
-      "title": "Ограничения Manifest V3 в расширении EasyProxy для управления прокси",
-      "url": "https://habr.com/ru/articles/1050942/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050942",
-      "description": "Как перестать искать подходящее расширение и написать его самому. Отличия API Firefox и Chrome Extensions. Читать далее",
-      "published_at": "2026-06-23T11:13:35",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "c602f9039af0",
-      "title": "Кейс обучения QA-персонала: развитие навыков оценки задач и контроль качества через метрики",
-      "url": "https://habr.com/ru/articles/1050940/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050940",
-      "description": "Роль и контекстКороче говоря, я QA лид. Отвечаю за обеспечение и контроль качества сразу на нескольких проектах в компании IT Test. А это значит, что пребывая к контексте десятка имеющихся у нас в портфеле проектов, я выстраиваю процессы тестирования, анализирую связанные с качеством инциденты, развиваю компетенции тестировщиков и, в целом, делаю всё, чтобы QA активности были прогнозируемыми результативными.&nbsp;Команда у нас распределена между тремя типами проектов: аутстафф-, аутсорс- и внутр",
-      "published_at": "2026-06-23T11:13:30",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "8d4dc8466f8c",
-      "title": "Как мы ускорили KNN-поиск в Manticore: двухпроходный обход HNSW, пакетная обработка и AVX-512",
-      "url": "https://habr.com/ru/articles/1050922/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050922",
-      "description": "Кратко:&nbsp;Три изменения в HNSW-поиске ускоряют KNN-поиск до 29% при больших k и дают более 20% прироста при параллельной нагрузке. Без изменений API, без перестроения индексов и без новых настроек — просто более быстрый поиск. Читать далее",
-      "published_at": "2026-06-23T11:04:10",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "c40f926935cf",
-      "title": "От золотого сечения до троичности Брусенцова: одно семейство числовых форматов от 2 до 1024 бит",
-      "url": "https://habr.com/ru/articles/1050924/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050924",
-      "description": "Почему bfloat16 стал стандартом для обучения нейросетей? Не потому, что он оптимален как число, — а потому что под него десять лет затачивали GPU и TPU. Снимаем этот эффект железа и смотрим на числа честно.В статье: семейство форматов GoldenFloat (GF4, GF8, GF16, GF32, GF64, GF1024) с основанием φ = (1+√5)/2; метрика «бит на значение» (GF16 = 2.5725 обходит bf16 = 2.6135 на одном корпусе); и неожиданный мост к троичной машине «Сетунь» Н. П. Брусенцова — три состояния −1/0/+1 как предельная точка",
-      "published_at": "2026-06-23T10:56:05",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "81b745b6b0c6",
-      "title": "Антиграбли: 10 ошибок при запуске интернет-магазина",
-      "url": "https://habr.com/ru/articles/1050918/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1050918",
-      "description": "Я только что выполнил свой первый вайбкодинг-заказ по разработке небольшого интернет-магазина. Изначально задача выглядела понятной: каталог, корзина, админка, оплата, деплой. Казалось, что это несложный CRUD-проект плюс дизайн по референсам заказчика.В моем случае все началось с оценки: «три недели, а если пойдет хорошо, то и две». Но фактически проект занял месяц. Ниже я описываю 10 своих ошибок, из-за которых мой план разошелся с реальностью.1. Разрабатывал только локально, на VirtualBoxЯ уст",
-      "published_at": "2026-06-23T10:51:21",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "15a7028e9e4b",
-      "title": "В App Store появилось приложение Toastmas с функциями «Т-Банка»",
-      "url": "https://vc.ru/services/2991131-prilozhenie-toastmas-v-app-store-s-funktsiyami-t-banka?from=rss",
-      "description": "Оно замаскировано под сервис для организации мероприятий.",
-      "published_at": "2026-06-23T08:52:47+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "7f69da2d284b",
-      "title": "ФТС массово доначисляет утильсбор за автомобили, ввезённые из ЕАЭС в 2021-2023 годах и проданные в течение года после этого — Autonews",
-      "url": "https://vc.ru/transport/2990247-fts-donachislyaet-util-sbor-avtomobili-iz-eaes?from=rss",
-      "description": "Хотя до августа 2023-го в законодательстве не было ограничений на перепродажу таких машин.",
-      "published_at": "2026-06-22T16:12:04+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "3de3f20dcebb",
-      "title": "«WB Банк» запустил онлайн-кредиты для физлиц",
-      "url": "https://vc.ru/money/2990033-onlayn-kredity-ot-wb-bank?from=rss",
-      "description": "Подача заявки и её одобрение — в мобильном приложении.",
-      "published_at": "2026-06-22T14:56:22+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "2087965a8c9a",
-      "title": "«Авито Услуги» начали тестировать рекомендации от «соседей» для поиска мастеров по ремонту",
-      "url": "https://vc.ru/services/2989921-avito-uslugi-rekomendatsii-sosedey?from=rss",
-      "description": "Алгоритмы показывают тех, к кому уже обращались пользователи, которые, согласно указанным в профилях адресам, живут рядом.",
-      "published_at": "2026-06-22T14:02:31+03:00",
       "source_key": "vc",
       "source_name": "VC.ru",
       "category": "tech",
