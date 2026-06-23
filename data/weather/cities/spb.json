@@ -5,16 +5,16 @@
   "longitude": 30.3609,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 17.7,
-    "feels_like": 14.9,
-    "humidity": 44,
+    "temperature": 19.2,
+    "feels_like": 16.2,
+    "humidity": 42,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1018.0,
-    "wind_speed_ms": 3.0,
-    "wind_direction_deg": 325,
-    "wind_direction_text": "СЗ",
-    "weather_code": 0,
-    "description": "Ясно"
+    "pressure_hpa": 1017.0,
+    "wind_speed_ms": 5.6,
+    "wind_direction_deg": 274,
+    "wind_direction_text": "З",
+    "weather_code": 1,
+    "description": "Преимущественно ясно"
   },
   "hourly": [
     {
@@ -67,85 +67,85 @@
     },
     {
       "time": "2026-06-23T08:00",
-      "temp": 17.7,
+      "temp": 17.6,
       "precip_prob": 0,
       "weather_code": 0
     },
     {
       "time": "2026-06-23T09:00",
-      "temp": 18.5,
+      "temp": 18.4,
       "precip_prob": 0,
       "weather_code": 0
     },
     {
       "time": "2026-06-23T10:00",
-      "temp": 19.3,
+      "temp": 19.2,
       "precip_prob": 0,
       "weather_code": 0
     },
     {
       "time": "2026-06-23T11:00",
-      "temp": 19.2,
+      "temp": 19.1,
       "precip_prob": 0,
-      "weather_code": 1
+      "weather_code": 0
     },
     {
       "time": "2026-06-23T12:00",
-      "temp": 19.3,
+      "temp": 19.2,
       "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T13:00",
-      "temp": 19.5,
+      "temp": 19.4,
       "precip_prob": 4,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T14:00",
-      "temp": 19.6,
+      "temp": 19.5,
       "precip_prob": 9,
-      "weather_code": 1
+      "weather_code": 2
     },
     {
       "time": "2026-06-23T15:00",
       "temp": 19.4,
       "precip_prob": 12,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-23T16:00",
-      "temp": 19.4,
+      "temp": 19.3,
       "precip_prob": 9,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T17:00",
-      "temp": 19.2,
+      "temp": 19.3,
       "precip_prob": 4,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T18:00",
-      "temp": 18.7,
+      "temp": 18.8,
+      "precip_prob": 0,
+      "weather_code": 3
+    },
+    {
+      "time": "2026-06-23T19:00",
+      "temp": 18.5,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
-      "time": "2026-06-23T19:00",
-      "temp": 18.4,
-      "precip_prob": 0,
-      "weather_code": 3
-    },
-    {
       "time": "2026-06-23T20:00",
-      "temp": 17.9,
+      "temp": 18.1,
       "precip_prob": 0,
-      "weather_code": 3
+      "weather_code": 2
     },
     {
       "time": "2026-06-23T21:00",
-      "temp": 17.6,
+      "temp": 17.8,
       "precip_prob": 0,
       "weather_code": 3
     },
@@ -157,36 +157,36 @@
     },
     {
       "time": "2026-06-23T23:00",
-      "temp": 16.8,
+      "temp": 16.7,
       "precip_prob": 0,
-      "weather_code": 3
+      "weather_code": 2
     }
   ],
   "forecast_7d": [
     {
       "date": "2026-06-23",
-      "temp_max": 19.6,
+      "temp_max": 19.5,
       "temp_min": 16.2,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 6.9,
+      "wind_max_ms": 6.8,
       "weather_code": 3,
       "description": "Пасмурно"
     },
     {
       "date": "2026-06-24",
-      "temp_max": 16.3,
-      "temp_min": 13.4,
-      "precipitation_mm": 2.5,
-      "wind_max_ms": 5.4,
+      "temp_max": 16.2,
+      "temp_min": 13.8,
+      "precipitation_mm": 1.9,
+      "wind_max_ms": 5.6,
       "weather_code": 53,
       "description": "Морось"
     },
     {
       "date": "2026-06-25",
-      "temp_max": 19.8,
-      "temp_min": 12.1,
+      "temp_max": 19.1,
+      "temp_min": 12.6,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 4.1,
+      "wind_max_ms": 5.0,
       "weather_code": 3,
       "description": "Пасмурно"
     },
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-23T05:14:18.580534+00:00"
+  "fetched_at": "2026-06-23T08:39:01.744984+00:00"
 }
