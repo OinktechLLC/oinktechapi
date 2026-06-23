@@ -1,136 +1,136 @@
 {
-  "updated_at": "2026-06-23T18:14:31.900866+00:00",
+  "updated_at": "2026-06-23T20:24:35.986451+00:00",
   "cities": [
     {
       "key": "moscow",
       "name": "Москва",
-      "temp": 18.8,
-      "description": "Преимущественно ясно",
+      "temp": 16.5,
+      "description": "Переменная облачность",
       "url": "cities/moscow.json"
     },
     {
       "key": "spb",
       "name": "Санкт-Петербург",
-      "temp": 17.5,
-      "description": "Пасмурно",
+      "temp": 16.8,
+      "description": "Переменная облачность",
       "url": "cities/spb.json"
     },
     {
       "key": "novosibirsk",
       "name": "Новосибирск",
-      "temp": 21.7,
+      "temp": 20.0,
       "description": "Преимущественно ясно",
       "url": "cities/novosibirsk.json"
     },
     {
       "key": "ekaterinburg",
       "name": "Екатеринбург",
-      "temp": 17.2,
-      "description": "Преимущественно ясно",
+      "temp": 16.6,
+      "description": "Пасмурно",
       "url": "cities/ekaterinburg.json"
     },
     {
       "key": "kazan",
       "name": "Казань",
-      "temp": 18.4,
+      "temp": 17.3,
       "description": "Переменная облачность",
       "url": "cities/kazan.json"
     },
     {
       "key": "nizhny_novgorod",
       "name": "Нижний Новгород",
-      "temp": 19.1,
-      "description": "Переменная облачность",
+      "temp": 16.4,
+      "description": "Преимущественно ясно",
       "url": "cities/nizhny_novgorod.json"
     },
     {
       "key": "chelyabinsk",
       "name": "Челябинск",
-      "temp": 19.6,
+      "temp": 18.2,
       "description": "Пасмурно",
       "url": "cities/chelyabinsk.json"
     },
     {
       "key": "samara",
       "name": "Самара",
-      "temp": 19.6,
-      "description": "Пасмурно",
+      "temp": 18.4,
+      "description": "Переменная облачность",
       "url": "cities/samara.json"
     },
     {
       "key": "omsk",
       "name": "Омск",
-      "temp": 23.8,
+      "temp": 23.3,
       "description": "Ясно",
       "url": "cities/omsk.json"
     },
     {
       "key": "rostov",
       "name": "Ростов-на-Дону",
-      "temp": 24.3,
+      "temp": 23.3,
       "description": "Пасмурно",
       "url": "cities/rostov.json"
     },
     {
+      "key": "ufa",
+      "name": "Уфа",
+      "temp": 15.1,
+      "description": "Переменная облачность",
+      "url": "cities/ufa.json"
+    },
+    {
       "key": "krasnodar",
       "name": "Краснодар",
-      "temp": 25.6,
+      "temp": 22.4,
       "description": "Ясно",
       "url": "cities/krasnodar.json"
     },
     {
       "key": "krasnoyarsk",
       "name": "Красноярск",
-      "temp": 18.5,
+      "temp": 17.3,
       "description": "Ясно",
       "url": "cities/krasnoyarsk.json"
     },
     {
-      "key": "perm",
-      "name": "Пермь",
-      "temp": 16.1,
-      "description": "Пасмурно",
-      "url": "cities/perm.json"
-    },
-    {
       "key": "voronezh",
       "name": "Воронеж",
-      "temp": 22.5,
+      "temp": 18.9,
       "description": "Ясно",
       "url": "cities/voronezh.json"
     },
     {
       "key": "volgograd",
       "name": "Волгоград",
-      "temp": 23.9,
+      "temp": 21.8,
       "description": "Ясно",
       "url": "cities/volgograd.json"
     },
     {
       "key": "saratov",
       "name": "Саратов",
-      "temp": 22.0,
-      "description": "Переменная облачность",
+      "temp": 20.6,
+      "description": "Ясно",
       "url": "cities/saratov.json"
     },
     {
       "key": "tyumen",
       "name": "Тюмень",
-      "temp": 24.6,
-      "description": "Ясно",
+      "temp": 22.6,
+      "description": "Пасмурно",
       "url": "cities/tyumen.json"
     },
     {
       "key": "tolyatti",
       "name": "Тольятти",
-      "temp": 18.9,
-      "description": "Ливень",
+      "temp": 18.1,
+      "description": "Преимущественно ясно",
       "url": "cities/tolyatti.json"
     },
     {
       "key": "izhevsk",
       "name": "Ижевск",
-      "temp": 17.2,
+      "temp": 16.1,
       "description": "Пасмурно",
       "url": "cities/izhevsk.json"
     }
