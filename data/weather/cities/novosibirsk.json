@@ -5,14 +5,14 @@
   "longitude": 82.9207,
   "timezone": "Asia/Novosibirsk",
   "current": {
-    "temperature": 29.2,
-    "feels_like": 27.5,
-    "humidity": 29,
+    "temperature": 28.3,
+    "feels_like": 26.1,
+    "humidity": 32,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1010.0,
-    "wind_speed_ms": 4.1,
-    "wind_direction_deg": 52,
-    "wind_direction_text": "СВ",
+    "pressure_hpa": 1009.0,
+    "wind_speed_ms": 4.0,
+    "wind_direction_deg": 59,
+    "wind_direction_text": "ВСВ",
     "weather_code": 3,
     "description": "Пасмурно"
   },
@@ -86,79 +86,79 @@
     {
       "time": "2026-06-23T11:00",
       "temp": 27.1,
-      "precip_prob": 0,
+      "precip_prob": 1,
       "weather_code": 2
     },
     {
       "time": "2026-06-23T12:00",
       "temp": 27.8,
-      "precip_prob": 0,
+      "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T13:00",
       "temp": 28.2,
-      "precip_prob": 0,
+      "precip_prob": 4,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T14:00",
       "temp": 28.8,
-      "precip_prob": 0,
+      "precip_prob": 5,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T15:00",
       "temp": 29.1,
-      "precip_prob": 0,
+      "precip_prob": 7,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T16:00",
       "temp": 29.3,
-      "precip_prob": 0,
+      "precip_prob": 8,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T17:00",
       "temp": 29.2,
-      "precip_prob": 0,
+      "precip_prob": 10,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T18:00",
       "temp": 29.0,
-      "precip_prob": 0,
+      "precip_prob": 12,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T19:00",
       "temp": 28.4,
-      "precip_prob": 0,
+      "precip_prob": 12,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T20:00",
       "temp": 27.7,
-      "precip_prob": 1,
+      "precip_prob": 9,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T21:00",
       "temp": 26.6,
-      "precip_prob": 2,
+      "precip_prob": 4,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T22:00",
       "temp": 25.2,
-      "precip_prob": 2,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T23:00",
       "temp": 24.1,
-      "precip_prob": 2,
+      "precip_prob": 0,
       "weather_code": 3
     }
   ],
@@ -227,5 +227,5 @@
       "description": "Ясно"
     }
   ],
-  "fetched_at": "2026-06-23T08:39:02.438903+00:00"
+  "fetched_at": "2026-06-23T12:15:16.996806+00:00"
 }

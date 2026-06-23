@@ -5,16 +5,16 @@
   "longitude": 68.0,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 31.7,
-    "feels_like": 30.2,
-    "humidity": 32,
+    "temperature": 30.8,
+    "feels_like": 28.3,
+    "humidity": 34,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1004.0,
-    "wind_speed_ms": 6.3,
-    "wind_direction_deg": 133,
+    "pressure_hpa": 1003.0,
+    "wind_speed_ms": 6.5,
+    "wind_direction_deg": 135,
     "wind_direction_text": "ЮВ",
-    "weather_code": 2,
-    "description": "Переменная облачность"
+    "weather_code": 3,
+    "description": "Пасмурно"
   },
   "hourly": [
     {
@@ -92,67 +92,67 @@
     {
       "time": "2026-06-23T12:00",
       "temp": 30.8,
-      "precip_prob": 1,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T13:00",
       "temp": 31.5,
-      "precip_prob": 1,
+      "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T14:00",
       "temp": 31.8,
-      "precip_prob": 2,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T15:00",
       "temp": 31.5,
-      "precip_prob": 2,
+      "precip_prob": 1,
       "weather_code": 2
     },
     {
       "time": "2026-06-23T16:00",
       "temp": 31.0,
-      "precip_prob": 2,
+      "precip_prob": 3,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T17:00",
       "temp": 30.9,
-      "precip_prob": 2,
+      "precip_prob": 4,
       "weather_code": 2
     },
     {
       "time": "2026-06-23T18:00",
       "temp": 30.4,
-      "precip_prob": 1,
+      "precip_prob": 4,
       "weather_code": 3
     },
     {
       "time": "2026-06-23T19:00",
       "temp": 29.1,
-      "precip_prob": 1,
+      "precip_prob": 4,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T20:00",
       "temp": 27.8,
-      "precip_prob": 0,
+      "precip_prob": 4,
       "weather_code": 1
     },
     {
       "time": "2026-06-23T21:00",
       "temp": 26.9,
-      "precip_prob": 0,
+      "precip_prob": 3,
       "weather_code": 0
     },
     {
       "time": "2026-06-23T22:00",
       "temp": 26.1,
-      "precip_prob": 0,
+      "precip_prob": 1,
       "weather_code": 1
     },
     {
@@ -227,5 +227,5 @@
       "description": "Морось"
     }
   ],
-  "fetched_at": "2026-06-23T08:39:27.969432+00:00"
+  "fetched_at": "2026-06-23T12:15:42.230495+00:00"
 }
