@@ -5,16 +5,16 @@
   "longitude": 68.0,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 21.4,
-    "feels_like": 22.8,
-    "humidity": 73,
-    "precipitation_mm": 0.2,
-    "pressure_hpa": 1009.0,
-    "wind_speed_ms": 1.6,
-    "wind_direction_deg": 208,
-    "wind_direction_text": "ЮЮЗ",
-    "weather_code": 53,
-    "description": "Морось"
+    "temperature": 21.3,
+    "feels_like": 22.4,
+    "humidity": 77,
+    "precipitation_mm": 0.0,
+    "pressure_hpa": 1008.0,
+    "wind_speed_ms": 2.6,
+    "wind_direction_deg": 109,
+    "wind_direction_text": "ВЮВ",
+    "weather_code": 1,
+    "description": "Преимущественно ясно"
   },
   "hourly": [
     {
@@ -227,5 +227,5 @@
       "description": "Морось"
     }
   ],
-  "fetched_at": "2026-06-22T22:56:11.284282+00:00"
+  "fetched_at": "2026-06-23T00:21:05.234854+00:00"
 }

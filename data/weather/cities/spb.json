@@ -5,14 +5,14 @@
   "longitude": 30.3609,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 17.7,
-    "feels_like": 15.3,
-    "humidity": 50,
+    "temperature": 17.4,
+    "feels_like": 14.2,
+    "humidity": 43,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1016.0,
-    "wind_speed_ms": 3.1,
-    "wind_direction_deg": 292,
-    "wind_direction_text": "ЗСЗ",
+    "pressure_hpa": 1017.0,
+    "wind_speed_ms": 3.5,
+    "wind_direction_deg": 315,
+    "wind_direction_text": "СЗ",
     "weather_code": 3,
     "description": "Пасмурно"
   },
@@ -43,7 +43,7 @@
     },
     {
       "time": "2026-06-23T04:00",
-      "temp": 17.0,
+      "temp": 16.9,
       "precip_prob": 0,
       "weather_code": 1
     },
@@ -115,7 +115,7 @@
     },
     {
       "time": "2026-06-23T16:00",
-      "temp": 19.3,
+      "temp": 19.4,
       "precip_prob": 18,
       "weather_code": 2
     },
@@ -174,7 +174,7 @@
     },
     {
       "date": "2026-06-24",
-      "temp_max": 16.4,
+      "temp_max": 16.3,
       "temp_min": 13.7,
       "precipitation_mm": 3.5,
       "wind_max_ms": 4.9,
@@ -184,7 +184,7 @@
     {
       "date": "2026-06-25",
       "temp_max": 20.0,
-      "temp_min": 11.9,
+      "temp_min": 12.0,
       "precipitation_mm": 0.1,
       "wind_max_ms": 4.4,
       "weather_code": 51,
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-22T22:55:48.425271+00:00"
+  "fetched_at": "2026-06-23T00:20:42.106147+00:00"
 }
