@@ -5,16 +5,16 @@
   "longitude": 44.002,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 17.8,
-    "feels_like": 16.2,
-    "humidity": 50,
+    "temperature": 15.0,
+    "feels_like": 13.9,
+    "humidity": 64,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1010.0,
-    "wind_speed_ms": 1.9,
-    "wind_direction_deg": 295,
-    "wind_direction_text": "ЗСЗ",
-    "weather_code": 0,
-    "description": "Ясно"
+    "wind_speed_ms": 1.2,
+    "wind_direction_deg": 270,
+    "wind_direction_text": "З",
+    "weather_code": 3,
+    "description": "Пасмурно"
   },
   "hourly": [
     {
@@ -127,37 +127,37 @@
     },
     {
       "time": "2026-06-24T18:00",
-      "temp": 19.9,
+      "temp": 19.7,
       "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T19:00",
-      "temp": 19.2,
+      "temp": 19.0,
       "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T20:00",
-      "temp": 18.2,
+      "temp": 17.9,
       "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T21:00",
-      "temp": 16.8,
+      "temp": 16.6,
       "precip_prob": 0,
       "weather_code": 0
     },
     {
       "time": "2026-06-24T22:00",
-      "temp": 15.9,
+      "temp": 15.7,
       "precip_prob": 0,
-      "weather_code": 1
+      "weather_code": 0
     },
     {
       "time": "2026-06-24T23:00",
-      "temp": 15.1,
+      "temp": 15.0,
       "precip_prob": 0,
       "weather_code": 3
     }
@@ -174,18 +174,18 @@
     },
     {
       "date": "2026-06-25",
-      "temp_max": 18.3,
+      "temp_max": 17.8,
       "temp_min": 12.4,
-      "precipitation_mm": 11.3,
+      "precipitation_mm": 3.1,
       "wind_max_ms": 2.3,
-      "weather_code": 95,
-      "description": "Гроза"
+      "weather_code": 80,
+      "description": "Ливень"
     },
     {
       "date": "2026-06-26",
       "temp_max": 19.3,
       "temp_min": 12.4,
-      "precipitation_mm": 2.7,
+      "precipitation_mm": 2.8,
       "wind_max_ms": 4.2,
       "weather_code": 80,
       "description": "Ливень"
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-24T17:17:12.385481+00:00"
+  "fetched_at": "2026-06-24T20:06:17.768987+00:00"
 }
