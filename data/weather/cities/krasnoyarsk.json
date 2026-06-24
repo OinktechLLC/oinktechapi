@@ -5,13 +5,13 @@
   "longitude": 92.8932,
   "timezone": "Asia/Krasnoyarsk",
   "current": {
-    "temperature": 18.1,
-    "feels_like": 19.3,
-    "humidity": 85,
+    "temperature": 19.2,
+    "feels_like": 20.3,
+    "humidity": 79,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1005.0,
-    "wind_speed_ms": 1.3,
-    "wind_direction_deg": 281,
+    "wind_speed_ms": 1.4,
+    "wind_direction_deg": 266,
     "wind_direction_text": "З",
     "weather_code": 2,
     "description": "Переменная облачность"
@@ -227,5 +227,5 @@
       "description": "Гроза"
     }
   ],
-  "fetched_at": "2026-06-24T21:44:50.925276+00:00"
+  "fetched_at": "2026-06-24T23:21:52.603828+00:00"
 }
