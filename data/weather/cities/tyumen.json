@@ -5,16 +5,16 @@
   "longitude": 68.0,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 17.0,
-    "feels_like": 17.8,
-    "humidity": 94,
+    "temperature": 16.7,
+    "feels_like": 17.7,
+    "humidity": 95,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1003.0,
-    "wind_speed_ms": 2.3,
-    "wind_direction_deg": 180,
+    "wind_speed_ms": 1.9,
+    "wind_direction_deg": 186,
     "wind_direction_text": "Ю",
-    "weather_code": 1,
-    "description": "Преимущественно ясно"
+    "weather_code": 0,
+    "description": "Ясно"
   },
   "hourly": [
     {
@@ -168,7 +168,7 @@
       "temp_max": 27.0,
       "temp_min": 16.3,
       "precipitation_mm": 5.3,
-      "wind_max_ms": 4.2,
+      "wind_max_ms": 4.3,
       "weather_code": 96,
       "description": "Гроза с градом"
     },
@@ -177,7 +177,7 @@
       "temp_max": 23.6,
       "temp_min": 15.2,
       "precipitation_mm": 1.5,
-      "wind_max_ms": 4.2,
+      "wind_max_ms": 4.5,
       "weather_code": 55,
       "description": "Сильная морось"
     },
@@ -186,7 +186,7 @@
       "temp_max": 25.5,
       "temp_min": 13.1,
       "precipitation_mm": 0.6,
-      "wind_max_ms": 3.2,
+      "wind_max_ms": 3.4,
       "weather_code": 51,
       "description": "Лёгкая морось"
     },
@@ -195,7 +195,7 @@
       "temp_max": 27.9,
       "temp_min": 17.6,
       "precipitation_mm": 1.1,
-      "wind_max_ms": 5.5,
+      "wind_max_ms": 4.3,
       "weather_code": 95,
       "description": "Гроза"
     },
@@ -204,7 +204,7 @@
       "temp_max": 25.1,
       "temp_min": 16.8,
       "precipitation_mm": 17.1,
-      "wind_max_ms": 3.4,
+      "wind_max_ms": 3.8,
       "weather_code": 95,
       "description": "Гроза"
     },
@@ -213,7 +213,7 @@
       "temp_max": 21.2,
       "temp_min": 12.8,
       "precipitation_mm": 2.7,
-      "wind_max_ms": 4.5,
+      "wind_max_ms": 7.2,
       "weather_code": 51,
       "description": "Лёгкая морось"
     },
@@ -227,5 +227,5 @@
       "description": "Гроза"
     }
   ],
-  "fetched_at": "2026-06-24T20:06:37.982805+00:00"
+  "fetched_at": "2026-06-24T21:44:55.441851+00:00"
 }
