@@ -5,13 +5,13 @@
   "longitude": 92.8932,
   "timezone": "Asia/Krasnoyarsk",
   "current": {
-    "temperature": 17.0,
-    "feels_like": 17.7,
-    "humidity": 83,
+    "temperature": 18.8,
+    "feels_like": 19.0,
+    "humidity": 70,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1010.0,
-    "wind_speed_ms": 1.2,
-    "wind_direction_deg": 62,
+    "pressure_hpa": 1009.0,
+    "wind_speed_ms": 1.4,
+    "wind_direction_deg": 76,
     "wind_direction_text": "ВСВ",
     "weather_code": 0,
     "description": "Ясно"
@@ -104,49 +104,49 @@
     {
       "time": "2026-06-24T14:00",
       "temp": 28.7,
-      "precip_prob": 3,
+      "precip_prob": 1,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T15:00",
       "temp": 29.1,
-      "precip_prob": 7,
+      "precip_prob": 1,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T16:00",
       "temp": 29.3,
-      "precip_prob": 10,
+      "precip_prob": 2,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T17:00",
       "temp": 29.1,
-      "precip_prob": 12,
+      "precip_prob": 2,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T18:00",
       "temp": 28.8,
-      "precip_prob": 13,
+      "precip_prob": 2,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T19:00",
       "temp": 28.4,
-      "precip_prob": 12,
+      "precip_prob": 2,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T20:00",
       "temp": 27.6,
-      "precip_prob": 9,
+      "precip_prob": 1,
       "weather_code": 0
     },
     {
       "time": "2026-06-24T21:00",
       "temp": 26.0,
-      "precip_prob": 4,
+      "precip_prob": 1,
       "weather_code": 0
     },
     {
@@ -227,5 +227,5 @@
       "description": "Лёгкая морось"
     }
   ],
-  "fetched_at": "2026-06-23T22:38:11.551443+00:00"
+  "fetched_at": "2026-06-24T00:11:07.921078+00:00"
 }

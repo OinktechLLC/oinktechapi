@@ -5,22 +5,22 @@
   "longitude": 82.9207,
   "timezone": "Asia/Novosibirsk",
   "current": {
-    "temperature": 18.6,
-    "feels_like": 18.3,
-    "humidity": 71,
+    "temperature": 19.4,
+    "feels_like": 19.4,
+    "humidity": 70,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1007.0,
-    "wind_speed_ms": 2.6,
-    "wind_direction_deg": 50,
+    "wind_speed_ms": 2.2,
+    "wind_direction_deg": 44,
     "wind_direction_text": "СВ",
-    "weather_code": 1,
-    "description": "Преимущественно ясно"
+    "weather_code": 0,
+    "description": "Ясно"
   },
   "hourly": [
     {
       "time": "2026-06-24T00:00",
       "temp": 22.9,
-      "precip_prob": 0,
+      "precip_prob": 2,
       "weather_code": 2
     },
     {
@@ -122,31 +122,31 @@
     {
       "time": "2026-06-24T17:00",
       "temp": 30.7,
-      "precip_prob": 0,
+      "precip_prob": 1,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T18:00",
       "temp": 30.2,
-      "precip_prob": 0,
+      "precip_prob": 3,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T19:00",
       "temp": 29.2,
-      "precip_prob": 0,
+      "precip_prob": 4,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T20:00",
       "temp": 28.2,
-      "precip_prob": 0,
+      "precip_prob": 3,
       "weather_code": 0
     },
     {
       "time": "2026-06-24T21:00",
       "temp": 26.8,
-      "precip_prob": 0,
+      "precip_prob": 1,
       "weather_code": 0
     },
     {
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-23T22:37:49.949104+00:00"
+  "fetched_at": "2026-06-24T00:10:46.280291+00:00"
 }

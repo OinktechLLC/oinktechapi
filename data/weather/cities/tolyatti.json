@@ -5,16 +5,16 @@
   "longitude": 49.4218,
   "timezone": "Europe/Samara",
   "current": {
-    "temperature": 17.5,
-    "feels_like": 18.5,
-    "humidity": 92,
+    "temperature": 16.9,
+    "feels_like": 17.1,
+    "humidity": 86,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1003.0,
-    "wind_speed_ms": 2.2,
-    "wind_direction_deg": 286,
+    "wind_speed_ms": 2.5,
+    "wind_direction_deg": 291,
     "wind_direction_text": "ЗСЗ",
-    "weather_code": 2,
-    "description": "Переменная облачность"
+    "weather_code": 3,
+    "description": "Пасмурно"
   },
   "hourly": [
     {
@@ -25,19 +25,19 @@
     },
     {
       "time": "2026-06-24T01:00",
-      "temp": 17.6,
+      "temp": 17.5,
       "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-24T02:00",
-      "temp": 17.6,
+      "temp": 17.5,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T03:00",
-      "temp": 17.4,
+      "temp": 17.3,
       "precip_prob": 8,
       "weather_code": 2
     },
@@ -45,7 +45,7 @@
       "time": "2026-06-24T04:00",
       "temp": 16.9,
       "precip_prob": 3,
-      "weather_code": 2
+      "weather_code": 3
     },
     {
       "time": "2026-06-24T05:00",
@@ -61,7 +61,7 @@
     },
     {
       "time": "2026-06-24T07:00",
-      "temp": 17.2,
+      "temp": 17.1,
       "precip_prob": 0,
       "weather_code": 2
     },
@@ -69,53 +69,53 @@
       "time": "2026-06-24T08:00",
       "temp": 18.0,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-24T09:00",
-      "temp": 18.9,
+      "temp": 18.8,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-24T10:00",
-      "temp": 19.8,
+      "temp": 19.7,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T11:00",
-      "temp": 20.6,
+      "temp": 20.7,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T12:00",
-      "temp": 21.4,
+      "temp": 21.6,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-24T13:00",
       "temp": 22.4,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 1
     },
     {
       "time": "2026-06-24T14:00",
-      "temp": 22.9,
+      "temp": 22.8,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-24T15:00",
-      "temp": 23.2,
+      "temp": 22.7,
       "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-24T16:00",
-      "temp": 23.0,
+      "temp": 22.6,
       "precip_prob": 0,
       "weather_code": 3
     },
@@ -127,7 +127,7 @@
     },
     {
       "time": "2026-06-24T18:00",
-      "temp": 21.7,
+      "temp": 21.6,
       "precip_prob": 0,
       "weather_code": 3
     },
@@ -139,43 +139,43 @@
     },
     {
       "time": "2026-06-24T20:00",
-      "temp": 19.9,
+      "temp": 19.7,
       "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-24T21:00",
-      "temp": 18.6,
+      "temp": 18.5,
       "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-24T22:00",
-      "temp": 17.5,
+      "temp": 17.3,
       "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-24T23:00",
-      "temp": 16.8,
+      "temp": 16.5,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 3
     }
   ],
   "forecast_7d": [
     {
       "date": "2026-06-24",
-      "temp_max": 23.2,
+      "temp_max": 22.8,
       "temp_min": 16.5,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 4.1,
+      "wind_max_ms": 4.3,
       "weather_code": 3,
       "description": "Пасмурно"
     },
     {
       "date": "2026-06-25",
       "temp_max": 23.2,
-      "temp_min": 14.3,
+      "temp_min": 14.1,
       "precipitation_mm": 0.0,
       "wind_max_ms": 2.0,
       "weather_code": 3,
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-23T22:38:15.694500+00:00"
+  "fetched_at": "2026-06-24T00:11:12.101491+00:00"
 }
