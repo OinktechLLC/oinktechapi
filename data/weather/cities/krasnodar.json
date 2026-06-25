@@ -5,16 +5,16 @@
   "longitude": 38.9753,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 25.4,
-    "feels_like": 27.7,
-    "humidity": 68,
+    "temperature": 22.3,
+    "feels_like": 25.8,
+    "humidity": 91,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1011.0,
-    "wind_speed_ms": 1.9,
-    "wind_direction_deg": 267,
-    "wind_direction_text": "З",
-    "weather_code": 1,
-    "description": "Преимущественно ясно"
+    "wind_speed_ms": 1.2,
+    "wind_direction_deg": 215,
+    "wind_direction_text": "ЮЗ",
+    "weather_code": 2,
+    "description": "Переменная облачность"
   },
   "hourly": [
     {
@@ -127,37 +127,37 @@
     },
     {
       "time": "2026-06-25T18:00",
-      "temp": 27.5,
+      "temp": 25.9,
       "precip_prob": 10,
       "weather_code": 2
     },
     {
       "time": "2026-06-25T19:00",
-      "temp": 27.0,
+      "temp": 25.5,
       "precip_prob": 5,
       "weather_code": 1
     },
     {
       "time": "2026-06-25T20:00",
-      "temp": 25.7,
+      "temp": 24.4,
       "precip_prob": 3,
       "weather_code": 1
     },
     {
       "time": "2026-06-25T21:00",
-      "temp": 24.5,
+      "temp": 23.5,
       "precip_prob": 3,
-      "weather_code": 1
+      "weather_code": 3
     },
     {
       "time": "2026-06-25T22:00",
-      "temp": 23.7,
+      "temp": 22.9,
       "precip_prob": 5,
       "weather_code": 1
     },
     {
       "time": "2026-06-25T23:00",
-      "temp": 23.1,
+      "temp": 22.4,
       "precip_prob": 3,
       "weather_code": 2
     }
@@ -174,12 +174,12 @@
     },
     {
       "date": "2026-06-26",
-      "temp_max": 28.6,
-      "temp_min": 20.2,
-      "precipitation_mm": 0.0,
-      "wind_max_ms": 3.1,
-      "weather_code": 45,
-      "description": "Туман"
+      "temp_max": 28.3,
+      "temp_min": 20.0,
+      "precipitation_mm": 0.9,
+      "wind_max_ms": 2.6,
+      "weather_code": 80,
+      "description": "Ливень"
     },
     {
       "date": "2026-06-27",
@@ -227,5 +227,5 @@
       "description": "Ясно"
     }
   ],
-  "fetched_at": "2026-06-25T17:23:06.654950+00:00"
+  "fetched_at": "2026-06-25T20:22:10.907674+00:00"
 }
