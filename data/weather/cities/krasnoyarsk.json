@@ -5,16 +5,16 @@
   "longitude": 92.8932,
   "timezone": "Asia/Krasnoyarsk",
   "current": {
-    "temperature": 26.5,
-    "feels_like": 27.4,
-    "humidity": 54,
-    "precipitation_mm": 0.0,
+    "temperature": 24.5,
+    "feels_like": 25.5,
+    "humidity": 59,
+    "precipitation_mm": 0.1,
     "pressure_hpa": 1004.0,
-    "wind_speed_ms": 2.5,
-    "wind_direction_deg": 290,
-    "wind_direction_text": "ЗСЗ",
-    "weather_code": 2,
-    "description": "Переменная облачность"
+    "wind_speed_ms": 2.1,
+    "wind_direction_deg": 266,
+    "wind_direction_text": "З",
+    "weather_code": 51,
+    "description": "Лёгкая морось"
   },
   "hourly": [
     {
@@ -68,98 +68,98 @@
     {
       "time": "2026-06-26T08:00",
       "temp": 23.8,
-      "precip_prob": 1,
+      "precip_prob": 2,
       "weather_code": 0
     },
     {
       "time": "2026-06-26T09:00",
       "temp": 26.1,
-      "precip_prob": 2,
+      "precip_prob": 6,
       "weather_code": 0
     },
     {
       "time": "2026-06-26T10:00",
       "temp": 27.7,
-      "precip_prob": 10,
+      "precip_prob": 16,
       "weather_code": 95
     },
     {
       "time": "2026-06-26T11:00",
       "temp": 27.6,
-      "precip_prob": 30,
+      "precip_prob": 39,
       "weather_code": 51
     },
     {
       "time": "2026-06-26T12:00",
       "temp": 23.0,
-      "precip_prob": 55,
+      "precip_prob": 68,
       "weather_code": 96
     },
     {
       "time": "2026-06-26T13:00",
-      "temp": 21.5,
-      "precip_prob": 75,
-      "weather_code": 80
+      "temp": 26.3,
+      "precip_prob": 88,
+      "weather_code": 61
     },
     {
       "time": "2026-06-26T14:00",
-      "temp": 23.4,
-      "precip_prob": 85,
-      "weather_code": 53
-    },
-    {
-      "time": "2026-06-26T15:00",
-      "temp": 25.3,
-      "precip_prob": 88,
+      "temp": 26.3,
+      "precip_prob": 91,
       "weather_code": 51
     },
     {
+      "time": "2026-06-26T15:00",
+      "temp": 27.1,
+      "precip_prob": 84,
+      "weather_code": 3
+    },
+    {
       "time": "2026-06-26T16:00",
-      "temp": 26.1,
-      "precip_prob": 86,
-      "weather_code": 0
+      "temp": 27.4,
+      "precip_prob": 76,
+      "weather_code": 51
     },
     {
       "time": "2026-06-26T17:00",
-      "temp": 26.5,
-      "precip_prob": 76,
+      "temp": 27.3,
+      "precip_prob": 67,
       "weather_code": 2
     },
     {
       "time": "2026-06-26T18:00",
-      "temp": 26.3,
-      "precip_prob": 60,
-      "weather_code": 2
-    },
-    {
-      "time": "2026-06-26T19:00",
-      "temp": 25.4,
-      "precip_prob": 47,
+      "temp": 25.9,
+      "precip_prob": 55,
       "weather_code": 53
     },
     {
-      "time": "2026-06-26T20:00",
-      "temp": 24.1,
-      "precip_prob": 39,
+      "time": "2026-06-26T19:00",
+      "temp": 25.6,
+      "precip_prob": 47,
       "weather_code": 51
     },
     {
+      "time": "2026-06-26T20:00",
+      "temp": 25.1,
+      "precip_prob": 44,
+      "weather_code": 2
+    },
+    {
       "time": "2026-06-26T21:00",
-      "temp": 22.5,
-      "precip_prob": 34,
+      "temp": 22.2,
+      "precip_prob": 45,
       "weather_code": 51
     },
     {
       "time": "2026-06-26T22:00",
-      "temp": 20.7,
-      "precip_prob": 31,
-      "weather_code": 53
+      "temp": 21.3,
+      "precip_prob": 45,
+      "weather_code": 51
     },
     {
       "time": "2026-06-26T23:00",
-      "temp": 18.9,
-      "precip_prob": 30,
-      "weather_code": 95
+      "temp": 20.6,
+      "precip_prob": 42,
+      "weather_code": 0
     }
   ],
   "forecast_7d": [
@@ -167,65 +167,65 @@
       "date": "2026-06-26",
       "temp_max": 27.7,
       "temp_min": 18.2,
-      "precipitation_mm": 8.1,
+      "precipitation_mm": 5.4,
       "wind_max_ms": 3.9,
       "weather_code": 96,
       "description": "Гроза с градом"
     },
     {
       "date": "2026-06-27",
-      "temp_max": 25.7,
-      "temp_min": 17.6,
-      "precipitation_mm": 4.7,
-      "wind_max_ms": 3.6,
+      "temp_max": 26.7,
+      "temp_min": 17.2,
+      "precipitation_mm": 6.0,
+      "wind_max_ms": 4.3,
       "weather_code": 95,
       "description": "Гроза"
     },
     {
       "date": "2026-06-28",
-      "temp_max": 23.4,
-      "temp_min": 19.1,
-      "precipitation_mm": 4.2,
-      "wind_max_ms": 4.7,
+      "temp_max": 24.1,
+      "temp_min": 18.0,
+      "precipitation_mm": 11.1,
+      "wind_max_ms": 5.7,
+      "weather_code": 96,
+      "description": "Гроза с градом"
+    },
+    {
+      "date": "2026-06-29",
+      "temp_max": 25.5,
+      "temp_min": 17.0,
+      "precipitation_mm": 15.7,
+      "wind_max_ms": 3.0,
       "weather_code": 95,
       "description": "Гроза"
     },
     {
-      "date": "2026-06-29",
-      "temp_max": 24.1,
-      "temp_min": 17.9,
-      "precipitation_mm": 8.8,
-      "wind_max_ms": 4.2,
+      "date": "2026-06-30",
+      "temp_max": 24.4,
+      "temp_min": 17.1,
+      "precipitation_mm": 7.2,
+      "wind_max_ms": 2.3,
       "weather_code": 96,
       "description": "Гроза с градом"
     },
     {
-      "date": "2026-06-30",
-      "temp_max": 26.1,
-      "temp_min": 17.7,
-      "precipitation_mm": 1.2,
-      "wind_max_ms": 2.3,
-      "weather_code": 51,
-      "description": "Лёгкая морось"
-    },
-    {
       "date": "2026-07-01",
-      "temp_max": 29.0,
-      "temp_min": 17.9,
-      "precipitation_mm": 0.0,
-      "wind_max_ms": 1.4,
-      "weather_code": 3,
-      "description": "Пасмурно"
+      "temp_max": 26.4,
+      "temp_min": 18.5,
+      "precipitation_mm": 6.3,
+      "wind_max_ms": 2.5,
+      "weather_code": 96,
+      "description": "Гроза с градом"
     },
     {
       "date": "2026-07-02",
-      "temp_max": 26.6,
-      "temp_min": 19.1,
-      "precipitation_mm": 9.2,
-      "wind_max_ms": 2.4,
+      "temp_max": 27.5,
+      "temp_min": 18.5,
+      "precipitation_mm": 5.6,
+      "wind_max_ms": 2.5,
       "weather_code": 96,
       "description": "Гроза с градом"
     }
   ],
-  "fetched_at": "2026-06-26T10:28:47.589398+00:00"
+  "fetched_at": "2026-06-26T13:19:53.238692+00:00"
 }
