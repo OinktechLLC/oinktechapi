@@ -5,13 +5,13 @@
   "longitude": 50.1002,
   "timezone": "Europe/Samara",
   "current": {
-    "temperature": 17.3,
-    "feels_like": 17.3,
-    "humidity": 84,
+    "temperature": 15.7,
+    "feels_like": 15.3,
+    "humidity": 89,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1008.0,
-    "wind_speed_ms": 2.8,
-    "wind_direction_deg": 360,
+    "wind_speed_ms": 3.2,
+    "wind_direction_deg": 351,
     "wind_direction_text": "С",
     "weather_code": 3,
     "description": "Пасмурно"
@@ -133,31 +133,31 @@
     },
     {
       "time": "2026-06-26T19:00",
-      "temp": 18.3,
+      "temp": 17.6,
       "precip_prob": 35,
       "weather_code": 3
     },
     {
       "time": "2026-06-26T20:00",
-      "temp": 17.4,
+      "temp": 17.3,
       "precip_prob": 25,
-      "weather_code": 80
+      "weather_code": 3
     },
     {
       "time": "2026-06-26T21:00",
-      "temp": 16.8,
+      "temp": 16.6,
       "precip_prob": 20,
       "weather_code": 3
     },
     {
       "time": "2026-06-26T22:00",
-      "temp": 16.3,
+      "temp": 16.2,
       "precip_prob": 20,
       "weather_code": 3
     },
     {
       "time": "2026-06-26T23:00",
-      "temp": 15.9,
+      "temp": 15.7,
       "precip_prob": 23,
       "weather_code": 3
     }
@@ -166,18 +166,18 @@
     {
       "date": "2026-06-26",
       "temp_max": 19.9,
-      "temp_min": 15.9,
+      "temp_min": 15.7,
       "precipitation_mm": 1.7,
       "wind_max_ms": 3.6,
-      "weather_code": 80,
-      "description": "Ливень"
+      "weather_code": 61,
+      "description": "Небольшой дождь"
     },
     {
       "date": "2026-06-27",
-      "temp_max": 20.5,
+      "temp_max": 20.0,
       "temp_min": 13.9,
-      "precipitation_mm": 0.5,
-      "wind_max_ms": 5.6,
+      "precipitation_mm": 1.9,
+      "wind_max_ms": 5.5,
       "weather_code": 61,
       "description": "Небольшой дождь"
     },
@@ -227,5 +227,5 @@
       "description": "Переменная облачность"
     }
   ],
-  "fetched_at": "2026-06-26T16:27:56.361249+00:00"
+  "fetched_at": "2026-06-26T19:03:04.871052+00:00"
 }
