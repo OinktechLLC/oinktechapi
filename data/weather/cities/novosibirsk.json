@@ -5,16 +5,16 @@
   "longitude": 82.9207,
   "timezone": "Asia/Novosibirsk",
   "current": {
-    "temperature": 25.5,
-    "feels_like": 25.8,
-    "humidity": 54,
+    "temperature": 22.7,
+    "feels_like": 24.9,
+    "humidity": 74,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1006.0,
-    "wind_speed_ms": 3.0,
-    "wind_direction_deg": 253,
-    "wind_direction_text": "ЗЮЗ",
-    "weather_code": 3,
-    "description": "Пасмурно"
+    "wind_speed_ms": 1.1,
+    "wind_direction_deg": 223,
+    "wind_direction_text": "ЮЗ",
+    "weather_code": 2,
+    "description": "Переменная облачность"
   },
   "hourly": [
     {
@@ -86,13 +86,13 @@
     {
       "time": "2026-06-26T11:00",
       "temp": 26.8,
-      "precip_prob": 23,
+      "precip_prob": 22,
       "weather_code": 0
     },
     {
       "time": "2026-06-26T12:00",
       "temp": 28.2,
-      "precip_prob": 16,
+      "precip_prob": 15,
       "weather_code": 0
     },
     {
@@ -104,61 +104,61 @@
     {
       "time": "2026-06-26T14:00",
       "temp": 28.7,
-      "precip_prob": 19,
+      "precip_prob": 25,
       "weather_code": 51
     },
     {
       "time": "2026-06-26T15:00",
       "temp": 27.7,
-      "precip_prob": 28,
+      "precip_prob": 43,
       "weather_code": 95
     },
     {
       "time": "2026-06-26T16:00",
       "temp": 27.1,
-      "precip_prob": 39,
+      "precip_prob": 57,
       "weather_code": 53
     },
     {
       "time": "2026-06-26T17:00",
       "temp": 27.4,
-      "precip_prob": 57,
+      "precip_prob": 67,
       "weather_code": 53
     },
     {
       "time": "2026-06-26T18:00",
       "temp": 27.9,
-      "precip_prob": 78,
+      "precip_prob": 75,
       "weather_code": 51
     },
     {
       "time": "2026-06-26T19:00",
       "temp": 27.9,
-      "precip_prob": 86,
+      "precip_prob": 75,
       "weather_code": 2
     },
     {
       "time": "2026-06-26T20:00",
       "temp": 25.9,
-      "precip_prob": 72,
+      "precip_prob": 62,
       "weather_code": 51
     },
     {
       "time": "2026-06-26T21:00",
       "temp": 24.7,
-      "precip_prob": 46,
+      "precip_prob": 42,
       "weather_code": 3
     },
     {
       "time": "2026-06-26T22:00",
       "temp": 23.6,
-      "precip_prob": 24,
+      "precip_prob": 25,
       "weather_code": 3
     },
     {
       "time": "2026-06-26T23:00",
       "temp": 22.8,
-      "precip_prob": 12,
+      "precip_prob": 16,
       "weather_code": 3
     }
   ],
@@ -227,5 +227,5 @@
       "description": "Лёгкая морось"
     }
   ],
-  "fetched_at": "2026-06-26T13:19:32.101316+00:00"
+  "fetched_at": "2026-06-26T16:27:52.877575+00:00"
 }
