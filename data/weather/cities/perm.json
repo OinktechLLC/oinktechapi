@@ -5,13 +5,13 @@
   "longitude": 56.2502,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 15.8,
-    "feels_like": 15.3,
-    "humidity": 93,
+    "temperature": 14.8,
+    "feels_like": 13.8,
+    "humidity": 92,
     "precipitation_mm": 0.5,
-    "pressure_hpa": 1003.0,
-    "wind_speed_ms": 3.8,
-    "wind_direction_deg": 75,
+    "pressure_hpa": 1002.0,
+    "wind_speed_ms": 4.1,
+    "wind_direction_deg": 62,
     "wind_direction_text": "ВСВ",
     "weather_code": 61,
     "description": "Небольшой дождь"
@@ -139,25 +139,25 @@
     },
     {
       "time": "2026-06-27T20:00",
-      "temp": 16.3,
+      "temp": 16.0,
       "precip_prob": 78,
       "weather_code": 61
     },
     {
       "time": "2026-06-27T21:00",
-      "temp": 15.9,
+      "temp": 15.8,
       "precip_prob": 83,
       "weather_code": 63
     },
     {
       "time": "2026-06-27T22:00",
-      "temp": 15.3,
+      "temp": 15.2,
       "precip_prob": 93,
-      "weather_code": 61
+      "weather_code": 63
     },
     {
       "time": "2026-06-27T23:00",
-      "temp": 15.0,
+      "temp": 14.9,
       "precip_prob": 100,
       "weather_code": 61
     }
@@ -166,25 +166,25 @@
     {
       "date": "2026-06-27",
       "temp_max": 17.4,
-      "temp_min": 15.0,
-      "precipitation_mm": 22.2,
+      "temp_min": 14.9,
+      "precipitation_mm": 22.7,
       "wind_max_ms": 4.8,
       "weather_code": 80,
       "description": "Ливень"
     },
     {
       "date": "2026-06-28",
-      "temp_max": 15.2,
+      "temp_max": 15.5,
       "temp_min": 12.8,
-      "precipitation_mm": 17.5,
-      "wind_max_ms": 4.3,
-      "weather_code": 63,
-      "description": "Дождь"
+      "precipitation_mm": 14.3,
+      "wind_max_ms": 3.9,
+      "weather_code": 61,
+      "description": "Небольшой дождь"
     },
     {
       "date": "2026-06-29",
       "temp_max": 19.5,
-      "temp_min": 10.8,
+      "temp_min": 10.4,
       "precipitation_mm": 3.8,
       "wind_max_ms": 3.1,
       "weather_code": 61,
@@ -222,10 +222,10 @@
       "temp_max": 24.7,
       "temp_min": 14.5,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 2.9,
-      "weather_code": 45,
-      "description": "Туман"
+      "wind_max_ms": 1.4,
+      "weather_code": 3,
+      "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-27T16:19:35.110083+00:00"
+  "fetched_at": "2026-06-27T18:18:19.321474+00:00"
 }

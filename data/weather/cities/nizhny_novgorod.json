@@ -5,14 +5,14 @@
   "longitude": 44.002,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 17.6,
-    "feels_like": 15.0,
-    "humidity": 41,
+    "temperature": 14.6,
+    "feels_like": 13.0,
+    "humidity": 60,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1012.0,
-    "wind_speed_ms": 2.3,
-    "wind_direction_deg": 322,
-    "wind_direction_text": "СЗ",
+    "wind_speed_ms": 1.7,
+    "wind_direction_deg": 298,
+    "wind_direction_text": "ЗСЗ",
     "weather_code": 2,
     "description": "Переменная облачность"
   },
@@ -127,25 +127,25 @@
     },
     {
       "time": "2026-06-27T18:00",
-      "temp": 18.4,
+      "temp": 18.2,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-27T19:00",
-      "temp": 17.8,
+      "temp": 17.6,
       "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-27T20:00",
-      "temp": 16.6,
+      "temp": 16.4,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-27T21:00",
-      "temp": 15.1,
+      "temp": 14.9,
       "precip_prob": 0,
       "weather_code": 2
     },
@@ -157,7 +157,7 @@
     },
     {
       "time": "2026-06-27T23:00",
-      "temp": 13.3,
+      "temp": 13.2,
       "precip_prob": 0,
       "weather_code": 2
     }
@@ -174,12 +174,12 @@
     },
     {
       "date": "2026-06-28",
-      "temp_max": 18.7,
+      "temp_max": 19.3,
       "temp_min": 10.4,
-      "precipitation_mm": 0.0,
+      "precipitation_mm": 0.1,
       "wind_max_ms": 5.3,
-      "weather_code": 3,
-      "description": "Пасмурно"
+      "weather_code": 61,
+      "description": "Небольшой дождь"
     },
     {
       "date": "2026-06-29",
@@ -214,18 +214,18 @@
       "temp_min": 16.8,
       "precipitation_mm": 0.0,
       "wind_max_ms": 2.0,
-      "weather_code": 3,
-      "description": "Пасмурно"
+      "weather_code": 2,
+      "description": "Переменная облачность"
     },
     {
       "date": "2026-07-03",
       "temp_max": 32.2,
       "temp_min": 17.4,
       "precipitation_mm": 0.3,
-      "wind_max_ms": 2.3,
-      "weather_code": 80,
-      "description": "Ливень"
+      "wind_max_ms": 3.8,
+      "weather_code": 3,
+      "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-27T16:19:15.328176+00:00"
+  "fetched_at": "2026-06-27T18:17:59.216380+00:00"
 }
