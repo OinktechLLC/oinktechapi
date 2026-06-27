@@ -5,16 +5,16 @@
   "longitude": 82.9207,
   "timezone": "Asia/Novosibirsk",
   "current": {
-    "temperature": 27.4,
-    "feels_like": 26.9,
-    "humidity": 43,
-    "precipitation_mm": 0.1,
-    "pressure_hpa": 1006.0,
-    "wind_speed_ms": 3.5,
-    "wind_direction_deg": 272,
+    "temperature": 28.2,
+    "feels_like": 26.7,
+    "humidity": 37,
+    "precipitation_mm": 0.0,
+    "pressure_hpa": 1005.0,
+    "wind_speed_ms": 4.0,
+    "wind_direction_deg": 281,
     "wind_direction_text": "З",
-    "weather_code": 51,
-    "description": "Лёгкая морось"
+    "weather_code": 2,
+    "description": "Переменная облачность"
   },
   "hourly": [
     {
@@ -168,7 +168,7 @@
       "temp_max": 28.2,
       "temp_min": 18.7,
       "precipitation_mm": 0.3,
-      "wind_max_ms": 3.7,
+      "wind_max_ms": 4.2,
       "weather_code": 51,
       "description": "Лёгкая морось"
     },
@@ -177,7 +177,7 @@
       "temp_max": 27.4,
       "temp_min": 17.7,
       "precipitation_mm": 9.2,
-      "wind_max_ms": 4.0,
+      "wind_max_ms": 4.4,
       "weather_code": 96,
       "description": "Гроза с градом"
     },
@@ -186,7 +186,7 @@
       "temp_max": 28.3,
       "temp_min": 18.7,
       "precipitation_mm": 0.3,
-      "wind_max_ms": 2.2,
+      "wind_max_ms": 2.9,
       "weather_code": 95,
       "description": "Гроза"
     },
@@ -195,7 +195,7 @@
       "temp_max": 28.4,
       "temp_min": 21.0,
       "precipitation_mm": 4.7,
-      "wind_max_ms": 5.8,
+      "wind_max_ms": 5.1,
       "weather_code": 96,
       "description": "Гроза с градом"
     },
@@ -213,7 +213,7 @@
       "temp_max": 30.5,
       "temp_min": 20.3,
       "precipitation_mm": 0.6,
-      "wind_max_ms": 3.9,
+      "wind_max_ms": 2.6,
       "weather_code": 51,
       "description": "Лёгкая морось"
     },
@@ -222,10 +222,10 @@
       "temp_max": 30.8,
       "temp_min": 21.2,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 3.5,
+      "wind_max_ms": 3.6,
       "weather_code": 3,
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-27T08:06:01.762525+00:00"
+  "fetched_at": "2026-06-27T10:22:29.780266+00:00"
 }
