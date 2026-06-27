@@ -5,16 +5,16 @@
   "longitude": 73.3242,
   "timezone": "Asia/Omsk",
   "current": {
-    "temperature": 22.3,
-    "feels_like": 22.0,
-    "humidity": 59,
-    "precipitation_mm": 0.0,
-    "pressure_hpa": 1004.0,
-    "wind_speed_ms": 2.8,
-    "wind_direction_deg": 80,
-    "wind_direction_text": "В",
-    "weather_code": 3,
-    "description": "Пасмурно"
+    "temperature": 21.0,
+    "feels_like": 20.5,
+    "humidity": 64,
+    "precipitation_mm": 0.2,
+    "pressure_hpa": 1003.0,
+    "wind_speed_ms": 3.3,
+    "wind_direction_deg": 104,
+    "wind_direction_text": "ВЮВ",
+    "weather_code": 53,
+    "description": "Морось"
   },
   "hourly": [
     {
@@ -227,5 +227,5 @@
       "description": "Гроза"
     }
   ],
-  "fetched_at": "2026-06-27T18:18:01.285338+00:00"
+  "fetched_at": "2026-06-27T20:19:21.883204+00:00"
 }
