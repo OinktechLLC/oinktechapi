@@ -5,12 +5,12 @@
   "longitude": 92.8932,
   "timezone": "Asia/Krasnoyarsk",
   "current": {
-    "temperature": 17.0,
-    "feels_like": 17.8,
-    "humidity": 92,
+    "temperature": 18.1,
+    "feels_like": 18.9,
+    "humidity": 90,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1006.0,
-    "wind_speed_ms": 2.1,
+    "wind_speed_ms": 2.6,
     "wind_direction_deg": 239,
     "wind_direction_text": "ЗЮЗ",
     "weather_code": 0,
@@ -227,5 +227,5 @@
       "description": "Лёгкая морось"
     }
   ],
-  "fetched_at": "2026-06-28T21:19:27.981686+00:00"
+  "fetched_at": "2026-06-28T23:17:55.184831+00:00"
 }
