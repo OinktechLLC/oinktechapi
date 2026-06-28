@@ -5,13 +5,13 @@
   "longitude": 61.4368,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 19.6,
-    "feels_like": 18.7,
-    "humidity": 56,
+    "temperature": 18.7,
+    "feels_like": 17.7,
+    "humidity": 60,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1004.0,
-    "wind_speed_ms": 2.0,
-    "wind_direction_deg": 327,
+    "wind_speed_ms": 2.5,
+    "wind_direction_deg": 348,
     "wind_direction_text": "ССЗ",
     "weather_code": 3,
     "description": "Пасмурно"
@@ -128,37 +128,37 @@
     {
       "time": "2026-06-28T18:00",
       "temp": 20.0,
-      "precip_prob": 5,
+      "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T19:00",
       "temp": 19.6,
-      "precip_prob": 0,
+      "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T20:00",
       "temp": 19.0,
-      "precip_prob": 3,
+      "precip_prob": 5,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T21:00",
       "temp": 18.4,
-      "precip_prob": 0,
+      "precip_prob": 20,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T22:00",
       "temp": 17.5,
-      "precip_prob": 3,
+      "precip_prob": 43,
       "weather_code": 80
     },
     {
       "time": "2026-06-28T23:00",
       "temp": 17.0,
-      "precip_prob": 5,
+      "precip_prob": 55,
       "weather_code": 3
     }
   ],
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-28T14:14:48.009720+00:00"
+  "fetched_at": "2026-06-28T15:42:00.824515+00:00"
 }
