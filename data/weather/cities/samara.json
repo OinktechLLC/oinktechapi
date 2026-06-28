@@ -5,14 +5,14 @@
   "longitude": 50.1002,
   "timezone": "Europe/Samara",
   "current": {
-    "temperature": 15.8,
-    "feels_like": 13.4,
-    "humidity": 57,
+    "temperature": 14.0,
+    "feels_like": 12.6,
+    "humidity": 68,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1005.0,
-    "wind_speed_ms": 3.2,
-    "wind_direction_deg": 306,
-    "wind_direction_text": "СЗ",
+    "wind_speed_ms": 1.9,
+    "wind_direction_deg": 298,
+    "wind_direction_text": "ЗСЗ",
     "weather_code": 2,
     "description": "Переменная облачность"
   },
@@ -115,117 +115,117 @@
     },
     {
       "time": "2026-06-28T16:00",
-      "temp": 18.3,
+      "temp": 19.7,
       "precip_prob": 13,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T17:00",
-      "temp": 17.7,
+      "temp": 19.0,
       "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T18:00",
-      "temp": 17.4,
+      "temp": 18.4,
       "precip_prob": 10,
-      "weather_code": 2
+      "weather_code": 3
     },
     {
       "time": "2026-06-28T19:00",
-      "temp": 16.7,
+      "temp": 17.1,
       "precip_prob": 10,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T20:00",
-      "temp": 14.8,
+      "temp": 15.6,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-28T21:00",
-      "temp": 14.0,
+      "temp": 14.5,
       "precip_prob": 3,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T22:00",
-      "temp": 13.3,
+      "temp": 13.6,
       "precip_prob": 0,
-      "weather_code": 3
+      "weather_code": 2
     },
     {
       "time": "2026-06-28T23:00",
-      "temp": 12.6,
+      "temp": 13.0,
       "precip_prob": 5,
-      "weather_code": 2
+      "weather_code": 3
     }
   ],
   "forecast_7d": [
     {
       "date": "2026-06-28",
-      "temp_max": 18.6,
+      "temp_max": 19.7,
       "temp_min": 10.5,
       "precipitation_mm": 0.6,
-      "wind_max_ms": 3.9,
+      "wind_max_ms": 4.2,
       "weather_code": 80,
       "description": "Ливень"
     },
     {
       "date": "2026-06-29",
-      "temp_max": 20.5,
-      "temp_min": 11.6,
-      "precipitation_mm": 0.1,
-      "wind_max_ms": 4.3,
+      "temp_max": 20.9,
+      "temp_min": 11.7,
+      "precipitation_mm": 2.0,
+      "wind_max_ms": 4.1,
       "weather_code": 61,
       "description": "Небольшой дождь"
     },
     {
       "date": "2026-06-30",
-      "temp_max": 17.5,
-      "temp_min": 13.7,
-      "precipitation_mm": 14.3,
-      "wind_max_ms": 5.6,
-      "weather_code": 63,
-      "description": "Дождь"
+      "temp_max": 17.4,
+      "temp_min": 14.2,
+      "precipitation_mm": 6.9,
+      "wind_max_ms": 6.2,
+      "weather_code": 80,
+      "description": "Ливень"
     },
     {
       "date": "2026-07-01",
-      "temp_max": 20.3,
-      "temp_min": 14.4,
-      "precipitation_mm": 1.5,
-      "wind_max_ms": 3.4,
-      "weather_code": 61,
-      "description": "Небольшой дождь"
+      "temp_max": 21.9,
+      "temp_min": 14.7,
+      "precipitation_mm": 0.0,
+      "wind_max_ms": 3.7,
+      "weather_code": 3,
+      "description": "Пасмурно"
     },
     {
       "date": "2026-07-02",
-      "temp_max": 25.6,
+      "temp_max": 26.8,
       "temp_min": 17.3,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 4.6,
+      "wind_max_ms": 5.0,
       "weather_code": 3,
       "description": "Пасмурно"
     },
     {
       "date": "2026-07-03",
-      "temp_max": 28.0,
-      "temp_min": 15.4,
+      "temp_max": 27.2,
+      "temp_min": 16.9,
       "precipitation_mm": 0.0,
       "wind_max_ms": 2.6,
-      "weather_code": 3,
-      "description": "Пасмурно"
+      "weather_code": 2,
+      "description": "Переменная облачность"
     },
     {
       "date": "2026-07-04",
-      "temp_max": 29.6,
-      "temp_min": 19.8,
+      "temp_max": 30.0,
+      "temp_min": 17.2,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 2.0,
-      "weather_code": 3,
-      "description": "Пасмурно"
+      "wind_max_ms": 1.4,
+      "weather_code": 1,
+      "description": "Преимущественно ясно"
     }
   ],
-  "fetched_at": "2026-06-28T15:42:01.368202+00:00"
+  "fetched_at": "2026-06-28T17:34:45.397481+00:00"
 }
