@@ -5,14 +5,14 @@
   "longitude": 49.4218,
   "timezone": "Europe/Samara",
   "current": {
-    "temperature": 12.9,
-    "feels_like": 11.5,
-    "humidity": 74,
+    "temperature": 12.3,
+    "feels_like": 11.6,
+    "humidity": 89,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1005.0,
-    "wind_speed_ms": 1.9,
-    "wind_direction_deg": 306,
-    "wind_direction_text": "СЗ",
+    "pressure_hpa": 1004.0,
+    "wind_speed_ms": 1.7,
+    "wind_direction_deg": 280,
+    "wind_direction_text": "З",
     "weather_code": 61,
     "description": "Небольшой дождь"
   },
@@ -133,31 +133,31 @@
     },
     {
       "time": "2026-06-28T19:00",
-      "temp": 14.6,
+      "temp": 14.2,
       "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T20:00",
-      "temp": 13.7,
+      "temp": 13.3,
       "precip_prob": 5,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T21:00",
-      "temp": 13.1,
+      "temp": 12.8,
       "precip_prob": 23,
       "weather_code": 3
     },
     {
       "time": "2026-06-28T22:00",
-      "temp": 12.7,
+      "temp": 12.6,
       "precip_prob": 40,
       "weather_code": 61
     },
     {
       "time": "2026-06-28T23:00",
-      "temp": 12.3,
+      "temp": 12.4,
       "precip_prob": 45,
       "weather_code": 61
     }
@@ -167,7 +167,7 @@
       "date": "2026-06-28",
       "temp_max": 18.7,
       "temp_min": 10.9,
-      "precipitation_mm": 0.5,
+      "precipitation_mm": 0.3,
       "wind_max_ms": 4.7,
       "weather_code": 61,
       "description": "Небольшой дождь"
@@ -175,11 +175,11 @@
     {
       "date": "2026-06-29",
       "temp_max": 20.2,
-      "temp_min": 12.1,
-      "precipitation_mm": 11.0,
-      "wind_max_ms": 3.3,
-      "weather_code": 80,
-      "description": "Ливень"
+      "temp_min": 12.3,
+      "precipitation_mm": 10.7,
+      "wind_max_ms": 3.8,
+      "weather_code": 95,
+      "description": "Гроза"
     },
     {
       "date": "2026-06-30",
@@ -227,5 +227,5 @@
       "description": "Ясно"
     }
   ],
-  "fetched_at": "2026-06-28T17:35:05.418058+00:00"
+  "fetched_at": "2026-06-28T19:44:49.621545+00:00"
 }

@@ -5,14 +5,14 @@
   "longitude": 82.9207,
   "timezone": "Asia/Novosibirsk",
   "current": {
-    "temperature": 21.8,
-    "feels_like": 24.9,
-    "humidity": 83,
+    "temperature": 20.6,
+    "feels_like": 23.1,
+    "humidity": 88,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1005.0,
-    "wind_speed_ms": 0.3,
-    "wind_direction_deg": 129,
-    "wind_direction_text": "ЮВ",
+    "wind_speed_ms": 1.0,
+    "wind_direction_deg": 96,
+    "wind_direction_text": "В",
     "weather_code": 1,
     "description": "Преимущественно ясно"
   },
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-28T17:34:42.911952+00:00"
+  "fetched_at": "2026-06-28T19:44:27.973962+00:00"
 }
