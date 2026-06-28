@@ -1,131 +1,138 @@
 {
-  "updated_at": "2026-06-28T00:14:48.998971+00:00",
+  "updated_at": "2026-06-28T04:53:56.767533+00:00",
   "cities": [
     {
       "key": "moscow",
       "name": "Москва",
-      "temp": 13.7,
-      "description": "Переменная облачность",
+      "temp": 16.6,
+      "description": "Преимущественно ясно",
       "url": "cities/moscow.json"
     },
     {
       "key": "spb",
       "name": "Санкт-Петербург",
-      "temp": 15.3,
-      "description": "Ясно",
+      "temp": 18.5,
+      "description": "Пасмурно",
       "url": "cities/spb.json"
     },
     {
       "key": "novosibirsk",
       "name": "Новосибирск",
-      "temp": 19.1,
+      "temp": 26.5,
       "description": "Ясно",
       "url": "cities/novosibirsk.json"
     },
     {
       "key": "ekaterinburg",
       "name": "Екатеринбург",
-      "temp": 15.5,
-      "description": "Пасмурно",
+      "temp": 17.9,
+      "description": "Ливень",
       "url": "cities/ekaterinburg.json"
     },
     {
       "key": "kazan",
       "name": "Казань",
-      "temp": 10.9,
-      "description": "Преимущественно ясно",
+      "temp": 11.3,
+      "description": "Пасмурно",
       "url": "cities/kazan.json"
     },
     {
       "key": "nizhny_novgorod",
       "name": "Нижний Новгород",
-      "temp": 10.3,
-      "description": "Ясно",
+      "temp": 14.6,
+      "description": "Преимущественно ясно",
       "url": "cities/nizhny_novgorod.json"
     },
     {
       "key": "chelyabinsk",
       "name": "Челябинск",
-      "temp": 15.7,
-      "description": "Переменная облачность",
+      "temp": 18.4,
+      "description": "Пасмурно",
       "url": "cities/chelyabinsk.json"
     },
     {
       "key": "samara",
       "name": "Самара",
-      "temp": 11.6,
-      "description": "Ясно",
+      "temp": 15.5,
+      "description": "Переменная облачность",
       "url": "cities/samara.json"
     },
     {
       "key": "omsk",
       "name": "Омск",
-      "temp": 19.6,
-      "description": "Преимущественно ясно",
+      "temp": 26.3,
+      "description": "Ясно",
       "url": "cities/omsk.json"
     },
     {
       "key": "ufa",
       "name": "Уфа",
-      "temp": 12.5,
+      "temp": 13.4,
       "description": "Пасмурно",
       "url": "cities/ufa.json"
     },
     {
       "key": "krasnodar",
       "name": "Краснодар",
-      "temp": 16.6,
-      "description": "Переменная облачность",
+      "temp": 21.1,
+      "description": "Преимущественно ясно",
       "url": "cities/krasnodar.json"
     },
     {
       "key": "krasnoyarsk",
       "name": "Красноярск",
-      "temp": 18.9,
-      "description": "Преимущественно ясно",
+      "temp": 24.7,
+      "description": "Гроза",
       "url": "cities/krasnoyarsk.json"
     },
     {
       "key": "perm",
       "name": "Пермь",
-      "temp": 14.3,
+      "temp": 15.1,
       "description": "Небольшой дождь",
       "url": "cities/perm.json"
     },
     {
       "key": "voronezh",
       "name": "Воронеж",
-      "temp": 16.3,
+      "temp": 17.3,
       "description": "Пасмурно",
       "url": "cities/voronezh.json"
     },
     {
       "key": "volgograd",
       "name": "Волгоград",
-      "temp": 16.6,
+      "temp": 19.8,
       "description": "Пасмурно",
       "url": "cities/volgograd.json"
     },
     {
       "key": "saratov",
       "name": "Саратов",
-      "temp": 14.1,
+      "temp": 16.1,
       "description": "Переменная облачность",
       "url": "cities/saratov.json"
     },
     {
       "key": "tyumen",
       "name": "Тюмень",
-      "temp": 16.6,
-      "description": "Пасмурно",
+      "temp": 20.9,
+      "description": "Переменная облачность",
       "url": "cities/tyumen.json"
     },
     {
       "key": "tolyatti",
       "name": "Тольятти",
-      "temp": 11.5,
-      "description": "Преимущественно ясно",
+      "temp": 14.8,
+      "description": "Переменная облачность",
       "url": "cities/tolyatti.json"
+    },
+    {
+      "key": "izhevsk",
+      "name": "Ижевск",
+      "temp": 10.0,
+      "description": "Пасмурно",
+      "url": "cities/izhevsk.json"
     }
   ]
 }
