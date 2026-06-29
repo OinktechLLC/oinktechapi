@@ -5,16 +5,16 @@
   "longitude": 68.0,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 19.5,
-    "feels_like": 21.6,
-    "humidity": 98,
-    "precipitation_mm": 0.7,
-    "pressure_hpa": 997.0,
-    "wind_speed_ms": 2.5,
-    "wind_direction_deg": 87,
-    "wind_direction_text": "В",
-    "weather_code": 96,
-    "description": "Гроза с градом"
+    "temperature": 18.5,
+    "feels_like": 20.8,
+    "humidity": 99,
+    "precipitation_mm": 0.6,
+    "pressure_hpa": 996.0,
+    "wind_speed_ms": 1.3,
+    "wind_direction_deg": 152,
+    "wind_direction_text": "ЮЮВ",
+    "weather_code": 95,
+    "description": "Гроза"
   },
   "hourly": [
     {
@@ -74,13 +74,13 @@
     {
       "time": "2026-06-29T09:00",
       "temp": 24.0,
-      "precip_prob": 1,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-29T10:00",
       "temp": 25.0,
-      "precip_prob": 3,
+      "precip_prob": 1,
       "weather_code": 3
     },
     {
@@ -92,37 +92,37 @@
     {
       "time": "2026-06-29T12:00",
       "temp": 25.8,
-      "precip_prob": 2,
+      "precip_prob": 10,
       "weather_code": 51
     },
     {
       "time": "2026-06-29T13:00",
       "temp": 26.5,
-      "precip_prob": 0,
+      "precip_prob": 18,
       "weather_code": 3
     },
     {
       "time": "2026-06-29T14:00",
       "temp": 26.6,
-      "precip_prob": 8,
+      "precip_prob": 31,
       "weather_code": 3
     },
     {
       "time": "2026-06-29T15:00",
       "temp": 24.5,
-      "precip_prob": 36,
+      "precip_prob": 53,
       "weather_code": 51
     },
     {
       "time": "2026-06-29T16:00",
       "temp": 21.0,
-      "precip_prob": 73,
+      "precip_prob": 79,
       "weather_code": 96
     },
     {
       "time": "2026-06-29T17:00",
       "temp": 20.6,
-      "precip_prob": 100,
+      "precip_prob": 98,
       "weather_code": 95
     },
     {
@@ -227,5 +227,5 @@
       "description": "Сильная морось"
     }
   ],
-  "fetched_at": "2026-06-29T14:19:17.025714+00:00"
+  "fetched_at": "2026-06-29T17:48:01.749773+00:00"
 }
