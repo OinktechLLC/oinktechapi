@@ -5,14 +5,14 @@
   "longitude": 60.6122,
   "timezone": "Asia/Yekaterinburg",
   "current": {
-    "temperature": 15.1,
-    "feels_like": 16.1,
-    "humidity": 98,
+    "temperature": 14.4,
+    "feels_like": 14.9,
+    "humidity": 96,
     "precipitation_mm": 0.0,
     "pressure_hpa": 996.0,
-    "wind_speed_ms": 1.1,
-    "wind_direction_deg": 124,
-    "wind_direction_text": "ЮВ",
+    "wind_speed_ms": 1.5,
+    "wind_direction_deg": 180,
+    "wind_direction_text": "Ю",
     "weather_code": 3,
     "description": "Пасмурно"
   },
@@ -20,73 +20,73 @@
     {
       "time": "2026-06-30T00:00",
       "temp": 15.3,
-      "precip_prob": 25,
+      "precip_prob": 15,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T01:00",
       "temp": 15.1,
-      "precip_prob": 28,
+      "precip_prob": 5,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T02:00",
       "temp": 14.7,
-      "precip_prob": 23,
+      "precip_prob": 5,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T03:00",
       "temp": 14.3,
-      "precip_prob": 13,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T04:00",
       "temp": 13.7,
-      "precip_prob": 10,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T05:00",
       "temp": 13.4,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T06:00",
       "temp": 13.4,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T07:00",
       "temp": 13.5,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T08:00",
       "temp": 13.8,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T09:00",
       "temp": 14.4,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T10:00",
       "temp": 15.4,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
       "time": "2026-06-30T11:00",
       "temp": 16.4,
-      "precip_prob": 5,
+      "precip_prob": 0,
       "weather_code": 3
     },
     {
@@ -158,7 +158,7 @@
     {
       "time": "2026-06-30T23:00",
       "temp": 16.2,
-      "precip_prob": 8,
+      "precip_prob": 3,
       "weather_code": 3
     }
   ],
@@ -227,5 +227,5 @@
       "description": "Переменная облачность"
     }
   ],
-  "fetched_at": "2026-06-29T20:14:36.300336+00:00"
+  "fetched_at": "2026-06-29T21:45:18.121774+00:00"
 }
