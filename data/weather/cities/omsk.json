@@ -5,16 +5,16 @@
   "longitude": 73.3242,
   "timezone": "Asia/Omsk",
   "current": {
-    "temperature": 21.3,
-    "feels_like": 21.4,
-    "humidity": 64,
+    "temperature": 18.5,
+    "feels_like": 19.6,
+    "humidity": 85,
     "precipitation_mm": 0.0,
     "pressure_hpa": 1006.0,
-    "wind_speed_ms": 2.4,
-    "wind_direction_deg": 205,
-    "wind_direction_text": "ЮЮЗ",
-    "weather_code": 2,
-    "description": "Переменная облачность"
+    "wind_speed_ms": 1.5,
+    "wind_direction_deg": 155,
+    "wind_direction_text": "ЮЮВ",
+    "weather_code": 0,
+    "description": "Ясно"
   },
   "hourly": [
     {
@@ -98,67 +98,67 @@
     {
       "time": "2026-06-30T13:00",
       "temp": 23.7,
-      "precip_prob": 4,
+      "precip_prob": 1,
       "weather_code": 0
     },
     {
       "time": "2026-06-30T14:00",
       "temp": 24.2,
-      "precip_prob": 10,
+      "precip_prob": 3,
       "weather_code": 1
     },
     {
       "time": "2026-06-30T15:00",
       "temp": 24.5,
-      "precip_prob": 14,
+      "precip_prob": 6,
       "weather_code": 51
     },
     {
       "time": "2026-06-30T16:00",
       "temp": 25.0,
-      "precip_prob": 13,
+      "precip_prob": 11,
       "weather_code": 51
     },
     {
       "time": "2026-06-30T17:00",
       "temp": 25.0,
-      "precip_prob": 10,
+      "precip_prob": 18,
       "weather_code": 51
     },
     {
       "time": "2026-06-30T18:00",
       "temp": 24.9,
-      "precip_prob": 8,
+      "precip_prob": 22,
       "weather_code": 1
     },
     {
       "time": "2026-06-30T19:00",
       "temp": 23.9,
-      "precip_prob": 10,
+      "precip_prob": 22,
       "weather_code": 51
     },
     {
       "time": "2026-06-30T20:00",
       "temp": 21.8,
-      "precip_prob": 13,
+      "precip_prob": 19,
       "weather_code": 51
     },
     {
       "time": "2026-06-30T21:00",
       "temp": 20.9,
-      "precip_prob": 14,
+      "precip_prob": 16,
       "weather_code": 0
     },
     {
       "time": "2026-06-30T22:00",
       "temp": 19.4,
-      "precip_prob": 10,
+      "precip_prob": 13,
       "weather_code": 0
     },
     {
       "time": "2026-06-30T23:00",
       "temp": 18.7,
-      "precip_prob": 4,
+      "precip_prob": 9,
       "weather_code": 0
     }
   ],
@@ -227,5 +227,5 @@
       "description": "Переменная облачность"
     }
   ],
-  "fetched_at": "2026-06-30T14:42:54.071518+00:00"
+  "fetched_at": "2026-06-30T17:15:19.058140+00:00"
 }
