@@ -1,17 +1,116 @@
 {
-  "updated_at": "2026-06-29T20:27:05.070854+00:00",
+  "updated_at": "2026-06-30T04:48:03.979029+00:00",
   "category": "tech",
   "articles": [
     {
-      "id": "b24a93e5e3bf",
-      "title": "База прямо на спутнике, дома на колёсах и новые скафандры: NASA и его планы закрепиться на Луне",
-      "url": "https://vc.ru/future/2990573-nasa-i-ego-plany-po-kolonizatsii-luny?from=rss",
-      "description": "Когда и как агентство рассчитывает вернуть человека на Луну.",
-      "published_at": "2026-06-29T21:30:18+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
+      "id": "a340facd79b9",
+      "title": "Apache Paimon: steamhouse как логическое продолжение современных КХД",
+      "url": "https://habr.com/ru/articles/1053674/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053674",
+      "description": "Apache Paimon: стриминговый lakehouse для дата-инженеровСколько систем вы держите ради того, чтобы аналитики видели события через секунды, а годовые отчёты собирались без прогрузки всех данных целиком? Kafka, Flink, S3/HDFS, ClickHouse и бесконечная синхронизация состояния между ними. Apache Paimon стирает границу между стримингом и батчем: одна таблица на LSM-tree отдаёт свежие данные за секунды и одновременно служит источником для тяжёлой аналитики. Разбираем архитектуру, честные бенчмарки про",
+      "published_at": "2026-06-30T03:50:53",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
       "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "9a4d90a3e1f5",
+      "title": "Серверы Minecraft как ботнет для DDoS атак",
+      "url": "https://habr.com/ru/articles/1053694/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053694",
+      "description": "Спустя много лет я решил поиграть в Minecraft на пиратских серверах. Никакого исследовательского умысла не было, просто хотел поиграть. Но профессиональная деформация взяла свое: я начал ковырять функционал плагинов сервера. То, что я обнаружил, заставило забыть про игру и открыть Interactsh Охуеть",
+      "published_at": "2026-06-30T02:39:40",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "121a0df49722",
+      "title": "Теплые и влажные Плитки для документов на C#: не проводник",
+      "url": "https://habr.com/ru/articles/1053696/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053696",
+      "description": "Не “проводник”, а визуальное пространство документов, что-то ближе к COSMOS (от Waves)-подходу, где файлы живут плитками, имеют вес, цвет, превью, теги, статус и историю.Всем привет. :?*(*%:%=)Ниже разбор, как мы шли от красивых, но тяжёлых плиток к более живому и быстрому интерфейсу на C#И давайте сразу разберемся с плитками (Тут только о плитках) Читать далее",
+      "published_at": "2026-06-30T02:34:52",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "9b307f68184c",
+      "title": "Анатомия SQLite-провайдера: уходим от EF Core — типизированное хранилище для десктопа, мобайла и Blazor WASM",
+      "url": "https://habr.com/ru/articles/1053672/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053672",
+      "description": "Серия: redb ecosystem (инженерный разбор после анонса 3.2.1)Когда&nbsp;вышел SQLite-провайдер 3.2.1, анонс был на пару абзацев: «тот же LINQ, одна строка в DI». Эта статья — противоположность анонса. Здесь не «что вышло», а&nbsp;как оно устроено и где у нас потекло. Конкретно: как движок запросов redb переехал в нативное C-расширение там, где у базы нет хранимок; как мы храним&nbsp;DateTimeOffset&nbsp;в базе, у которой нет типа «дата»; и три бага из этого релиза, разобранные с фильтр-JSON, сгене",
+      "published_at": "2026-06-29T21:38:13",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "e2d452394ecc",
+      "title": "Погружение в Kafka c KRaft",
+      "url": "https://habr.com/ru/articles/1053670/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053670",
+      "description": "Достаточно часто приходится проводить интервью на должность разработчика, технического лидера проекта. Обязательной частью интервью является валидировать понимание работы с распределенными событийными моделями. Тут начинается аномалия. Не смотря на то, что все кандидаты заявляют об опыте с Kafka, многие теряются в рассуждениях на тему что это и как организовано.Для того, чтобы коллегам было комфортное на техническом интервью, а так же для желающих понять работу Kafka без Zookeper предлагаю стать",
+      "published_at": "2026-06-29T21:33:31",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "c1d4a088f6b8",
+      "title": "5 движков, 1 resnet: битва inference-рантаймов 2026",
+      "url": "https://habr.com/ru/articles/1053650/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053650",
+      "description": "Сравним скорость ResNet-50 на PyTorch, ONNX Runtime, OpenVINO, TensorRT и TVM в 46 конфигурациях. ONNX Runtime + INT8 даёт ×4 на CPU, TensorRT + INT8 — ×6 на GPU. Код прилагается. Читать далее",
+      "published_at": "2026-06-29T21:04:44",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "512547f079c0",
+      "title": "Рунет без Google Login: что теперь делать с авторизацией",
+      "url": "https://habr.com/ru/articles/1053664/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053664",
+      "description": "В&nbsp;России снова обсуждают вход на&nbsp;сайты через Google, Apple ID, GitHub и другие иностранные аккаунты. Повод&nbsp;— подписанный закон №&nbsp;199-ФЗ от 26.06.2026, который добавил в&nbsp;КоАП штрафы за&nbsp;нарушение правил авторизации пользователей.Но&nbsp;сам запрет появился не&nbsp;сейчас. Базовая норма пришла ещё с 406-ФЗ от 31.07.2023 и с 1&nbsp;декабря 2023&nbsp;года живёт в ч. 10&nbsp;ст. 8&nbsp;закона №&nbsp;149-ФЗ «Об информации». Новость 2026&nbsp;года в&nbsp;том, что&nbsp;тепер",
+      "published_at": "2026-06-29T21:02:27",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "e6c971fed3bf",
+      "title": "OS Personium. Часть 4: Биопрограммы. Всё что вы не знали о своём призвании и Цели в жизни",
+      "url": "https://habr.com/ru/articles/1053660/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053660",
+      "description": "В прошлых частях мы поговорили о том, почему психология и вообще науки о сознании и поведении человека оказались в кризисе и предложили свой инженерный подход к психологии личности, который называется OS Personium.И сегодня я продолжу описывать основные блоки теории, из которой вырос OS Personium - мы начнём разговор о трёх биопрограммах - одной из важнейших тем во Вселенной OS Humanium/OS Personium, потому что они составляют и исчерпывают смысл жизни любого человека. Да, именно так. Ничего друг",
+      "published_at": "2026-06-29T20:58:24",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "b0018912f00b",
+      "title": "Facts — прохождение простой машины от HackTheBox",
+      "url": "https://habr.com/ru/articles/1053654/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053654",
+      "description": "Простая машина от Hack The Box, на которой работает Camaleon CMS 2.9.0 под управлением nginx. В системе включена функция самостоятельной регистрации, а уязвимость, позволяющая повысить привилегии после аутентификации (CVE-2025-2304), дает возможность любому зарегистрированному пользователю получить права администратора CMS всего за один запрос. В настройках хранилища медиафайлов в панели администратора можно обнаружить учетные данные для AWS S3.Перебор (перечисление) бакетов S3 позволяет найти в",
+      "published_at": "2026-06-29T20:48:31",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
+    },
+    {
+      "id": "076388d41b79",
+      "title": "Российский микроконтроллерный блок управления судовыми преобразователями частоты. Часть 3",
+      "url": "https://habr.com/ru/articles/1030686/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1030686",
+      "description": "Статья посвящена микроконтроллерным системам управления преобразователями частоты для электродвигателей переменного тока. Рассматриваются различные варианты структуры и конструкции систем управления преобразователями частоты. Приводится техническое описание российского микроконтроллерного блока управления БУПЧ, который входит в состав преобразователей частоты для судовых систем электродвижения концерна «Русэлпром»: его состав, устройство, технические характеристики, преимущества и недостатки по",
+      "published_at": "2026-06-29T20:24:15",
+      "source_key": "tech_habr",
+      "source_name": "Хабр",
+      "category": "tech",
+      "logo": "https://habr.com/favicon.ico"
     },
     {
       "id": "d049c57f9058",
@@ -34,17 +133,6 @@
       "source_name": "Хабр",
       "category": "tech",
       "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "cced419e7434",
-      "title": "WhatsApp* представил юзернеймы и открыл их бронирование",
-      "url": "https://vc.ru/services/3002905-whatsapp-predstavil-yuzernyemy?from=rss",
-      "description": "Функцию запустят в течение нескольких месяцев.",
-      "published_at": "2026-06-29T20:00:08+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
     },
     {
       "id": "df372867843e",
@@ -100,17 +188,6 @@
       "source_name": "Хабр",
       "category": "tech",
       "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "4836974757d7",
-      "title": "Аэрокосмическая Rocket Lab купит спутникового оператора Iridium в сделке на $8 млрд для конкуренции со SpaceX",
-      "url": "https://vc.ru/future/3002575-rocket-lab-pokupaet-iridium?from=rss",
-      "description": "Сделка позволит объединить возможности компании по запуску и производству спутников с глобальной сетью спутников L-диапазона, лицензиями и базой абонентов.",
-      "published_at": "2026-06-29T17:57:16+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
     },
     {
       "id": "603fa271afe7",
@@ -201,17 +278,6 @@
       "logo": "https://habr.com/favicon.ico"
     },
     {
-      "id": "c4c2ecb04b47",
-      "title": "В США подали коллективный иск против Samsung, SK Hynix и Micron — их обвиняют в создании искусственного дефицита чипов памяти",
-      "url": "https://vc.ru/legal/3002176-isk-protiv-samsung-sk-hynix-i-micron?from=rss",
-      "description": "На три фирмы приходится почти 90% мирового рынка оперативной памяти.",
-      "published_at": "2026-06-29T15:20:03+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
       "id": "5aba0e819412",
       "title": "Квантового компьютера нет, а ваш трафик уже собирают",
       "url": "https://habr.com/ru/articles/1053538/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053538",
@@ -300,17 +366,6 @@
       "logo": "https://habr.com/favicon.ico"
     },
     {
-      "id": "feae44562971",
-      "title": "Сооснователь CloudPayments рассказал о завершении спора с «Т-Банком» из-за якобы заниженной стоимости проданной банку доли в сервисе",
-      "url": "https://vc.ru/money/3002001-spor-cloudpayments-i-t-banka-zavershilsya?from=rss",
-      "description": "Сколько денег ему выплатили — не раскрыл.",
-      "published_at": "2026-06-29T14:33:03+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
       "id": "c85b9755e092",
       "title": "Как уместить 26 типов виджетов, RTL и веб‑сокет в килобайты флеша ESP32 — и при чём тут ИИ",
       "url": "https://habr.com/ru/articles/1053508/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053508",
@@ -386,171 +441,6 @@
       "source_name": "Хабр",
       "category": "tech",
       "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "d792a9a8381f",
-      "title": "Что лучше — C++ или C#?",
-      "url": "https://habr.com/ru/articles/1053056/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053056",
-      "description": "Самым фатальным недостатком C++ является то, что он скоро умрёт. То, что C++ скоро умрёт — это истина, проверенная временем. 30 лет назад все говорили, что C++ скоро умрёт, потому что появилась Java. 20 лет назад ему пророчили скорую смерть, потому что к Джаве присоединился C#. 10 лет назад C++ должен был умереть, потому что появился Rust. 3 года назад его снова принялись хоронить, когда АНБ выпустило спорную рекомендацию «переходить на memory-safe языки» везде, где это возможно, и я думаю, что",
-      "published_at": "2026-06-29T14:16:14",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "1939ed3d832c",
-      "title": "Сколько стоит один тикет",
-      "url": "https://habr.com/ru/companies/simpleone/articles/1053492/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053492",
-      "description": "Стоимость поддержки кажется простой: есть зарплаты, есть число обращений — поделили и готово. На практике эта цифра занижена в разы, потому что половина затрат на тикет не попадает ни в один отчёт. Разбираем, из чего складывается реальная стоимость обращения и как посчитать её для своей команды. Читать далее",
-      "published_at": "2026-06-29T14:11:23",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "692dc5d53249",
-      "title": "Эйджизм можно победить?",
-      "url": "https://habr.com/ru/articles/1053488/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053488",
-      "description": "Совет обратиться в Роструд бесполезен. Как вы докажете, что вас не берут на работу из-за возраста?Представьте самую обычную ситуацию. Вам пятьдесят два года. За последние два месяца вы отправили несколько десятков откликов. Где-то пришли автоматические отказы. Где-то вообще не ответили. Пару раз пригласили на собеседование. Итогом стала фраза: «Мы взяли более подходящего кандидата», читай: «Пошел ты нафиг, старый пердун». Читать далее",
-      "published_at": "2026-06-29T14:04:15",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "4b923a40f6fe",
-      "title": "Я отдал разработку автономному ИИ — промежуточные итоги за 178 релизов",
-      "url": "https://habr.com/ru/articles/1053486/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053486",
-      "description": "Две недели назад я отдал разработку живого продукта автономному ИИ-пайплайну: люди пишут в бота «что поменять», а код пишется, тестируется, ревьюится и выкатывается в прод без единого человеческого взгляда на дифф.Итог двух недель: 178 релизов, 1.4 млрд токенов, 0 строк кода, прочитанных человеком перед мержем. И неожиданный вывод — я не перестал быть программистом, а стал кем-то вроде бухгалтера, который отложил счёты и осваивает Excel.Я поставил череду экспериментов: по очереди убирал куски «о",
-      "published_at": "2026-06-29T14:01:31",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "baa61d5cc5d4",
-      "title": "Безопасность контрагентов с точки зрения ИБ: с чего начать и как выстроить процесс",
-      "url": "https://habr.com/ru/companies/ozontech/articles/1052466/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1052466",
-      "description": "Привет, Хабр! Меня зовут Алиса, я методолог информационной безопасности в Ozon. Я занимаюсь построением и улучшением процессов ИБ начиная от регламентов и требований до внедрения практических контролей в работу команд. Один из сложных участков в ИБ — работа с контрагентами. Компании используют внешние сервисы, подрядчиков, аутсорсинг, облака, интеграции и внешнюю разработку. При этом далеко не всегда понятно, кто отвечает за безопасность этих связей и с чего вообще начинать. Читать далее",
-      "published_at": "2026-06-29T13:59:28",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "ba66cb55b6a1",
-      "title": "Когда ИИ не знает – но делает вид, что знает: ударим энтропией по LLM",
-      "url": "https://habr.com/ru/companies/itmai/articles/1053446/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053446",
-      "description": "Представьте: вы спрашиваете умного коллегу о дедлайне проекта, а он отвечает уверенно и детально – но на самом деле придумывает всё на ходу. Именно это постоянно делают большие языковые модели. Они не «знают», что не знают. И это не баг конкретной реализации – это фундаментальное свойство архитектуры. В данной статье студент первого курса ТОП ИТ предлагает один из способов как это побороть вооружившись RAG и семантической энтропией... Читать далее",
-      "published_at": "2026-06-29T13:44:27",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "5e5f770a683f",
-      "title": "Четыре релиза без единой новой функции. Почему иногда архитектура важнее новых возможностей",
-      "url": "https://habr.com/ru/articles/1053470/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053470",
-      "description": "Четыре последних релиза моего проекта почти ничего не изменили для пользователя. Не появилось новых экранов, кнопок или возможностей. Зато именно за эти восемь дней проект пережил, пожалуй, самую большую архитектурную перестройку с момента своего появления. Рассказываю, почему иногда отказ от новых функций оказывается самым правильным решением.  Статья большая и представлена как ретроспектива. Рассказывает о взрослении как в самом написании кода и подходу к разработке, так и о архитектурном. Чит",
-      "published_at": "2026-06-29T13:43:36",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "503ecc327ab1",
-      "title": "6 необычных смартфонов 2026 года: от телефона с проектором до карманного Linux-компьютера",
-      "url": "https://habr.com/ru/companies/ru_mts/articles/1052436/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1052436",
-      "description": "Кажется, рынок смартфонов давно перестал удивлять. Но стоит выйти за пределы привычных Android-флагманов, и оказывается, что производители продолжают искать новые идеи. В 2026 году появились телефоны со встроенным проектором, Linux вместо Android, экраном E Ink и даже устройства, которые больше напоминают карманные компьютеры, чем привычные смартфоны. В этой подборке — самые интересные примеры таких экспериментов.&nbsp; Читать далее",
-      "published_at": "2026-06-29T13:42:34",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "1d1a1623e507",
-      "title": "Как HTML убил Markdown и зачем Cursor выпускают замену GitHub",
-      "url": "https://habr.com/ru/companies/haulmont/articles/1053468/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053468",
-      "description": "19-й выпуск IT-новостей от OpenIDE!Midjourney открыла медицинское подразделение и сканер всего тела вместо МРТ, Cursor строит замену GitHub под AI-агентов, а в OpenIDE крупно прокачали поддержку Go. Тем временем японская Sakana AI без собственной топовой модели обходит Opus 4.8 и GPT-5.5, а Fable 5 от Anthropic остаётся отключённым по всему миру уже 11-й день подряд. Читать далее",
-      "published_at": "2026-06-29T13:40:07",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "180bd473a612",
-      "title": "Работа с ГОСТ TLS в реальных проектах: костыли, решения и опыт",
-      "url": "https://habr.com/ru/companies/innostage/articles/1053246/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1053246",
-      "description": "Привет, Хабр! Меня зовут Максим Теплых, эксперт по тестированию на проникновение в ИТ-компании Innostage. В этой статье я хочу рассмотреть тему, которая с годами становится все более актуальной — тестирование систем, использующих ГОСТ TLS. Кратко расскажу о самой технологии, а также покажу подходы и наработки, которые применяем на практике.&nbsp;Заранее приношу извинения за объемное и несколько затянутое введение. Хотя изложение начинается не с динозавров и не с истории древней Руси, тему все же",
-      "published_at": "2026-06-29T13:37:32",
-      "source_key": "tech_habr",
-      "source_name": "Хабр",
-      "category": "tech",
-      "logo": "https://habr.com/favicon.ico"
-    },
-    {
-      "id": "e87d8bedd5a0",
-      "title": "Bild: Volkswagen закроет совместный с Bosсh проект по разработке системы автономного вождения — внутренние тесты показали, что технология «неконкурентоспособна»",
-      "url": "https://vc.ru/transport/3001782-volkswagen-i-bosch-zakryvayut-proyekt-avtonomnogo-vozhdeniya?from=rss",
-      "description": "В компаниях заявили, что «не комментируют слухи».",
-      "published_at": "2026-06-29T13:20:57+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "1f8b3671a2b5",
-      "title": "Приложение Happ снова появилось в российском App Store",
-      "url": "https://vc.ru/services/3001429-prilozhenie-happ-snova-v-rossiyskom-app-store?from=rss",
-      "description": "Популярный VPN-клиент удалили из магазина Apple 24 июня 2026 года.",
-      "published_at": "2026-06-29T10:20:08+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "f0edcb8f0433",
-      "title": "День 1587: перевозчики начали предупреждать о росте цен из-за перебоев с поставками топлива",
-      "url": "https://vc.ru/money/3001296-rost-tsen-na-perevozki-iz-za-perebov-s-postavkami-topliva?from=rss",
-      "description": "Собираем новости, события и мнения о рынках, банках и реакциях компаний.",
-      "published_at": "2026-06-29T08:18:42+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "4d6f39a1e2e3",
-      "title": "День 1586: запасы бензина в России составляют 1,7 млн тонн — Путин",
-      "url": "https://vc.ru/transport/3000949-zapasy-benzina-v-rossii?from=rss",
-      "description": "Собираем новости, события и мнения о рынках, банках и реакциях компаний.",
-      "published_at": "2026-06-28T21:07:59+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
-    },
-    {
-      "id": "de1e32c340c8",
-      "title": "Некоторые иностранные граждане столкнулись с заморозкой вкладов в российских банках — РБК",
-      "url": "https://vc.ru/money/3000752-zamorozka-vkladov-grazhdan-nerezidentov?from=rss",
-      "description": "В «Т-Банке», «Сбере», ВТБ и «Альфа-банке».",
-      "published_at": "2026-06-28T17:34:25+03:00",
-      "source_key": "vc",
-      "source_name": "VC.ru",
-      "category": "tech",
-      "logo": "https://vc.ru/favicon.ico"
     }
   ]
 }
