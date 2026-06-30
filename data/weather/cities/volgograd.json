@@ -5,14 +5,14 @@
   "longitude": 44.5133,
   "timezone": "Europe/Moscow",
   "current": {
-    "temperature": 25.0,
-    "feels_like": 23.3,
-    "humidity": 35,
+    "temperature": 22.7,
+    "feels_like": 20.8,
+    "humidity": 41,
     "precipitation_mm": 0.0,
-    "pressure_hpa": 1010.0,
-    "wind_speed_ms": 2.5,
-    "wind_direction_deg": 334,
-    "wind_direction_text": "ССЗ",
+    "pressure_hpa": 1011.0,
+    "wind_speed_ms": 3.0,
+    "wind_direction_deg": 310,
+    "wind_direction_text": "СЗ",
     "weather_code": 1,
     "description": "Преимущественно ясно"
   },
@@ -127,39 +127,39 @@
     },
     {
       "time": "2026-06-30T18:00",
-      "temp": 27.2,
+      "temp": 27.5,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-30T19:00",
-      "temp": 26.6,
+      "temp": 27.0,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 3
     },
     {
       "time": "2026-06-30T20:00",
-      "temp": 25.3,
+      "temp": 25.7,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 3
     },
     {
       "time": "2026-06-30T21:00",
-      "temp": 24.0,
+      "temp": 24.5,
       "precip_prob": 0,
       "weather_code": 1
     },
     {
       "time": "2026-06-30T22:00",
-      "temp": 23.0,
+      "temp": 23.4,
       "precip_prob": 0,
       "weather_code": 2
     },
     {
       "time": "2026-06-30T23:00",
-      "temp": 22.5,
+      "temp": 22.8,
       "precip_prob": 0,
-      "weather_code": 2
+      "weather_code": 1
     }
   ],
   "forecast_7d": [
@@ -174,10 +174,10 @@
     },
     {
       "date": "2026-07-01",
-      "temp_max": 30.2,
-      "temp_min": 19.1,
+      "temp_max": 30.4,
+      "temp_min": 19.3,
       "precipitation_mm": 0.0,
-      "wind_max_ms": 4.4,
+      "wind_max_ms": 4.3,
       "weather_code": 1,
       "description": "Преимущественно ясно"
     },
@@ -227,5 +227,5 @@
       "description": "Пасмурно"
     }
   ],
-  "fetched_at": "2026-06-30T17:15:38.197126+00:00"
+  "fetched_at": "2026-06-30T20:18:28.089019+00:00"
 }
